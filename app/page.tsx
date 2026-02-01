@@ -11,8 +11,8 @@ export default function Home() {
       {/* Hero Section */}
       <section id="hero" className="pt-32 pb-20 sm:pt-40 sm:pb-24 bg-cream">
         <div className="container-width section-padding">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-16 text-center">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-16">
               <Image
                 src="/logo.png"
                 alt="A'SHERIV"
@@ -23,250 +23,222 @@ export default function Home() {
               />
             </div>
             
-            <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-maritime mb-8 leading-tight">
-                Maritime Operations Platform
-              </h1>
-              <p className="text-xl sm:text-2xl text-maritime/80 mb-12 leading-relaxed max-w-3xl mx-auto">
-                Digital twin systems and predictive intelligence for asset integrity and operational visibility.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="#platform"
-                  className="inline-block px-8 py-3 bg-maritime text-cream font-medium hover:bg-maritime/90 transition-colors duration-150"
-                >
-                  Platform Overview
-                </a>
-                <a
-                  href="#contact"
-                  className="inline-block px-8 py-3 border border-steel/40 text-maritime font-medium hover:border-steel transition-colors duration-150"
-                >
-                  Contact
-                </a>
-              </div>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-maritime mb-8 leading-tight">
+              A&apos;SHERIV MARITIME
+            </h1>
+            <p className="text-xl sm:text-2xl text-maritime/80 mb-6 leading-relaxed max-w-3xl mx-auto">
+              Welcome to A&apos;SHERIV, a maritime technology company delivering digital twin systems and predictive intelligence for asset integrity, maintenance planning, and operational visibility across vessel lifecycles.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="#contact"
+                className="inline-block px-8 py-3 bg-maritime text-cream font-medium hover:bg-maritime/90 transition-colors duration-150"
+              >
+                CONTACT US
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* What A'SHERIV Delivers Section */}
-      <section id="delivers" className="section-padding bg-cream">
+      {/* About Us Section */}
+      <section id="about" className="section-padding bg-cream-light">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            What A&apos;SHERIV Delivers
+            ABOUT US
           </h2>
-          <p className="text-lg text-maritime/80 mb-6 max-w-3xl leading-relaxed">
-            Maritime operations platforms that unify vessel data, telemetry, and decisions into structured digital twin systems with AI-driven risk and degradation analysis.
-          </p>
-          <ul className="space-y-3 max-w-3xl">
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Operational visibility across voyage phases and maintenance cycles
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Predictive maintenance signals from telemetry and structured logs
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Evidence packages for insurance, class readiness, and audit trails
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Modular deployment: integrate by system and stakeholder requirement
-              </span>
-            </li>
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl">
+            <div>
+              <h3 className="text-2xl font-serif font-semibold text-maritime mb-4">Mission</h3>
+              <p className="text-maritime/80 leading-relaxed">
+                A&apos;SHERIV produces maritime operations platforms and digital twin systems that unify vessel data, telemetry, and operational decisions into structured intelligence layers. We enable shipyards, operators, and stakeholders to make data-driven decisions that support safer operations, reduced unplanned failures, and clearer accountability across the vessel lifecycle.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-serif font-semibold text-maritime mb-4">Vision</h3>
+              <p className="text-maritime/80 leading-relaxed">
+                To create a maritime analytics value chain through digital twin systems and AI-driven risk analysis, supporting the next generation needs of shipyards, operators, and the broader maritime industry. We aim to establish digital twin adoption as standard practice for high-value maritime assets.
+              </p>
+            </div>
+          </div>
+          <div className="mt-12 max-w-3xl">
+            <p className="text-lg text-maritime/80 leading-relaxed">
+              A&apos;SHERIV works with shipyards, operators, owners, engineers, insurers, class societies, and OEMs to deploy operational platforms that integrate with existing production, maintenance, and inspection workflows.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Platform Section */}
-      <section id="platform" className="section-padding bg-cream-light">
+      {/* EshMOP Platform Section */}
+      <section id="platform" className="section-padding bg-cream">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            Maritime Operations Platform
+            ESHMOP
           </h2>
           <p className="text-lg text-maritime/80 mb-10 max-w-3xl leading-relaxed">
-            EshMOP connects vessel assets, events, telemetry, and decisions into a consistent digital twin model with role-based access for shipyards, operators, engineers, and regulatory parties.
+            EshMOP is A&apos;SHERIV&apos;s maritime operations platform that connects vessel assets, events, telemetry, and decisions into a consistent digital twin model. The platform supports role-based access and stakeholder-specific views, enabling each party to act on the same underlying source of operational truth.
           </p>
-
-          <h3 className="text-2xl font-serif font-semibold text-maritime mb-8">Core System Modules</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                1) Digital Twin Workspace
+                Digital Twin Workspace
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                3D asset navigation, system drill-down, risk overlays, and lifecycle context.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                3D asset navigation, system drill-down, risk overlays, and lifecycle context for comprehensive vessel understanding.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
 
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                2) Telemetry & Health Monitoring
+                Telemetry & Health Monitoring
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                Health scoring from component → system → vessel with trend and anomaly signals.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Health scoring from component → system → vessel with trend and anomaly signals for predictive maintenance planning.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
 
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                3) Operational Logs to Structured Data
+                Operational Logs to Structured Data
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                Convert operational notes into measurable events, decisions, and evidence.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Convert operational notes into measurable events, decisions, and evidence for traceability and compliance.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
 
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                4) Evidence Pack Builder
+                Evidence Pack Builder
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                Time-window evidence exports for insurance, class, charterers, and audit.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Time-window evidence exports for insurance, class, charterers, and internal audit with structured documentation.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
 
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                5) Shipyard Configuration System
+                Shipyard Configuration System
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                Build specifications, BOM, QC checklists, and operational feedback loops.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Build specifications, BOM, QC checklists, and operational feedback loops from operations to design.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
 
-            <div className="bg-cream p-8 border border-steel/20">
+            <div className="bg-cream-light p-8 border border-steel/20">
               <h4 className="text-xl font-serif font-semibold text-maritime mb-3">
-                6) Scenario Playback & Validation
+                Scenario Playback & Validation
               </h4>
-              <p className="text-maritime/80 leading-relaxed">
-                Synthetic scenarios to validate workflows before live integrations.
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Synthetic scenarios to validate workflows before live integrations and system deployments.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Shipyard & Operational Integration Section */}
-      <section id="integration" className="section-padding bg-cream">
+      {/* Shipyard Integration Section */}
+      <section id="integration" className="section-padding bg-cream-light">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            Shipyard & Operational Integration
+            SHIPYARD INTEGRATION
           </h2>
           <p className="text-lg text-maritime/80 mb-6 max-w-3xl leading-relaxed">
-            A&apos;SHERIV works with shipyards and operational partners to deploy digital twin systems integrated with production, maintenance, and inspection workflows.
+            A&apos;SHERIV works with shipyards to deploy digital twin systems integrated with production, maintenance, and inspection workflows. Our approach extends beyond traditional vessel management, delivering detailed assessments that support informed decision-making and risk mitigation.
           </p>
-          <ul className="space-y-3 max-w-3xl mb-10">
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Shipyard build configuration and QC traceability from production through delivery
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Operational data feedback into design and build specifications
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Integration with existing industrial systems and maintenance workflows
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Asset integrity monitoring and predictive maintenance planning
-              </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-steel mr-4 mt-1 text-xl">•</span>
-              <span className="text-maritime/80 leading-relaxed">
-                Compliance documentation and evidence packages for regulatory requirements
-              </span>
-            </li>
-          </ul>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
-            <div className="bg-cream-light p-6 border border-steel/20">
-              <h4 className="font-serif font-semibold text-maritime mb-3">Production & Build</h4>
-              <p className="text-sm text-maritime/70 leading-relaxed">
-                Build specifications, BOM management, QC checklists, and delivery documentation.
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+            <div className="bg-cream p-8 border border-steel/20">
+              <h4 className="text-xl font-serif font-semibold text-maritime mb-4">Production & Build</h4>
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Build configuration, QC traceability, and delivery documentation integrated with operational systems. Shipyard build specifications, BOM management, and QC checklists connected to vessel operations.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
-            <div className="bg-cream-light p-6 border border-steel/20">
-              <h4 className="font-serif font-semibold text-maritime mb-3">Operations & Maintenance</h4>
-              <p className="text-sm text-maritime/70 leading-relaxed">
-                Telemetry monitoring, maintenance planning, log traceability, and decision support.
+            <div className="bg-cream p-8 border border-steel/20">
+              <h4 className="text-xl font-serif font-semibold text-maritime mb-4">Operations & Maintenance</h4>
+              <p className="text-maritime/80 leading-relaxed mb-4">
+                Operational data feedback into design and build specifications. Telemetry monitoring, maintenance planning, log traceability, and decision support for operational fleets.
               </p>
+              <a href="#contact" className="text-steel hover:text-maritime hover:underline text-sm font-medium">
+                Read more →
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Stakeholders Section */}
-      <section id="stakeholders" className="section-padding bg-cream-light">
+      <section id="stakeholders" className="section-padding bg-cream">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            Stakeholders We Serve
+            STAKEHOLDERS WE SERVE
           </h2>
           <p className="text-lg text-maritime/80 mb-10 max-w-3xl leading-relaxed">
-            A&apos;SHERIV platforms support shipyards, operators, owners, engineers, insurers, class societies, and OEMs with role-based access to operational data.
+            A&apos;SHERIV platforms are deployed across maritime operations, supporting shipyards, operators, owners, engineers, insurers, class societies, and OEMs with role-based access to operational data and decision support.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Shipyards</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
-                Build configuration, QC traceability, delivery documentation, and operational feedback.
+                Build configuration, QC traceability, delivery documentation, and operational feedback into design.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Ship Owners & Managers</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Lifecycle visibility, cost and risk management, asset value protection.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Operators & Technical Teams</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Operational health monitoring, maintenance planning, log traceability.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Chief Engineers & Crew</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Structured workflows, reduced manual overhead, operational decision support.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Insurers</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Evidence-based risk assessment, claims support, exposure reduction.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">Class & Flag</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Audit-ready evidence packages, survey readiness indicators.
               </p>
             </div>
 
-            <div className="bg-cream p-6 border border-steel/20">
+            <div className="bg-cream-light p-6 border border-steel/20">
               <h4 className="font-serif font-semibold text-maritime mb-2">OEMs & Service Providers</h4>
               <p className="text-sm text-maritime/70 leading-relaxed">
                 Performance insights, warranty context, targeted interventions.
@@ -276,32 +248,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Regions Section */}
-      <section id="regions" className="section-padding bg-cream">
+      {/* Geographic Footprint Section */}
+      <section id="regions" className="section-padding bg-cream-light">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            Geographic Operating Footprint
+            GEOGRAPHIC OPERATING FOOTPRINT
           </h2>
           <p className="text-lg text-maritime/80 mb-10 max-w-3xl leading-relaxed">
-            A&apos;SHERIV operates across Türkiye, the United Kingdom, and the United Arab Emirates, enabling cross-border delivery and regional compliance.
+            A&apos;SHERIV operates across Türkiye, the United Kingdom, and the United Arab Emirates, enabling cross-border delivery and compliance with regional maritime and industrial requirements.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-cream-light p-8 border border-steel/20">
+            <div className="bg-cream p-8 border border-steel/20">
               <h3 className="text-xl font-serif font-semibold text-maritime mb-4">Türkiye</h3>
               <p className="text-maritime/80 leading-relaxed">
-                Field partnerships and production ecosystem alignment. Shipyard and operational implementations.
+                Field partnerships and production ecosystem alignment. Shipyard and operational stakeholder implementations.
               </p>
             </div>
 
-            <div className="bg-cream-light p-8 border border-steel/20">
+            <div className="bg-cream p-8 border border-steel/20">
               <h3 className="text-xl font-serif font-semibold text-maritime mb-4">United Kingdom</h3>
               <p className="text-maritime/80 leading-relaxed">
                 Platform development, productisation, and partner-led delivery.
               </p>
             </div>
 
-            <div className="bg-cream-light p-8 border border-steel/20">
+            <div className="bg-cream p-8 border border-steel/20">
               <h3 className="text-xl font-serif font-semibold text-maritime mb-4">United Arab Emirates</h3>
               <p className="text-maritime/80 leading-relaxed">
                 Regional operations, commercial partnerships, and international delivery.
@@ -312,13 +284,13 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section-padding bg-cream-light">
+      <section id="contact" className="section-padding bg-cream">
         <div className="container-width">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-maritime mb-8">
-            Contact
+            CONTACT
           </h2>
           <p className="text-lg text-maritime/80 mb-12 max-w-3xl leading-relaxed">
-            For shipyards, operators, owners, insurers, class organisations, or OEMs exploring digital twin systems, contact A&apos;SHERIV to discuss integration and deployment requirements.
+            For shipyards, operators, owners, insurers, class organisations, or OEMs exploring digital twin systems and predictive maintenance platforms, contact A&apos;SHERIV to discuss integration and deployment requirements.
           </p>
           <div className="max-w-2xl">
             <ContactForm />

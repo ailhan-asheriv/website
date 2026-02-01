@@ -41,16 +41,16 @@ export default function Navigation() {
           
           <div className="hidden md:flex items-center space-x-10">
             <button
-              onClick={() => scrollToSection("delivers")}
+              onClick={() => scrollToSection("about")}
               className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
             >
-              What We Deliver
+              About Us
             </button>
             <button
               onClick={() => scrollToSection("platform")}
               className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
             >
-              Platform
+              EshMOP
             </button>
             <button
               onClick={() => scrollToSection("integration")}
@@ -63,12 +63,6 @@ export default function Navigation() {
               className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
             >
               Stakeholders
-            </button>
-            <button
-              onClick={() => scrollToSection("regions")}
-              className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
-            >
-              Operating Footprint
             </button>
             <button
               onClick={() => scrollToSection("contact")}
@@ -116,16 +110,16 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-steel/20 py-4 space-y-3">
             <button
-              onClick={() => scrollToSection("delivers")}
+              onClick={() => scrollToSection("about")}
               className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
             >
-              What We Deliver
+              About Us
             </button>
             <button
               onClick={() => scrollToSection("platform")}
               className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
             >
-              Platform
+              EshMOP
             </button>
             <button
               onClick={() => scrollToSection("integration")}
@@ -138,12 +132,6 @@ export default function Navigation() {
               className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
             >
               Stakeholders
-            </button>
-            <button
-              onClick={() => scrollToSection("regions")}
-              className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
-            >
-              Operating Footprint
             </button>
             <button
               onClick={() => scrollToSection("contact")}
