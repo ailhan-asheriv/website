@@ -9,19 +9,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        cream: {
-          DEFAULT: "#F6F2EA",
-          light: "#FAF7F1",
-          dark: "#F5F1E8",
+        dark: {
+          DEFAULT: "#0A0E1A",
+          light: "#141B2D",
+          lighter: "#1E2838",
         },
-        maritime: {
-          DEFAULT: "#0E2A3A",
-          dark: "#0B2F44",
-          light: "#102C3A",
+        primary: {
+          DEFAULT: "#00D9FF",
+          dark: "#00B8D9",
+          light: "#33E0FF",
         },
-        steel: {
-          DEFAULT: "#4A6F82",
-          light: "#5F7F8F",
+        accent: {
+          DEFAULT: "#6366F1",
+          dark: "#4F46E5",
+          light: "#818CF8",
+        },
+        gray: {
+          DEFAULT: "#94A3B8",
+          light: "#CBD5E1",
+          dark: "#64748B",
         },
       },
     },

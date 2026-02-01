@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "about": "About Us",
+    "platform": "AshMOP",
+    "integration": "Shipyard Integration",
+    "stakeholders": "Stakeholders",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Digital Maritime Operations",
+    "subtitle": "AI-powered digital twin systems and predictive intelligence for asset integrity, maintenance planning, and operational visibility across vessel lifecycles.",
+    "contact": "CONTACT US",
+    "explore": "EXPLORE PLATFORM"
+  },
+  "about": {
+    "title": "ABOUT US",
+    "mission": "Mission",
+    "missionText": "A'SHERIV produces maritime operations platforms and digital twin systems that unify vessel data, telemetry, and operational decisions into structured intelligence layers. We enable shipyards, operators, and stakeholders to make data-driven decisions that support safer operations, reduced unplanned failures, and clearer accountability across the vessel lifecycle.",
+    "vision": "Vision",
+    "visionText": "To create a maritime analytics value chain through digital twin systems and AI-powered risk analysis, supporting the next generation needs of shipyards, operators, and the broader maritime industry. We aim to establish digital twin adoption as standard practice for high-value maritime assets.",
+    "description": "A'SHERIV works with shipyards, operators, owners, engineers, insurers, class societies, and OEMs to deploy operational platforms that integrate with existing production, maintenance, and inspection workflows."
+  },
+  "platform": {
+    "title": "ASHMOP",
+    "description": "AshMOP is A'SHERIV's maritime operations platform that connects vessel assets, events, telemetry, and decisions into a consistent digital twin model with role-based access for shipyards, operators, engineers, and regulatory parties.",
+    "modules": {
+      "1": {
+        "title": "Digital Twin Workspace",
+        "description": "3D asset navigation, system drill-down, risk overlays, and lifecycle context for comprehensive vessel understanding."
+      },
+      "2": {
+        "title": "Telemetry & Health Monitoring",
+        "description": "Health scoring from component → system → vessel with trend and anomaly signals for predictive maintenance planning."
+      },
+      "3": {
+        "title": "Operational Logs to Structured Data",
+        "description": "Convert operational notes into measurable events, decisions, and evidence for traceability and compliance."
+      },
+      "4": {
+        "title": "Evidence Pack Builder",
+        "description": "Time-window evidence exports for insurance, class, charterers, and internal audit with structured documentation."
+      },
+      "5": {
+        "title": "Shipyard Configuration System",
+        "description": "Build specifications, BOM, QC checklists, and operational feedback loops from operations to design."
+      },
+      "6": {
+        "title": "Scenario Playback & Validation",
+        "description": "Synthetic scenarios to validate workflows before live integrations and system deployments."
+      }
+    },
+    "learnMore": "Learn more →"
+  },
+  "integration": {
+    "title": "SHIPYARD INTEGRATION",
+    "description": "A'SHERIV works with shipyards to deploy digital twin systems integrated with production, maintenance, and inspection workflows. Our approach extends beyond traditional vessel management, delivering detailed assessments that support informed decision-making and risk mitigation.",
+    "production": {
+      "title": "Production & Build",
+      "description": "Build configuration, QC traceability, and delivery documentation integrated with operational systems. Shipyard build specifications, BOM management, and QC checklists connected to vessel operations."
+    },
+    "operations": {
+      "title": "Operations & Maintenance",
+      "description": "Operational data feedback into design and build specifications. Telemetry monitoring, maintenance planning, log traceability, and decision support for operational fleets."
+    }
+  },
+  "stakeholders": {
+    "title": "STAKEHOLDERS WE SERVE",
+    "description": "A'SHERIV platforms are deployed across maritime operations, supporting shipyards, operators, owners, engineers, insurers, class societies, and OEMs with role-based access to operational data and decision support.",
+    "shipyards": "Shipyards",
+    "shipyardsDesc": "Build configuration, QC traceability, delivery documentation, and operational feedback into design.",
+    "owners": "Ship Owners & Managers",
+    "ownersDesc": "Lifecycle visibility, cost and risk management, asset value protection.",
+    "operators": "Operators & Technical Teams",
+    "operatorsDesc": "Operational health monitoring, maintenance planning, log traceability.",
+    "engineers": "Chief Engineers & Crew",
+    "engineersDesc": "Structured workflows, reduced manual overhead, operational decision support.",
+    "insurers": "Insurers",
+    "insurersDesc": "Evidence-based risk assessment, claims support, exposure reduction.",
+    "class": "Class & Flag",
+    "classDesc": "Audit-ready evidence packages, survey readiness indicators.",
+    "oems": "OEMs & Service Providers",
+    "oemsDesc": "Performance insights, warranty context, targeted interventions."
+  },
+  "regions": {
+    "title": "GEOGRAPHIC FOOTPRINT",
+    "description": "A'SHERIV operates across Türkiye, the United Kingdom, and the United Arab Emirates, enabling cross-border delivery and compliance with regional maritime and industrial requirements.",
+    "turkey": "Türkiye",
+    "turkeyDesc": "Field partnerships and production ecosystem alignment. Shipyard and operational stakeholder implementations.",
+    "uk": "United Kingdom",
+    "ukDesc": "Platform development, productisation, and partner-led delivery.",
+    "uae": "United Arab Emirates",
+    "uaeDesc": "Regional operations, commercial partnerships, and international delivery.",
+    "zoomHint": "Scroll to zoom • Drag to pan"
+  },
+  "contact": {
+    "title": "CONTACT",
+    "description": "For shipyards, operators, owners, insurers, class organisations, or OEMs exploring digital twin systems and predictive maintenance platforms, contact A'SHERIV to discuss integration and deployment requirements.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "role": "Role",
+    "message": "Message",
+    "submit": "Submit inquiry",
+    "sending": "Sending...",
+    "success": "Your inquiry has been received. A'SHERIV will respond shortly.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "your.email@company.com",
+    "companyPlaceholder": "Company name",
+    "rolePlaceholder": "Your role",
+    "messagePlaceholder": "Tell us about your requirements..."
+  },
+  "footer": {
+    "description": "Digital maritime operations platform powered by AI for digital twins and predictive intelligence.",
+    "legal": "Legal",
+    "privacy": "Privacy",
+    "contact": "Contact"
+  },
+  "turkey": {
+    "title": "Türkiye Operations",
+    "subtitle": "Field partnerships and production ecosystem alignment",
+    "description": "A'SHERIV operates in Türkiye through field partnerships and production ecosystem alignment, focusing on shipyard and operational stakeholder implementations.",
+    "kosgeb": {
+      "title": "KOSGEB Business Development Support",
+      "description": "A'SHERIV is supported by KOSGEB (Small and Medium Enterprises Development Organization) Business Development Support Program for the development of data collection and AI-assisted decision platform for shipyard production processes.",
+      "project": {
+        "title": "Project: Data Collection and AI-Assisted Decision Platform for Shipyard Production Processes",
+        "description": "A software platform that analyzes data obtained from shipyard production processes to provide quality, efficiency, and traceability. The platform also aims to obtain uncollected critical data through local sensor prototypes and includes three modules: Discovery, Traceability Core, and AI Decision Support.",
+        "duration": "Project Duration: 12 periods (36 months)",
+        "modules": {
+          "discovery": "Discovery Module: Data collection and analysis from shipyard production processes",
+          "traceability": "Traceability Core: Quality control, documentation, and traceability systems",
+          "ai": "AI Decision Support: AI-powered decision support for production optimization"
+        }
+      }
+    }
+  },
+  "uk": {
+    "title": "United Kingdom Operations",
+    "subtitle": "Platform development and productisation",
+    "description": "A'SHERIV operates in the United Kingdom focusing on platform development, productisation, and partner-led delivery of maritime operations platforms.",
+    "focus": {
+      "title": "Focus Areas",
+      "development": "Platform Development: Core platform architecture and development",
+      "productisation": "Productisation: Commercial product development and market readiness",
+      "delivery": "Partner-Led Delivery: Collaborative delivery with maritime industry partners"
+    }
+  }
+}
+

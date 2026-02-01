@@ -1,10 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const t = useTranslations("nav");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,15 +29,15 @@ export default function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
         isScrolled
-          ? "bg-cream border-b border-steel/20"
-          : "bg-cream/95 backdrop-blur-sm"
+          ? "bg-dark/95 backdrop-blur-md border-b border-dark-lighter"
+          : "bg-dark/80 backdrop-blur-sm"
       }`}
     >
       <div className="container-width px-6 sm:px-8 lg:px-12">
         <div className="flex items-center justify-between h-20">
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-lg font-serif font-bold text-maritime hover:text-steel transition-colors"
+            className="text-lg font-bold text-white hover:text-primary transition-colors"
           >
             A&apos;SHERIV
           </button>
@@ -42,40 +45,41 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-10">
             <button
               onClick={() => scrollToSection("about")}
-              className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
+              className="text-sm text-gray-light hover:text-primary transition-all duration-150"
             >
-              About Us
+              {t("about")}
             </button>
             <button
               onClick={() => scrollToSection("platform")}
-              className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
+              className="text-sm text-gray-light hover:text-primary transition-all duration-150"
             >
-              EshMOP
+              {t("platform")}
             </button>
             <button
               onClick={() => scrollToSection("integration")}
-              className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
+              className="text-sm text-gray-light hover:text-primary transition-all duration-150"
             >
-              Shipyard Integration
+              {t("integration")}
             </button>
             <button
               onClick={() => scrollToSection("stakeholders")}
-              className="text-sm text-maritime/80 hover:text-maritime hover:underline transition-all duration-150"
+              className="text-sm text-gray-light hover:text-primary transition-all duration-150"
             >
-              Stakeholders
+              {t("stakeholders")}
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="px-5 py-2 bg-maritime text-cream text-sm font-medium hover:bg-maritime/90 transition-colors duration-150"
+              className="px-5 py-2 bg-gradient-to-r from-primary to-accent text-dark font-medium hover:from-primary-dark hover:to-accent-dark transition-all duration-150 rounded-lg"
             >
-              Contact
+              {t("contact")}
             </button>
+            <LanguageSwitcher />
           </div>
 
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-maritime"
+            className="md:hidden text-gray-light"
             aria-label="Menu"
           >
             {isMobileMenuOpen ? (
@@ -108,41 +112,43 @@ export default function Navigation() {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-steel/20 py-4 space-y-3">
+          <div className="md:hidden border-t border-dark-lighter py-4 space-y-3">
             <button
               onClick={() => scrollToSection("about")}
-              className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
+              className="block w-full text-left text-sm text-gray-light hover:text-primary transition-colors py-2"
             >
-              About Us
+              {t("about")}
             </button>
             <button
               onClick={() => scrollToSection("platform")}
-              className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
+              className="block w-full text-left text-sm text-gray-light hover:text-primary transition-colors py-2"
             >
-              EshMOP
+              {t("platform")}
             </button>
             <button
               onClick={() => scrollToSection("integration")}
-              className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
+              className="block w-full text-left text-sm text-gray-light hover:text-primary transition-colors py-2"
             >
-              Shipyard Integration
+              {t("integration")}
             </button>
             <button
               onClick={() => scrollToSection("stakeholders")}
-              className="block w-full text-left text-sm text-maritime/80 hover:text-maritime transition-colors py-2"
+              className="block w-full text-left text-sm text-gray-light hover:text-primary transition-colors py-2"
             >
-              Stakeholders
+              {t("stakeholders")}
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="block w-full px-4 py-2 bg-maritime text-cream text-sm font-medium hover:bg-maritime/90 transition-colors text-center"
+              className="block w-full px-4 py-2 bg-gradient-to-r from-primary to-accent text-dark text-sm font-medium hover:from-primary-dark hover:to-accent-dark transition-all text-center rounded-lg"
             >
-              Contact
+              {t("contact")}
             </button>
+            <div className="pt-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         )}
       </div>
     </nav>
   );
 }
-

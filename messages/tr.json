@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "about": "Hakkımızda",
+    "platform": "AshMOP",
+    "integration": "Tersane Entegrasyonu",
+    "stakeholders": "Paydaşlar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Dijital Denizcilik Operasyonları",
+    "subtitle": "Varlık bütünlüğü, bakım planlaması ve gemi yaşam döngüleri boyunca operasyonel görünürlük için AI destekli dijital ikiz sistemleri ve tahmine dayalı istihbarat.",
+    "contact": "İLETİŞİME GEÇİN",
+    "explore": "PLATFORMU KEŞFEDİN"
+  },
+  "about": {
+    "title": "HAKKIMIZDA",
+    "mission": "Misyon",
+    "missionText": "A'SHERIV, gemi verilerini, telemetriyi ve operasyonel kararları yapılandırılmış istihbarat katmanlarına birleştiren denizcilik operasyon platformları ve dijital ikiz sistemleri üretir. Tersanelerin, operatörlerin ve paydaşların daha güvenli operasyonları destekleyen, plansız arızaları azaltan ve gemi yaşam döngüsü boyunca daha net hesap verebilirlik sağlayan veri odaklı kararlar almasını sağlıyoruz.",
+    "vision": "Vizyon",
+    "visionText": "Dijital ikiz sistemleri ve AI destekli risk analizi aracılığıyla bir denizcilik analitik değer zinciri oluşturmak, tersanelerin, operatörlerin ve daha geniş denizcilik endüstrisinin gelecek nesil ihtiyaçlarını desteklemek. Yüksek değerli denizcilik varlıkları için dijital ikiz benimsenmesini standart uygulama haline getirmeyi hedefliyoruz.",
+    "description": "A'SHERIV, mevcut üretim, bakım ve denetim iş akışlarıyla entegre olan operasyonel platformları dağıtmak için tersaneler, operatörler, sahipler, mühendisler, sigortacılar, sınıf toplumları ve OEM'lerle çalışır."
+  },
+  "platform": {
+    "title": "ASHMOP",
+    "description": "AshMOP, A'SHERIV'in denizcilik operasyon platformudur ve gemi varlıklarını, olayları, telemetriyi ve kararları tersaneler, operatörler, mühendisler ve düzenleyici taraflar için rol tabanlı erişimle tutarlı bir dijital ikiz modeline bağlar.",
+    "modules": {
+      "1": {
+        "title": "Dijital İkiz Çalışma Alanı",
+        "description": "Kapsamlı gemi anlayışı için 3D varlık navigasyonu, sistem detaylandırması, risk katmanları ve yaşam döngüsü bağlamı."
+      },
+      "2": {
+        "title": "Telemetri ve Sağlık İzleme",
+        "description": "Bileşen → sistem → gemi için tahmine dayalı bakım planlaması için trend ve anomali sinyalleri ile sağlık puanlama."
+      },
+      "3": {
+        "title": "Operasyonel Kayıtlar Yapılandırılmış Veriye",
+        "description": "İzlenebilirlik ve uyumluluk için operasyonel notları ölçülebilir olaylara, kararlara ve kanıtlara dönüştürün."
+      },
+      "4": {
+        "title": "Kanıt Paketi Oluşturucu",
+        "description": "Yapılandırılmış dokümantasyonla sigorta, sınıf, charterer'lar ve dahili denetim için zaman penceresi kanıt dışa aktarmaları."
+      },
+      "5": {
+        "title": "Tersane Yapılandırma Sistemi",
+        "description": "Operasyonlardan tasarıma yapı özellikleri, BOM, QC kontrol listeleri ve operasyonel geri bildirim döngüleri."
+      },
+      "6": {
+        "title": "Senaryo Oynatma ve Doğrulama",
+        "description": "Canlı entegrasyonlar ve sistem dağıtımlarından önce iş akışlarını doğrulamak için sentetik senaryolar."
+      }
+    },
+    "learnMore": "Daha fazla bilgi →"
+  },
+  "integration": {
+    "title": "TERSANE ENTEGRASYONU",
+    "description": "A'SHERIV, üretim, bakım ve denetim iş akışlarıyla entegre dijital ikiz sistemleri dağıtmak için tersanelerle çalışır. Yaklaşımımız geleneksel gemi yönetiminin ötesine geçerek, bilinçli karar vermeyi ve risk azaltmayı destekleyen detaylı değerlendirmeler sunar.",
+    "production": {
+      "title": "Üretim ve İnşaat",
+      "description": "Operasyonel sistemlerle entegre yapı yapılandırması, QC izlenebilirliği ve teslimat dokümantasyonu. Tersane yapı özellikleri, BOM yönetimi ve gemi operasyonlarına bağlı QC kontrol listeleri."
+    },
+    "operations": {
+      "title": "Operasyonlar ve Bakım",
+      "description": "Tasarım ve yapı özelliklerine operasyonel veri geri bildirimi. Telemetri izleme, bakım planlaması, log izlenebilirliği ve operasyonel filolar için karar desteği."
+    }
+  },
+  "stakeholders": {
+    "title": "HİZMET VERDİĞİMİZ PAYDAŞLAR",
+    "description": "A'SHERIV platformları denizcilik operasyonları genelinde dağıtılır ve tersaneler, operatörler, sahipler, mühendisler, sigortacılar, sınıf toplumları ve OEM'leri operasyonel verilere ve karar desteğine rol tabanlı erişimle destekler.",
+    "shipyards": "Tersaneler",
+    "shipyardsDesc": "Yapı yapılandırması, QC izlenebilirliği, teslimat dokümantasyonu ve tasarıma operasyonel geri bildirim.",
+    "owners": "Gemi Sahipleri ve Yöneticiler",
+    "ownersDesc": "Yaşam döngüsü görünürlüğü, maliyet ve risk yönetimi, varlık değeri koruması.",
+    "operators": "Operatörler ve Teknik Ekipler",
+    "operatorsDesc": "Operasyonel sağlık izleme, bakım planlaması, log izlenebilirliği.",
+    "engineers": "Baş Mühendisler ve Mürettebat",
+    "engineersDesc": "Yapılandırılmış iş akışları, azaltılmış manuel yük, operasyonel karar desteği.",
+    "insurers": "Sigortacılar",
+    "insurersDesc": "Kanıta dayalı risk değerlendirmesi, talep desteği, maruz kalma azaltma.",
+    "class": "Sınıf ve Bayrak",
+    "classDesc": "Denetime hazır kanıt paketleri, anket hazırlık göstergeleri.",
+    "oems": "OEM'ler ve Hizmet Sağlayıcılar",
+    "oemsDesc": "Performans içgörüleri, garanti bağlamı, hedefli müdahaleler."
+  },
+  "regions": {
+    "title": "COĞRAFİ AYAK İZİ",
+    "description": "A'SHERIV, Türkiye, Birleşik Krallık ve Birleşik Arap Emirlikleri'nde faaliyet göstererek sınır ötesi teslimat ve bölgesel denizcilik ve endüstriyel gereksinimlere uyum sağlar.",
+    "turkey": "Türkiye",
+    "turkeyDesc": "Saha ortaklıkları ve üretim ekosistemi hizalaması. Tersane ve operasyonel paydaş uygulamaları.",
+    "uk": "Birleşik Krallık",
+    "ukDesc": "Platform geliştirme, ürünleştirme ve ortak liderliğinde teslimat.",
+    "uae": "Birleşik Arap Emirlikleri",
+    "uaeDesc": "Bölgesel operasyonlar, ticari ortaklıklar ve uluslararası teslimat.",
+    "zoomHint": "Yakınlaştırmak için kaydırın • Pan için sürükleyin"
+  },
+  "contact": {
+    "title": "İLETİŞİM",
+    "description": "Dijital ikiz sistemleri ve tahmine dayalı bakım platformlarını keşfeden tersaneler, operatörler, sahipler, sigortacılar, sınıf organizasyonları veya OEM'ler için, entegrasyon ve dağıtım gereksinimlerini görüşmek üzere A'SHERIV ile iletişime geçin.",
+    "name": "Ad",
+    "email": "E-posta",
+    "company": "Şirket",
+    "role": "Rol",
+    "message": "Mesaj",
+    "submit": "Sorgu gönder",
+    "sending": "Gönderiliyor...",
+    "success": "Sorgunuz alındı. A'SHERIV kısa süre içinde yanıt verecektir.",
+    "namePlaceholder": "Adınız",
+    "emailPlaceholder": "e-posta@şirket.com",
+    "companyPlaceholder": "Şirket adı",
+    "rolePlaceholder": "Rolünüz",
+    "messagePlaceholder": "Gereksinimleriniz hakkında bize bilgi verin..."
+  },
+  "footer": {
+    "description": "Dijital ikizler ve tahmine dayalı istihbarat için AI destekli dijital denizcilik operasyon platformu.",
+    "legal": "Yasal",
+    "privacy": "Gizlilik",
+    "contact": "İletişim"
+  },
+  "turkey": {
+    "title": "Türkiye Operasyonları",
+    "subtitle": "Saha ortaklıkları ve üretim ekosistemi hizalaması",
+    "description": "A'SHERIV, Türkiye'de tersane ve operasyonel paydaş uygulamalarına odaklanarak saha ortaklıkları ve üretim ekosistemi hizalaması yoluyla faaliyet göstermektedir.",
+    "kosgeb": {
+      "title": "KOSGEB İş Geliştirme Desteği",
+      "description": "A'SHERIV, tersane üretim süreçlerinde veri toplama ve AI destekli karar platformu geliştirilmesi için KOSGEB (Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı) İş Geliştirme Desteği Programı tarafından desteklenmektedir.",
+      "project": {
+        "title": "Proje: Tersane Üretim Süreçlerinde Veri Toplama ve AI Destekli Karar Platformu",
+        "description": "Tersanelerdeki üretim süreçlerinden elde edilen verileri analiz ederek kalite, verimlilik ve izlenebilirlik sağlayan bir yazılım platformu. Platform ayrıca toplanmayan kritik verileri yerli sensör prototipleri ile elde etmeyi hedeflemekte ve üç modül içermektedir: Discovery, Traceability Core ve AI Decision Support.",
+        "duration": "Proje Süresi: 12 dönem (36 ay)",
+        "modules": {
+          "discovery": "Discovery Modülü: Tersane üretim süreçlerinden veri toplama ve analiz",
+          "traceability": "Traceability Core: Kalite kontrolü, dokümantasyon ve izlenebilirlik sistemleri",
+          "ai": "AI Karar Desteği: Üretim optimizasyonu için AI destekli karar desteği"
+        }
+      }
+    }
+  },
+  "uk": {
+    "title": "Birleşik Krallık Operasyonları",
+    "subtitle": "Platform geliştirme ve ürünleştirme",
+    "description": "A'SHERIV, Birleşik Krallık'ta denizcilik operasyon platformlarının platform geliştirme, ürünleştirme ve ortak liderliğinde teslimatına odaklanarak faaliyet göstermektedir.",
+    "focus": {
+      "title": "Odak Alanları",
+      "development": "Platform Geliştirme: Temel platform mimarisi ve geliştirme",
+      "productisation": "Ürünleştirme: Ticari ürün geliştirme ve piyasa hazırlığı",
+      "delivery": "Ortak Liderliğinde Teslimat: Denizcilik endüstrisi ortaklarıyla işbirlikçi teslimat"
+    }
+  }
+}
+

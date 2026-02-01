@@ -1,8 +1,10 @@
 "use client";
 
 import { useState, FormEvent } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactForm() {
+  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,9 +56,9 @@ export default function ContactForm() {
 
   if (isSuccess) {
     return (
-      <div className="bg-cream-light border border-steel/30 p-6 text-center">
-        <p className="text-maritime font-medium">
-          Your inquiry has been received. A&apos;SHERIV will respond shortly.
+      <div className="bg-dark-lighter border border-primary/30 p-6 text-center rounded-xl">
+        <p className="text-white font-medium">
+          {t("success")}
         </p>
       </div>
     );
@@ -65,8 +67,8 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-maritime mb-2">
-          Name
+        <label htmlFor="name" className="block text-sm font-medium text-gray-light mb-2">
+          {t("name")}
         </label>
         <input
           type="text"
@@ -75,13 +77,14 @@ export default function ContactForm() {
           required
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-cream-light border border-steel/30 text-maritime focus:border-steel focus:outline-none transition-colors"
+          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          placeholder={t("namePlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-maritime mb-2">
-          Email
+        <label htmlFor="email" className="block text-sm font-medium text-gray-light mb-2">
+          {t("email")}
         </label>
         <input
           type="email"
@@ -90,13 +93,14 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-cream-light border border-steel/30 text-maritime focus:border-steel focus:outline-none transition-colors"
+          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          placeholder={t("emailPlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="company" className="block text-sm font-medium text-maritime mb-2">
-          Company
+        <label htmlFor="company" className="block text-sm font-medium text-gray-light mb-2">
+          {t("company")}
         </label>
         <input
           type="text"
@@ -105,13 +109,14 @@ export default function ContactForm() {
           required
           value={formData.company}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-cream-light border border-steel/30 text-maritime focus:border-steel focus:outline-none transition-colors"
+          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          placeholder={t("companyPlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="role" className="block text-sm font-medium text-maritime mb-2">
-          Role
+        <label htmlFor="role" className="block text-sm font-medium text-gray-light mb-2">
+          {t("role")}
         </label>
         <input
           type="text"
@@ -120,13 +125,14 @@ export default function ContactForm() {
           required
           value={formData.role}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-cream-light border border-steel/30 text-maritime focus:border-steel focus:outline-none transition-colors"
+          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          placeholder={t("rolePlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-maritime mb-2">
-          Message
+        <label htmlFor="message" className="block text-sm font-medium text-gray-light mb-2">
+          {t("message")}
         </label>
         <textarea
           id="message"
@@ -135,18 +141,18 @@ export default function ContactForm() {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-cream-light border border-steel/30 text-maritime focus:border-steel focus:outline-none resize-none transition-colors"
+          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none transition-all"
+          placeholder={t("messagePlaceholder")}
         />
       </div>
 
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full sm:w-auto px-8 py-3 bg-maritime text-cream font-medium hover:bg-maritime/90 transition-colors duration-150 disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-primary to-accent text-dark font-semibold hover:from-primary-dark hover:to-accent-dark transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-lg shadow-primary/20"
       >
-        {isSubmitting ? "Sending..." : "Submit inquiry"}
+        {isSubmitting ? t("sending") : t("submit")}
       </button>
     </form>
   );
 }
-

@@ -1,36 +1,41 @@
-import Link from "next/link";
+"use client";
+
+import { useTranslations } from "next-intl";
+import { Link } from "../../lib/routing";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
   return (
-    <footer className="bg-cream border-t border-steel/20">
+    <footer className="bg-dark-light border-t border-dark-lighter">
       <div className="container-width section-padding">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-lg font-serif font-bold text-maritime mb-4">A&apos;SHERIV</h3>
-            <p className="text-sm text-maritime/70 leading-relaxed">
-              AI-driven maritime operations platform for digital twins and predictive intelligence.
+            <h3 className="text-lg font-bold text-white mb-4">A&apos;SHERIV</h3>
+            <p className="text-sm text-gray-light leading-relaxed">
+              {t("description")}
             </p>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-maritime mb-4">Legal</h4>
+            <h4 className="text-sm font-semibold text-white mb-4">{t("legal")}</h4>
             <ul className="space-y-2">
               <li>
                 <Link
                   href="/privacy"
-                  className="text-sm text-maritime/70 hover:text-maritime hover:underline transition-colors"
+                  className="text-sm text-gray-light hover:text-primary transition-colors"
                 >
-                  Privacy
+                  {t("privacy")}
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-sm font-semibold text-maritime mb-4">Contact</h4>
+            <h4 className="text-sm font-semibold text-white mb-4">{t("contact")}</h4>
             <a
               href="mailto:info@asheriv.com"
-              className="text-sm text-maritime/70 hover:text-maritime hover:underline transition-colors"
+              className="text-sm text-gray-light hover:text-primary transition-colors"
             >
               info@asheriv.com
             </a>
@@ -40,4 +45,3 @@ export default function Footer() {
     </footer>
   );
 }
-
