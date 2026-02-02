@@ -17,7 +17,7 @@ const geoUrl =
 export default function WorldMap() {
   const t = useTranslations("regions");
   const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
-  const [position, setPosition] = useState({ coordinates: [20, 30] as [number, number], zoom: 1 });
+  const [position, setPosition] = useState({ coordinates: [30, 40] as [number, number], zoom: 2.5 });
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
@@ -99,14 +99,14 @@ export default function WorldMap() {
                 className={`${location.route ? "cursor-pointer" : "cursor-default"}`}
               >
                 <circle
-                  r={hoveredLocation === location.nameKey ? 8 : 6}
+                  r={hoveredLocation === location.nameKey ? 5 : 4}
                   fill="#00D9FF"
                   stroke="#6366F1"
-                  strokeWidth={2}
+                  strokeWidth={1.5}
                   className="transition-all duration-200"
                 />
                 <circle
-                  r={hoveredLocation === location.nameKey ? 16 : 0}
+                  r={hoveredLocation === location.nameKey ? 12 : 0}
                   fill="#00D9FF"
                   opacity={0.2}
                   className="transition-all duration-200"
