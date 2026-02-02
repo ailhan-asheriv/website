@@ -119,19 +119,32 @@
     "title": "Türkiye Operasyonları",
     "subtitle": "Saha ortaklıkları ve üretim ekosistemi hizalaması",
     "description": "A'SHERIV, Türkiye'de tersane ve operasyonel paydaş uygulamalarına odaklanarak saha ortaklıkları ve üretim ekosistemi hizalaması yoluyla faaliyet göstermektedir.",
-    "kosgeb": {
-      "title": "KOSGEB İş Geliştirme Desteği",
-      "description": "A'SHERIV, tersane üretim süreçlerinde veri toplama ve AI destekli karar platformu geliştirilmesi için KOSGEB (Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı) İş Geliştirme Desteği Programı tarafından desteklenmektedir.",
-      "project": {
-        "title": "Proje: Tersane Üretim Süreçlerinde Veri Toplama ve AI Destekli Karar Platformu",
-        "description": "Tersanelerdeki üretim süreçlerinden elde edilen verileri analiz ederek kalite, verimlilik ve izlenebilirlik sağlayan bir yazılım platformu. Platform ayrıca toplanmayan kritik verileri yerli sensör prototipleri ile elde etmeyi hedeflemekte ve üç modül içermektedir: Discovery, Traceability Core ve AI Decision Support.",
-        "duration": "Proje Süresi: 12 dönem (36 ay)",
-        "modules": {
-          "discovery": "Discovery Modülü: Tersane üretim süreçlerinden veri toplama ve analiz",
-          "traceability": "Traceability Core: Kalite kontrolü, dokümantasyon ve izlenebilirlik sistemleri",
-          "ai": "AI Karar Desteği: Üretim optimizasyonu için AI destekli karar desteği"
+    "operations": {
+      "title": "Operasyonel Odak",
+      "description": "A'SHERIV'in Türkiye'deki operasyonları, tersane ortaklıkları, üretim sistemi entegrasyonu ve denizcilik teknolojisi dağıtımına odaklanmaktadır. Tersaneler ve operasyonel paydaşlarla birlikte dijital ikiz sistemleri ve tahmine dayalı bakım platformlarını uygulamak için çalışıyoruz.",
+      "areas": {
+        "shipyard": {
+          "title": "Tersane Ortaklıkları",
+          "description": "Dijital ikiz sistemlerini üretim iş akışlarına, inşa konfigürasyon yönetimine ve operasyonel geri bildirim döngülerine entegre etmek için tersanelerle işbirlikçi uygulamalar."
+        },
+        "production": {
+          "title": "Üretim Sistemleri",
+          "description": "Tersane üretim süreçlerine veri toplama, kalite kontrolü ve izlenebilirlik sistemlerinin entegrasyonu, inşadan operasyona iş akışlarını desteklemek için."
+        },
+        "integration": {
+          "title": "Sistem Entegrasyonu",
+          "description": "Tersaneler ve operatörler tarafından kullanılan mevcut üretim, bakım ve denetim sistemleriyle bağlantı kuran denizcilik operasyon platformlarının dağıtımı."
+        },
+        "partnerships": {
+          "title": "Saha Ortaklıkları",
+          "description": "Üretim ekosistemlerini hizalamak ve operasyonel teknoloji çözümleri sunmak için denizcilik endüstrisi paydaşlarıyla stratejik ortaklıklar."
         }
       }
+    },
+    "contact": {
+      "title": "Türkiye Operasyonları ile İlgileniyor musunuz?",
+      "description": "Türkiye'deki tersane ortaklıkları ve operasyonel uygulamaları görüşmek için A'SHERIV ile iletişime geçin.",
+      "cta": "İletişime Geçin"
     }
   },
   "uk": {

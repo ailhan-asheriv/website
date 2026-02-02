@@ -119,19 +119,32 @@
     "title": "Türkiye Operations",
     "subtitle": "Field partnerships and production ecosystem alignment",
     "description": "A'SHERIV operates in Türkiye through field partnerships and production ecosystem alignment, focusing on shipyard and operational stakeholder implementations.",
-    "kosgeb": {
-      "title": "KOSGEB Business Development Support",
-      "description": "A'SHERIV is supported by KOSGEB (Small and Medium Enterprises Development Organization) Business Development Support Program for the development of data collection and AI-assisted decision platform for shipyard production processes.",
-      "project": {
-        "title": "Project: Data Collection and AI-Assisted Decision Platform for Shipyard Production Processes",
-        "description": "A software platform that analyzes data obtained from shipyard production processes to provide quality, efficiency, and traceability. The platform also aims to obtain uncollected critical data through local sensor prototypes and includes three modules: Discovery, Traceability Core, and AI Decision Support.",
-        "duration": "Project Duration: 12 periods (36 months)",
-        "modules": {
-          "discovery": "Discovery Module: Data collection and analysis from shipyard production processes",
-          "traceability": "Traceability Core: Quality control, documentation, and traceability systems",
-          "ai": "AI Decision Support: AI-powered decision support for production optimization"
+    "operations": {
+      "title": "Operational Focus",
+      "description": "A'SHERIV's operations in Türkiye center on shipyard partnerships, production system integration, and maritime technology deployment. We work with shipyards and operational stakeholders to implement digital twin systems and predictive maintenance platforms.",
+      "areas": {
+        "shipyard": {
+          "title": "Shipyard Partnerships",
+          "description": "Collaborative implementations with shipyards to integrate digital twin systems into production workflows, build configuration management, and operational feedback loops."
+        },
+        "production": {
+          "title": "Production Systems",
+          "description": "Integration of data collection, quality control, and traceability systems into shipyard production processes to support build-to-operate workflows."
+        },
+        "integration": {
+          "title": "System Integration",
+          "description": "Deployment of maritime operations platforms that connect with existing production, maintenance, and inspection systems used by shipyards and operators."
+        },
+        "partnerships": {
+          "title": "Field Partnerships",
+          "description": "Strategic partnerships with maritime industry stakeholders to align production ecosystems and deliver operational technology solutions."
         }
       }
+    },
+    "contact": {
+      "title": "Interested in Türkiye Operations?",
+      "description": "Contact A'SHERIV to discuss shipyard partnerships and operational implementations in Türkiye.",
+      "cta": "Contact Us"
     }
   },
   "uk": {

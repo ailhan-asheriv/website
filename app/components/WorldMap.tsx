@@ -121,7 +121,7 @@ export default function WorldMap() {
                     fontWeight="bold"
                     className="pointer-events-none"
                   >
-                    {locale === "tr" ? "Tıkla" : "Click"}
+                    {locale === "tr" ? "Tıkla" : " "}
                   </text>
                 )}
               </g>

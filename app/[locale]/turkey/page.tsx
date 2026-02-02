@@ -40,53 +40,49 @@ export default async function TurkeyPage({
         </div>
       </section>
 
-      {/* KOSGEB Section */}
+      {/* Operations Section */}
       <section className="section-padding bg-dark-light">
         <div className="container-width">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-              <span className="gradient-text">{t("kosgeb.title")}</span>
+              <span className="gradient-text">{t("operations.title")}</span>
             </h2>
             <p className="text-lg text-gray-light mb-12 leading-relaxed">
-              {t("kosgeb.description")}
+              {t("operations.description")}
             </p>
 
-            <div className="bg-dark-lighter p-8 rounded-xl border border-dark-lighter card-hover mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                {t("kosgeb.project.title")}
-              </h3>
-              <p className="text-gray-light leading-relaxed mb-6">
-                {t("kosgeb.project.description")}
-              </p>
-              <p className="text-primary font-semibold mb-6">
-                {t("kosgeb.project.duration")}
-              </p>
-
-              <div className="space-y-4">
-                <div className="bg-dark p-6 rounded-lg border border-primary/20">
-                  <h4 className="text-lg font-bold text-white mb-2">
-                    {t("kosgeb.project.modules.discovery").split(":")[0]}:
-                  </h4>
-                  <p className="text-gray-light">
-                    {t("kosgeb.project.modules.discovery").split(":").slice(1).join(":")}
-                  </p>
-                </div>
-                <div className="bg-dark p-6 rounded-lg border border-primary/20">
-                  <h4 className="text-lg font-bold text-white mb-2">
-                    {t("kosgeb.project.modules.traceability").split(":")[0]}:
-                  </h4>
-                  <p className="text-gray-light">
-                    {t("kosgeb.project.modules.traceability").split(":").slice(1).join(":")}
-                  </p>
-                </div>
-                <div className="bg-dark p-6 rounded-lg border border-primary/20">
-                  <h4 className="text-lg font-bold text-white mb-2">
-                    {t("kosgeb.project.modules.ai").split(":")[0]}:
-                  </h4>
-                  <p className="text-gray-light">
-                    {t("kosgeb.project.modules.ai").split(":").slice(1).join(":")}
-                  </p>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-dark-lighter p-8 rounded-xl border border-dark-lighter card-hover">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {t("operations.areas.shipyard.title")}
+                </h3>
+                <p className="text-gray-light leading-relaxed">
+                  {t("operations.areas.shipyard.description")}
+                </p>
+              </div>
+              <div className="bg-dark-lighter p-8 rounded-xl border border-dark-lighter card-hover">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {t("operations.areas.production.title")}
+                </h3>
+                <p className="text-gray-light leading-relaxed">
+                  {t("operations.areas.production.description")}
+                </p>
+              </div>
+              <div className="bg-dark-lighter p-8 rounded-xl border border-dark-lighter card-hover">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {t("operations.areas.integration.title")}
+                </h3>
+                <p className="text-gray-light leading-relaxed">
+                  {t("operations.areas.integration.description")}
+                </p>
+              </div>
+              <div className="bg-dark-lighter p-8 rounded-xl border border-dark-lighter card-hover">
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {t("operations.areas.partnerships.title")}
+                </h3>
+                <p className="text-gray-light leading-relaxed">
+                  {t("operations.areas.partnerships.description")}
+                </p>
               </div>
             </div>
           </div>
@@ -98,17 +94,17 @@ export default async function TurkeyPage({
         <div className="container-width">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold mb-6">
-              <span className="gradient-text">Interested in Türkiye Operations?</span>
+              <span className="gradient-text">{t("contact.title")}</span>
             </h2>
             <p className="text-lg text-gray-light mb-8 leading-relaxed">
-              Contact A&apos;SHERIV to discuss shipyard partnerships and operational implementations in Türkiye.
+              {t("contact.description")}
             </p>
             <Link
               href="/#contact"
               locale={locale}
               className="inline-block px-8 py-4 bg-gradient-to-r from-primary to-accent text-dark font-semibold hover:from-primary-dark hover:to-accent-dark transition-all duration-300 rounded-lg shadow-lg shadow-primary/20"
             >
-              {locale === "tr" ? "İletişime Geçin" : "Contact Us"}
+              {t("contact.cta")}
             </Link>
           </div>
         </div>
