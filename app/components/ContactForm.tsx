@@ -2,14 +2,16 @@
 
 import { useState, FormEvent } from "react";
 import { useTranslations } from "next-intl";
+import { useSearchParams } from "next/navigation";
 
 export default function ContactForm() {
   const t = useTranslations("contact");
+  const searchParams = useSearchParams();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
-    role: "",
+    role: searchParams.get("role") ?? "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -46,7 +48,7 @@ export default function ContactForm() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setFormData({
       ...formData,
@@ -56,7 +58,7 @@ export default function ContactForm() {
 
   if (isSuccess) {
     return (
-      <div className="bg-dark-lighter border border-primary/30 p-6 text-center rounded-xl">
+      <div className="rounded-xl border border-[#00D4FF]/30 bg-[#00D4FF]/10 p-6 text-center">
         <p className="text-white font-medium">
           {t("success")}
         </p>
@@ -67,7 +69,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div>
-        <label htmlFor="name" className="block text-sm font-medium text-gray-light mb-2">
+        <label htmlFor="name" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
           {t("name")}
         </label>
         <input
@@ -77,13 +79,13 @@ export default function ContactForm() {
           required
           value={formData.name}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
           placeholder={t("namePlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-gray-light mb-2">
+        <label htmlFor="email" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
           {t("email")}
         </label>
         <input
@@ -93,13 +95,13 @@ export default function ContactForm() {
           required
           value={formData.email}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
           placeholder={t("emailPlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="company" className="block text-sm font-medium text-gray-light mb-2">
+        <label htmlFor="company" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
           {t("company")}
         </label>
         <input
@@ -109,29 +111,38 @@ export default function ContactForm() {
           required
           value={formData.company}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
           placeholder={t("companyPlaceholder")}
         />
       </div>
 
       <div>
-        <label htmlFor="role" className="block text-sm font-medium text-gray-light mb-2">
+        <label htmlFor="role" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
           {t("role")}
         </label>
-        <input
-          type="text"
+        <select
           id="role"
           name="role"
           required
           value={formData.role}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-          placeholder={t("rolePlaceholder")}
-        />
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
+        >
+          <option value="" disabled>
+            Select a role
+          </option>
+          <option value="Shipyard">Shipyard</option>
+          <option value="Ship Owner">Ship Owner</option>
+          <option value="Operator">Operator</option>
+          <option value="Class & Flag">Class & Flag</option>
+          <option value="Insurer">Insurer</option>
+          <option value="OEM">OEM</option>
+          <option value="Other">Other</option>
+        </select>
       </div>
 
       <div>
-        <label htmlFor="message" className="block text-sm font-medium text-gray-light mb-2">
+        <label htmlFor="message" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
           {t("message")}
         </label>
         <textarea
@@ -141,7 +152,7 @@ export default function ContactForm() {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 bg-dark-lighter border border-dark-lighter text-white placeholder-gray-dark rounded-lg focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 resize-none transition-all"
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm resize-none"
           placeholder={t("messagePlaceholder")}
         />
       </div>
@@ -149,7 +160,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-primary to-accent text-dark font-semibold hover:from-primary-dark hover:to-accent-dark transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-lg shadow-lg shadow-primary/20"
+        className="w-full sm:w-auto px-6 py-3 rounded-md bg-[#00D4FF] text-[#0A0F1E] text-sm font-semibold transition hover:bg-[#67E5FF] disabled:opacity-50 disabled:cursor-not-allowed"
       >
         {isSubmitting ? t("sending") : t("submit")}
       </button>

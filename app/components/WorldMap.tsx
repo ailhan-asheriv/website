@@ -1,156 +1,44 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter, usePathname } from "../../lib/routing";
-import { useLocale, useTranslations } from "next-intl";
-import {
-  ComposableMap,
-  Geographies,
-  Geography,
-  Marker,
-  ZoomableGroup,
-} from "react-simple-maps";
-
-const geoUrl =
-  "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
+import { useParams } from "next/navigation";
 
 export default function WorldMap() {
-  const t = useTranslations("regions");
-  const [hoveredLocation, setHoveredLocation] = useState<string | null>(null);
-  const [position, setPosition] = useState({ coordinates: [30, 40] as [number, number], zoom: 2.5 });
-  const router = useRouter();
-  const pathname = usePathname();
-  const locale = useLocale();
+  const params = useParams();
+  const lang = ((params?.lang as string) ?? (params?.locale as string) ?? "en").toLowerCase();
+  const isTr = lang === "tr";
 
   const locations = [
-    {
-      name: t("turkey"),
-      nameKey: "turkey",
-      coordinates: [28.9, 41.0] as [number, number],
-      description: t("turkeyDesc"),
-      route: "/turkey",
-    },
-    {
-      name: t("uk"),
-      nameKey: "uk",
-      coordinates: [-0.1, 51.5] as [number, number],
-      description: t("ukDesc"),
-      route: "/uk",
-    },
-    {
-      name: t("uae"),
-      nameKey: "uae",
-      coordinates: [55.3, 25.2] as [number, number],
-      description: t("uaeDesc"),
-      route: null,
-    },
+    { city: isTr ? "Istanbul, Turkiye" : "Istanbul, Turkey", desc: isTr ? "Ar-Ge ve Tersane Entegrasyonu" : "R&D & Shipyard Integration", x: 555, y: 190 },
+    { city: isTr ? "Londra, Birlesik Krallik" : "London, UK", desc: isTr ? "Platform Gelistirme ve Arastirma" : "Platform Development & Research", x: 468, y: 160 },
+    { city: isTr ? "Dubai, BAE" : "Dubai, UAE", desc: isTr ? "Korfez ve Bolgesel Operasyonlar" : "Gulf & Regional Operations", x: 605, y: 222 },
   ];
 
-  const handleMoveEnd = (position: { coordinates: [number, number]; zoom: number }) => {
-    setPosition(position);
-  };
-
-  const handleMarkerClick = (location: typeof locations[0]) => {
-    if (location.route) {
-      router.push(`${location.route}`, { locale });
-    }
-  };
-
   return (
-    <div className="w-full h-[600px] relative">
-      <ComposableMap
-        projectionConfig={{
-          scale: 150,
-        }}
-        className="w-full h-full"
-      >
-        <ZoomableGroup
-          zoom={position.zoom}
-          center={position.coordinates}
-          onMoveEnd={handleMoveEnd}
-        >
-          <Geographies geography={geoUrl}>
-            {({ geographies }) =>
-              geographies.map((geo) => (
-                <Geography
-                  key={geo.rsmKey}
-                  geography={geo}
-                  fill="#1E2838"
-                  stroke="#2D3748"
-                  strokeWidth={0.5}
-                  style={{
-                    default: { outline: "none" },
-                    hover: { outline: "none", fill: "#2D3748" },
-                    pressed: { outline: "none" },
-                  }}
-                />
-              ))
-            }
-          </Geographies>
-          {locations.map((location, index) => (
-            <Marker
-              key={index}
-              coordinates={location.coordinates}
-            >
-              <g
-                onMouseEnter={() => setHoveredLocation(location.nameKey)}
-                onMouseLeave={() => setHoveredLocation(null)}
-                onClick={() => handleMarkerClick(location)}
-                className={`${location.route ? "cursor-pointer" : "cursor-default"}`}
-              >
-                <circle
-                  r={hoveredLocation === location.nameKey ? 5 : 4}
-                  fill="#00D9FF"
-                  stroke="#6366F1"
-                  strokeWidth={1.5}
-                  className="transition-all duration-200"
-                />
-                <circle
-                  r={hoveredLocation === location.nameKey ? 12 : 0}
-                  fill="#00D9FF"
-                  opacity={0.2}
-                  className="transition-all duration-200"
-                />
-                {location.route && (
-                  <text
-                    x={0}
-                    y={-25}
-                    textAnchor="middle"
-                    fill="#00D9FF"
-                    fontSize={10}
-                    fontWeight="bold"
-                    className="pointer-events-none"
-                  >
-                    {locale === "tr" ? "Tıkla" : " "}
-                  </text>
-                )}
-              </g>
-            </Marker>
-          ))}
-        </ZoomableGroup>
-      </ComposableMap>
-
-      {/* Tooltip - positioned near marker */}
-      {hoveredLocation && (
-        <div className="absolute top-4 right-4 bg-dark-lighter border border-primary/30 rounded-lg p-4 shadow-lg shadow-primary/20 min-w-[300px] max-w-md z-10">
-          <h3 className="text-lg font-bold text-white mb-2">
-            {locations.find((loc) => loc.nameKey === hoveredLocation)?.name}
-          </h3>
-          <p className="text-sm text-gray-light leading-relaxed mb-2">
-            {locations.find((loc) => loc.nameKey === hoveredLocation)?.description}
-          </p>
-          {locations.find((loc) => loc.nameKey === hoveredLocation)?.route && (
-            <p className="text-xs text-primary mt-2">
-              {locale === "tr" ? "Detaylar için işarete tıklayın" : "Click marker to view details"}
-            </p>
-          )}
-        </div>
-      )}
-
-      {/* Zoom Instructions */}
-      <div className="absolute bottom-4 left-4 bg-dark-lighter/80 backdrop-blur-sm border border-primary/20 rounded-lg px-3 py-2 text-xs text-gray-light">
-        {t("zoomHint")}
-      </div>
+    <div className="w-full h-[600px] relative bg-[#F8FAFC] rounded-lg border border-[#E5E7EB] p-4">
+      <svg viewBox="0 0 1000 500" className="h-full w-full">
+        <path d="M 80 80 L 130 70 L 190 80 L 220 120 L 240 160 L 210 200 L 190 240 L 160 260 L 130 250 L 100 220 L 80 180 L 60 140 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 190 270 L 220 260 L 250 280 L 260 320 L 250 370 L 220 400 L 190 390 L 170 360 L 165 320 L 175 290 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 440 80 L 490 75 L 520 90 L 530 110 L 510 130 L 480 140 L 450 135 L 430 120 L 430 100 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 460 160 L 510 155 L 545 170 L 560 210 L 555 260 L 540 310 L 510 340 L 480 340 L 455 310 L 445 260 L 445 210 L 450 175 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 540 70 L 650 60 L 760 70 L 830 90 L 870 120 L 860 160 L 820 190 L 760 200 L 700 210 L 640 200 L 590 180 L 555 155 L 540 130 L 535 100 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 580 200 L 610 195 L 630 215 L 625 245 L 600 250 L 580 235 L 572 215 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        <path d="M 740 300 L 810 290 L 860 310 L 870 350 L 840 390 L 790 400 L 740 390 L 710 360 L 715 325 Z" fill="none" stroke="#C9D4E4" strokeWidth="1.5"/>
+        {locations.map((loc) => (
+          <g key={loc.city}>
+            <circle cx={loc.x} cy={loc.y} r="6" fill="#00D4FF" />
+            <circle cx={loc.x} cy={loc.y} r="12" fill="none" stroke="#00D4FF" strokeWidth="1.5" opacity="0.5">
+              <animate attributeName="r" values="8;16;8" dur="2.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.6;0;0.6" dur="2.5s" repeatCount="indefinite"/>
+            </circle>
+            <text x={loc.x + 10} y={loc.y - 10} fontSize="12" fill="#0A0F1E" fontWeight="600">
+              {loc.city}
+            </text>
+            <text x={loc.x + 10} y={loc.y + 6} fontSize="10" fill="#64748B">
+              {loc.desc}
+            </text>
+          </g>
+        ))}
+      </svg>
     </div>
   );
 }

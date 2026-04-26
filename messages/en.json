@@ -1,16 +1,139 @@
 {
   "nav": {
-    "about": "About Us",
-    "platform": "AshMOP",
-    "integration": "Shipyard Integration",
-    "stakeholders": "Stakeholders",
-    "contact": "Contact"
+    "home": "Home",
+    "why": "Why A'SHERIV",
+    "solutions": "Solutions",
+    "overview": "Overview",
+    "shipyard": "Shipyard Intelligence",
+    "operationalTwin": "Operational Digital Twin",
+    "maintenance": "Maintenance Intelligence",
+    "compliance": "Compliance & Evidence",
+    "platform": "Platform",
+    "lifecycle": "Lifecycle Intelligence",
+    "industries": "Industries",
+    "pilot": "Pilot Program",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact",
+    "ctaPilot": "Start a Pilot Discussion",
+    "ctaExplore": "Platform Overview"
   },
   "hero": {
-    "title": "Digital Maritime Operations",
-    "subtitle": "AI-powered digital twin systems and predictive intelligence for asset integrity, maintenance planning, and operational visibility across vessel lifecycles.",
-    "contact": "CONTACT US",
-    "explore": "EXPLORE PLATFORM"
+    "eyebrow": "Digital Twin Infrastructure for Maritime Operations",
+    "headline": "From Shipyard Data to Live Vessel Intelligence",
+    "subheadline": "A'SHERIV builds digital twin infrastructure that connects shipyard production data, vessel operational systems, maintenance records, and targeted sensing into a unified maritime intelligence platform.",
+    "supporting": "Designed for shipyards, fleet operators, OEMs, insurers, and classification societies.",
+    "ctaPrimary": "Start a Pilot Discussion",
+    "ctaSecondary": "Explore the Platform"
+  },
+  "problem": {
+    "headline": "Maritime Data Exists Everywhere. Operational Intelligence Exists Nowhere.",
+    "p1": "Shipyards generate build documentation and production records. Operators collect telemetry from vessel systems. Maintenance teams log inspections and repairs. Classification societies require evidence and documentation.",
+    "p2": "Yet these data streams rarely connect.",
+    "p3": "A'SHERIV transforms scattered maritime data into a structured digital twin designed for operational clarity, predictive maintenance, and lifecycle accountability.",
+    "label1": "Shipyard Records",
+    "label2": "Telemetry",
+    "label3": "Maintenance Logs",
+    "label4": "QA Documents",
+    "label5": "Operational Reports"
+  },
+  "lifecycle": {
+    "headline": "One Digital Twin Across the Vessel Lifecycle",
+    "intro": "A vessel's lifecycle spans multiple environments — design offices, shipyards, operational fleets, and maintenance yards. A'SHERIV connects these environments through a continuous intelligence layer.",
+    "stage1": "Design",
+    "stage2": "Shipyard Production",
+    "stage3": "Vessel Operations",
+    "stage4": "Maintenance & Repairs",
+    "stage5": "Feedback to Design",
+    "supporting": "By linking shipyard configuration data, operational telemetry, maintenance records, and contextual sensing, A'SHERIV creates a persistent digital twin that evolves alongside the vessel."
+  },
+  "solutions": {
+    "headline": "Four Layers of Maritime Intelligence",
+    "intro": "A'SHERIV combines shipyard data environments, live vessel-state awareness, maintenance intelligence, and compliance-ready evidence into one operational framework.",
+    "card1Title": "Shipyard Intelligence",
+    "card1Desc": "Structure production data, quality checkpoints, and configuration records into traceable operational asset models.",
+    "card1Cta": "Explore Shipyard Intelligence",
+    "card2Title": "Operational Digital Twin",
+    "card2Desc": "Transform vessel telemetry, alarms, and logs into a live operational intelligence layer.",
+    "card2Cta": "Explore Operational Twin",
+    "card3Title": "Maintenance Intelligence",
+    "card3Desc": "Connect inspections, maintenance records, and risk signals to support evidence-based maintenance planning.",
+    "card3Cta": "Explore Maintenance Intelligence",
+    "card4Title": "Compliance & Evidence",
+    "card4Desc": "Generate structured evidence chains for review, claims, audits, and technical decision-making.",
+    "card4Cta": "Explore Compliance & Evidence"
+  },
+  "platform": {
+    "headline": "Built to Integrate — Not Replace",
+    "p1": "A'SHERIV integrates with existing maritime systems using secure read-only connectors.",
+    "p2": "Rather than replacing onboard systems or operational software, the platform aggregates and structures data across multiple sources.",
+    "item1": "Integrated Automation Systems (IAS) exports",
+    "item2": "Maintenance management platforms",
+    "item3": "Shipyard production records",
+    "item4": "Operational logs and reports",
+    "item5": "Selective sensing modules where visibility is limited",
+    "calloutTitle": "Read-Only Integration. No System Replacement.",
+    "calloutText": "A'SHERIV integrates using secure read-only connectors that extract operational and production data without modifying existing onboard or shipyard systems."
+  },
+  "sensors": {
+    "headline": "Selective Sensing Where Visibility Matters",
+    "p1": "In many vessels, critical operational insights remain hidden due to missing data points.",
+    "p2": "A'SHERIV deploys targeted sensing modules designed to augment existing vessel data environments without invasive system integration.",
+    "signal1": "Bilge Contamination Monitoring",
+    "signal2": "Vibration & Structural Behavior",
+    "signal3": "Fastener Integrity Detection",
+    "signal4": "Environmental Contamination Alerts"
+  },
+  "stakeholders": {
+    "headline": "Built for the Entire Maritime Ecosystem",
+    "intro": "A'SHERIV creates one shared intelligence layer with role-specific relevance across shipyards, operators, OEMs, insurers, and classification societies.",
+    "card1Title": "Shipyards",
+    "card1Desc": "Improve production traceability, QA linkage, and handover readiness.",
+    "card2Title": "Fleet Owners & Operators",
+    "card2Desc": "Gain continuous operational visibility and maintenance intelligence.",
+    "card3Title": "OEMs",
+    "card3Desc": "Monitor performance patterns and strengthen design feedback loops.",
+    "card4Title": "Insurers & Class",
+    "card4Desc": "Access structured evidence and operational context for review."
+  },
+  "global": {
+    "headline": "Global Platform. Regional Expertise.",
+    "intro": "A'SHERIV operates through a distributed structure designed to support maritime engineering, digital platform development, and international commercial growth.",
+    "region1Name": "Turkey",
+    "region1Desc": "Shipyard collaboration, production intelligence development, and hardware prototyping.",
+    "region2Name": "United Kingdom",
+    "region2Desc": "Digital twin architecture, platform development, and AI-driven maritime analytics.",
+    "region3Name": "Dubai",
+    "region3Desc": "Strategic partnerships, commercial expansion, and global market access."
+  },
+  "pilot": {
+    "headline": "Deploy a Digital Twin Pilot",
+    "paragraph": "A'SHERIV offers pilot deployments designed to validate digital twin integration using existing vessel data environments.",
+    "step1": "Data assessment of existing operational systems",
+    "step2": "Mapping vessel systems into the digital twin model",
+    "step3": "Integration of historical and live operational records",
+    "step4": "Optional targeted sensing deployment",
+    "step5": "Delivery of operational intelligence dashboards and evidence reports",
+    "ctaPrimary": "Start a Pilot Discussion",
+    "ctaSecondary": "Contact the A'SHERIV Team"
+  },
+  "globalStructure": {
+    "title": "Global Structure",
+    "description": "A'SHERIV operates from Türkiye, the United Kingdom, and the United Arab Emirates—enabling regional delivery, shipyard partnerships, and compliance with local maritime and industrial requirements."
+  },
+  "why": {
+    "title": "Why A'SHERIV",
+    "description": "A'SHERIV delivers maritime operations platforms and digital twin systems that unify vessel data, telemetry, and operational decisions into structured intelligence. We enable shipyards, operators, and stakeholders to make data-driven decisions for safer operations, reduced unplanned failures, and clearer accountability across the vessel lifecycle."
+  },
+  "industries": {
+    "title": "Industries",
+    "teaser": "A'SHERIV delivers traceability, operational clarity, and evidence to shipyards, fleet owners, operators, OEMs, insurers, and class societies.",
+    "learnMore": "View industries"
+  },
+  "insights": {
+    "title": "Insights",
+    "teaser": "Articles, case studies, and research on maritime digitalisation, digital twins, and operational intelligence.",
+    "learnMore": "View insights"
   },
   "about": {
     "title": "ABOUT US",
@@ -18,38 +141,8 @@
     "missionText": "A'SHERIV produces maritime operations platforms and digital twin systems that unify vessel data, telemetry, and operational decisions into structured intelligence layers. We enable shipyards, operators, and stakeholders to make data-driven decisions that support safer operations, reduced unplanned failures, and clearer accountability across the vessel lifecycle.",
     "vision": "Vision",
     "visionText": "To create a maritime analytics value chain through digital twin systems and AI-powered risk analysis, supporting the next generation needs of shipyards, operators, and the broader maritime industry. We aim to establish digital twin adoption as standard practice for high-value maritime assets.",
-    "description": "A'SHERIV works with shipyards, operators, owners, engineers, insurers, class societies, and OEMs to deploy operational platforms that integrate with existing production, maintenance, and inspection workflows."
-  },
-  "platform": {
-    "title": "ASHMOP",
-    "description": "AshMOP is A'SHERIV's maritime operations platform that connects vessel assets, events, telemetry, and decisions into a consistent digital twin model with role-based access for shipyards, operators, engineers, and regulatory parties.",
-    "modules": {
-      "1": {
-        "title": "Digital Twin Workspace",
-        "description": "3D asset navigation, system drill-down, risk overlays, and lifecycle context for comprehensive vessel understanding."
-      },
-      "2": {
-        "title": "Telemetry & Health Monitoring",
-        "description": "Health scoring from component → system → vessel with trend and anomaly signals for predictive maintenance planning."
-      },
-      "3": {
-        "title": "Operational Logs to Structured Data",
-        "description": "Convert operational notes into measurable events, decisions, and evidence for traceability and compliance."
-      },
-      "4": {
-        "title": "Evidence Pack Builder",
-        "description": "Time-window evidence exports for insurance, class, charterers, and internal audit with structured documentation."
-      },
-      "5": {
-        "title": "Shipyard Configuration System",
-        "description": "Build specifications, BOM, QC checklists, and operational feedback loops from operations to design."
-      },
-      "6": {
-        "title": "Scenario Playback & Validation",
-        "description": "Synthetic scenarios to validate workflows before live integrations and system deployments."
-      }
-    },
-    "learnMore": "Learn more →"
+    "description": "A'SHERIV works with shipyards, operators, owners, engineers, insurers, class societies, and OEMs to deploy operational platforms that integrate with existing production, maintenance, and inspection workflows.",
+    "learnMore": "Company, Global Structure, Partners"
   },
   "integration": {
     "title": "SHIPYARD INTEGRATION",
@@ -60,26 +153,8 @@
     },
     "operations": {
       "title": "Operations & Maintenance",
-      "description": "Operational data feedback into design and build specifications. Telemetry monitoring, maintenance planning, log traceability, and decision support for operational fleets."
+      "description": "Operational data feedback into design and build specifications. Telemetry monitoring, maintenance planning, log traceability, and evidence-based visibility for operational fleets."
     }
-  },
-  "stakeholders": {
-    "title": "STAKEHOLDERS WE SERVE",
-    "description": "A'SHERIV platforms are deployed across maritime operations, supporting shipyards, operators, owners, engineers, insurers, class societies, and OEMs with role-based access to operational data and decision support.",
-    "shipyards": "Shipyards",
-    "shipyardsDesc": "Build configuration, QC traceability, delivery documentation, and operational feedback into design.",
-    "owners": "Ship Owners & Managers",
-    "ownersDesc": "Lifecycle visibility, cost and risk management, asset value protection.",
-    "operators": "Operators & Technical Teams",
-    "operatorsDesc": "Operational health monitoring, maintenance planning, log traceability.",
-    "engineers": "Chief Engineers & Crew",
-    "engineersDesc": "Structured workflows, reduced manual overhead, operational decision support.",
-    "insurers": "Insurers",
-    "insurersDesc": "Evidence-based risk assessment, claims support, exposure reduction.",
-    "class": "Class & Flag",
-    "classDesc": "Audit-ready evidence packages, survey readiness indicators.",
-    "oems": "OEMs & Service Providers",
-    "oemsDesc": "Performance insights, warranty context, targeted interventions."
   },
   "regions": {
     "title": "GEOGRAPHIC FOOTPRINT",
@@ -109,11 +184,103 @@
     "rolePlaceholder": "Your role",
     "messagePlaceholder": "Tell us about your requirements..."
   },
+  "pages": {
+    "backToHome": "Back to Home",
+    "ctaContact": "Contact us",
+    "ctaPilot": "Start a Pilot Discussion",
+    "shipyardIntelligence": {
+      "title": "Shipyard Intelligence",
+      "intro": "Turn production data, quality checkpoints, and configuration records into traceable operational asset models. A'SHERIV connects shipyard build environments to the digital twin so handover and operations start from a structured baseline.",
+      "body": "Production data, QC traceability, and build configuration flow into the digital twin for handover and operational continuity.",
+      "viewAllSolutions": "View all Solutions"
+    },
+    "operationalDigitalTwin": {
+      "title": "Operational Digital Twin",
+      "intro": "Transform vessel telemetry, alarms, and logs into a live operational intelligence layer. A'SHERIV aggregates onboard and shore-side data into a single digital twin designed for visibility, operational clarity, and evidence.",
+      "body": "Live vessel state, telemetry, and alarms are aggregated into one operational view for visibility and evidence.",
+      "viewAllSolutions": "View all Solutions"
+    },
+    "maintenanceIntelligence": {
+      "title": "Maintenance Intelligence",
+      "intro": "Connect inspections, maintenance records, and risk signals to support evidence-based planning. A'SHERIV links historical and live data so maintenance decisions are informed by vessel configuration and operational context.",
+      "body": "Inspections, work orders, and risk signals link to vessel configuration and history for evidence-based maintenance decisions.",
+      "viewAllSolutions": "View all Solutions"
+    },
+    "complianceEvidence": {
+      "title": "Compliance & Evidence",
+      "intro": "Generate structured evidence chains for audits, claims, and technical decisions. A'SHERIV supports classification, insurers, and operators with traceable documentation derived from the digital twin.",
+      "body": "Structured evidence from the digital twin supports class, insurers, and operators with traceable documentation for review and claims.",
+      "viewAllSolutions": "View all Solutions"
+    },
+    "contact": {
+      "title": "Contact",
+      "intro": "For shipyards, operators, owners, insurers, class societies, or OEMs exploring digital twin and predictive maintenance platforms contact A'SHERIV to discuss integration and pilot deployment."
+    },
+    "solutions": {
+      "title": "Solutions",
+      "description": "Purpose-built capabilities for maritime operations and digital twin deployment.",
+      "shipyard": { "title": "Shipyard Intelligence", "description": "Structure shipbuilding production data into traceable digital asset models ready for operational use and lifecycle analysis." },
+      "operationalDigitalTwin": { "title": "Operational Digital Twin", "description": "Transform vessel telemetry, alarms, and logs into a live operational intelligence layer for visibility and evidence." },
+      "maintenance": { "title": "Maintenance Intelligence", "description": "Connect inspections, maintenance records, and risk signals to support evidence-based maintenance planning." },
+      "compliance": { "title": "Compliance & Evidence", "description": "Generate structured evidence chains for review, claims, audits, and technical decision-making." }
+    },
+    "platform": {
+      "title": "Platform",
+      "description": "Architecture, data integration, and hardware for maritime operations.",
+      "architecture": { "title": "Architecture", "description": "The A'SHERIV platform aggregates shipyard, vessel, and maintenance data into a unified digital twin environment designed for maritime operational intelligence." },
+      "dataIntegration": { "title": "Data Integration", "description": "Data integration is performed through secure read-only connectors that extract structured information from vessel automation systems, shipyard databases, and operational logs." },
+      "sensors": { "title": "Sensors & Hardware", "description": "Selective sensing modules augment vessel telemetry by capturing signals that are not available through standard onboard systems." }
+    },
+    "lifecycle": {
+      "title": "Lifecycle Intelligence",
+      "description": "A single source of truth across build, operation, and end-of-life for vessel configuration, health, and evidence.",
+      "body": "One digital twin from design and build through operations and maintenance, with continuous intelligence and evidence across the vessel lifecycle."
+    },
+    "industries": {
+      "title": "Industries",
+      "description": "A'SHERIV delivers traceability, operational clarity, and evidence to shipyards, fleet operators, OEMs, insurers, and class societies.",
+      "shipyards": { "title": "Shipyards", "description": "Structure shipbuilding production data into traceable digital asset models ready for operational use and lifecycle analysis." },
+      "fleetOwners": { "title": "Fleet Owners", "description": "Gain continuous operational visibility across vessels through live digital twin monitoring and anomaly detection." },
+      "operators": { "title": "Operators", "description": "Gain continuous operational visibility across vessels through live digital twin monitoring and anomaly detection." },
+      "oems": { "title": "OEMs", "description": "Monitor equipment performance across fleets and strengthen engineering feedback loops." },
+      "insurersClass": { "title": "Insurers & Class", "description": "Insurers: Access structured operational evidence and maintenance histories during incident review and claims analysis. Class Societies: Review configuration traceability, maintenance records, and operational evidence through structured digital twin datasets." }
+    },
+    "pilotProgram": {
+      "title": "Pilot Program",
+      "description": "Discuss scope, timelines, and success criteria for a focused pilot deployment. Contact A'SHERIV to start a conversation.",
+      "body": "Discuss scope, timelines, and success criteria for a focused pilot. A'SHERIV validates digital twin integration using your existing vessel data environments."
+    },
+    "about": {
+      "title": "About",
+      "description": "Company, global structure, and partners.",
+      "whyTitle": "Why A'SHERIV",
+      "why1": "Maritime operations generate large volumes of data across shipyards, vessels, maintenance teams, and regulatory environments. Yet these data sources remain fragmented across disconnected systems.",
+      "why2": "A'SHERIV addresses this challenge by structuring maritime intelligence across three layers: Build Intelligence for shipyard production data, Operational Intelligence for live vessel telemetry and anomaly detection, and Lifecycle Intelligence connecting design, operations, and maintenance.",
+      "why3": "This architecture enables shipyards, operators, OEMs, insurers, and classification societies to access a consistent digital twin representation of vessel assets across their entire lifecycle.",
+      "company": { "title": "Company", "description": "A'SHERIV is an operating, professional maritime technology company building digital twin infrastructure for shipbuilding, vessel operations, and lifecycle intelligence." },
+      "globalStructure": { "title": "Global Structure", "description": "A'SHERIV operates from Turkey, the United Kingdom, and Dubai—enabling regional delivery, shipyard partnerships, and compliance with local maritime and industrial requirements." },
+      "partners": { "title": "Partners", "description": "A'SHERIV works with shipyards, operators, OEMs, insurers, and class societies to deploy integration-first digital twin and maritime intelligence platforms." }
+    },
+    "insights": {
+      "title": "Insights",
+      "description": "Articles, case studies, and research.",
+      "articles": { "title": "Articles", "description": "Technical and industry perspectives on maritime digitalisation, digital twins, and operational intelligence." },
+      "caseStudies": { "title": "Case Studies", "description": "Deployment examples and outcomes from shipyard, operator, and fleet digital twin implementations." },
+      "research": { "title": "Research", "description": "Research and development in vessel lifecycle intelligence, sensor integration, and evidence-based maintenance." }
+    }
+  },
   "footer": {
-    "description": "Digital maritime operations platform powered by AI for digital twins and predictive intelligence.",
+    "description": "Digital twin infrastructure for shipbuilding, vessel operations, and lifecycle intelligence.",
+    "solutions": "Solutions",
+    "platform": "Platform",
+    "lifecycle": "Lifecycle Intelligence",
+    "industries": "Industries",
+    "pilot": "Pilot Program",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact",
     "legal": "Legal",
-    "privacy": "Privacy",
-    "contact": "Contact"
+    "privacy": "Privacy"
   },
   "turkey": {
     "title": "Türkiye Operations",

@@ -1,16 +1,139 @@
 {
   "nav": {
+    "home": "Ana Sayfa",
+    "why": "Neden A'SHERIV",
+    "solutions": "Çözümler",
+    "overview": "Genel Bakış",
+    "shipyard": "Tersane İstihbaratı",
+    "operationalTwin": "Operasyonel Dijital İkiz",
+    "maintenance": "Bakım İstihbaratı",
+    "compliance": "Uyumluluk ve Kanıt",
+    "platform": "Platform",
+    "lifecycle": "Yaşam Döngüsü İstihbaratı",
+    "industries": "Sektörler",
+    "pilot": "Pilot Program",
     "about": "Hakkımızda",
-    "platform": "AshMOP",
-    "integration": "Tersane Entegrasyonu",
-    "stakeholders": "Paydaşlar",
-    "contact": "İletişim"
+    "insights": "İçgörüler",
+    "contact": "İletişim",
+    "ctaPilot": "Pilot Görüşme Başlat",
+    "ctaExplore": "Platform Özeti"
   },
   "hero": {
-    "title": "Dijital Denizcilik Operasyonları",
-    "subtitle": "Varlık bütünlüğü, bakım planlaması ve gemi yaşam döngüleri boyunca operasyonel görünürlük için AI destekli dijital ikiz sistemleri ve tahmine dayalı istihbarat.",
-    "contact": "İLETİŞİME GEÇİN",
-    "explore": "PLATFORMU KEŞFEDİN"
+    "eyebrow": "Denizcilik Operasyonları için Dijital İkiz Altyapısı",
+    "headline": "Tersane Verisinden Canlı Gemi İstihbaratına",
+    "subheadline": "A'SHERIV, tersane üretim verilerini, gemi operasyon sistemlerini, bakım kayıtlarını ve hedefli sensörleri tek bir denizcilik istihbarat platformunda birleştiren dijital ikiz altyapısı kurar.",
+    "supporting": "Tersaneler, filo operatörleri, OEM'ler, sigortacılar ve sınıflandırma kuruluşları için tasarlandı.",
+    "ctaPrimary": "Pilot Görüşme Başlat",
+    "ctaSecondary": "Platformu Keşfet"
+  },
+  "problem": {
+    "headline": "Denizcilik Verisi Her Yerde. Operasyonel İstihbarat Hiçbir Yerde.",
+    "p1": "Tersaneler yapı dokümantasyonu ve üretim kayıtları üretir. Operatörler gemi sistemlerinden telemetri toplar. Bakım ekipleri denetim ve onarımları kaydeder. Sınıflandırma kuruluşları kanıt ve dokümantasyon talep eder.",
+    "p2": "Oysa bu veri akışları nadiren birbirine bağlanır.",
+    "p3": "A'SHERIV, dağınık denizcilik verisini operasyonel netlik, tahmine dayalı bakım ve yaşam döngüsü hesap verebilirliği için tasarlanmış yapılandırılmış bir dijital ikize dönüştürür.",
+    "label1": "Tersane Kayıtları",
+    "label2": "Telemetri",
+    "label3": "Bakım Günlükleri",
+    "label4": "KA Belgeleri",
+    "label5": "Operasyonel Raporlar"
+  },
+  "lifecycle": {
+    "headline": "Gemi Yaşam Döngüsü Boyunca Tek Dijital İkiz",
+    "intro": "Bir geminin yaşam döngüsü tasarım ofisleri, tersaneler, operasyonel filolar ve bakım tesisleri gibi birden fazla ortamı kapsar. A'SHERIV, bu ortamları sürekli bir istihbarat katmanıyla birbirine bağlar.",
+    "stage1": "Tasarım",
+    "stage2": "Tersane Üretimi",
+    "stage3": "Gemi Operasyonları",
+    "stage4": "Bakım ve Onarımlar",
+    "stage5": "Tasarıma Geri Bildirim",
+    "supporting": "Tersane yapılandırma verilerini, operasyonel telemetriyi, bakım kayıtlarını ve bağlamsal sensörleri birbirine bağlayarak A'SHERIV, geminin yanında evrilen kalıcı bir dijital ikiz oluşturur."
+  },
+  "solutions": {
+    "headline": "Dört Katman Denizcilik İstihbaratı",
+    "intro": "A'SHERIV, tersane veri ortamlarını, canlı gemi durumu farkındalığını, bakım istihbaratını ve uyumluluk hazır kanıtları tek bir operasyonel çerçevede birleştirir.",
+    "card1Title": "Tersane İstihbaratı",
+    "card1Desc": "Üretim verisini, kalite kontrol noktalarını ve yapılandırma kayıtlarını izlenebilir operasyonel varlık modellerine dönüştürün.",
+    "card1Cta": "Tersane İstihbaratını Keşfet",
+    "card2Title": "Operasyonel Dijital İkiz",
+    "card2Desc": "Gemi telemetrisini, alarmları ve günlükleri canlı bir operasyonel istihbarat katmanına dönüştürün.",
+    "card2Cta": "Operasyonel İkizi Keşfet",
+    "card3Title": "Bakım İstihbaratı",
+    "card3Desc": "Kanıta dayalı bakım planlamasını desteklemek için denetimleri, bakım kayıtlarını ve risk sinyallerini bağlayın.",
+    "card3Cta": "Bakım İstihbaratını Keşfet",
+    "card4Title": "Uyumluluk ve Kanıt",
+    "card4Desc": "İnceleme, talepler, denetimler ve teknik karar alma için yapılandırılmış kanıt zincirleri oluşturun.",
+    "card4Cta": "Uyumluluk ve Kanıtı Keşfet"
+  },
+  "platform": {
+    "headline": "Entegre Etmek İçin İnşa Edildi — Değiştirmek İçin Değil",
+    "p1": "A'SHERIV, güvenli salt-okunur bağlayıcılar kullanarak mevcut denizcilik sistemleriyle entegre olur.",
+    "p2": "Gemi içi sistemlerin veya operasyonel yazılımın yerini almak yerine, platform birden fazla kaynaktan gelen veriyi toplar ve yapılandırır.",
+    "item1": "Entegre Otomasyon Sistemleri (IAS) dışa aktarmaları",
+    "item2": "Bakım yönetim platformları",
+    "item3": "Tersane üretim kayıtları",
+    "item4": "Operasyonel günlükler ve raporlar",
+    "item5": "Görünürlüğün sınırlı olduğu yerlerde seçici sensör modülleri",
+    "calloutTitle": "Salt-Okunur Entegrasyon. Sistem Değişikliği Yok.",
+    "calloutText": "A'SHERIV, mevcut gemi içi veya tersane sistemlerini değiştirmeden operasyonel ve üretim verilerini çıkaran güvenli salt-okunur bağlayıcılar kullanarak entegre olur."
+  },
+  "sensors": {
+    "headline": "Görünürlüğün Önemli Olduğu Yerde Seçici Sensörler",
+    "p1": "Birçok gemide, eksik veri noktaları nedeniyle kritik operasyonel içgörüler gizli kalır.",
+    "p2": "A'SHERIV, istilacı sistem entegrasyonu olmadan mevcut gemi veri ortamlarını zenginleştirmek için tasarlanmış hedefli sensör modülleri konuşlandırır.",
+    "signal1": "Sintine Kirliliği İzleme",
+    "signal2": "Titreşim ve Yapısal Davranış",
+    "signal3": "Bağlantı Elemanı Bütünlüğü Tespiti",
+    "signal4": "Çevresel Kirlilik Uyarıları"
+  },
+  "stakeholders": {
+    "headline": "Tüm Denizcilik Ekosistemi İçin İnşa Edildi",
+    "intro": "A'SHERIV, tersaneler, operatörler, OEM'ler, sigortacılar ve sınıflandırma kuruluşları genelinde role özel ilgisi olan tek bir paylaşılan istihbarat katmanı oluşturur.",
+    "card1Title": "Tersaneler",
+    "card1Desc": "Üretim izlenebilirliğini, KA bağlantısını ve devir hazırlığını iyileştirin.",
+    "card2Title": "Filo Sahipleri ve Operatörler",
+    "card2Desc": "Sürekli operasyonel görünürlük ve bakım istihbaratı elde edin.",
+    "card3Title": "OEM'ler",
+    "card3Desc": "Performans kalıplarını izleyin ve tasarım geri bildirim döngülerini güçlendirin.",
+    "card4Title": "Sigortacılar ve Sınıf",
+    "card4Desc": "İnceleme için yapılandırılmış kanıt ve operasyonel bağlama erişin."
+  },
+  "global": {
+    "headline": "Küresel Platform. Bölgesel Uzmanlık.",
+    "intro": "A'SHERIV, denizcilik mühendisliği, dijital platform geliştirme ve uluslararası ticari büyümeyi desteklemek için tasarlanmış dağıtık bir yapı üzerinden faaliyet göstermektedir.",
+    "region1Name": "Türkiye",
+    "region1Desc": "Tersane işbirliği, üretim istihbaratı geliştirme ve donanım prototipleme.",
+    "region2Name": "Birleşik Krallık",
+    "region2Desc": "Dijital ikiz mimarisi, platform geliştirme ve AI destekli denizcilik analitiği.",
+    "region3Name": "Dubai",
+    "region3Desc": "Stratejik ortaklıklar, ticari genişleme ve küresel pazar erişimi."
+  },
+  "pilot": {
+    "headline": "Dijital İkiz Pilotu Konuşlandırın",
+    "paragraph": "A'SHERIV, mevcut gemi veri ortamlarını kullanarak dijital ikiz entegrasyonunu doğrulamak için tasarlanmış pilot dağıtımlar sunar.",
+    "step1": "Mevcut operasyonel sistemlerin veri değerlendirmesi",
+    "step2": "Gemi sistemlerinin dijital ikiz modeline eşlenmesi",
+    "step3": "Geçmiş ve canlı operasyonel kayıtların entegrasyonu",
+    "step4": "İsteğe bağlı hedefli sensör konuşlandırması",
+    "step5": "Operasyonel istihbarat panoları ve kanıt raporlarının teslimi",
+    "ctaPrimary": "Pilot Görüşme Başlat",
+    "ctaSecondary": "A'SHERIV Ekibiyle İletişime Geçin"
+  },
+  "globalStructure": {
+    "title": "Küresel Yapı",
+    "description": "A'SHERIV, Türkiye, Birleşik Krallık ve Birleşik Arap Emirlikleri'nden faaliyet göstermektedir—bölgesel teslimat, tersane ortaklıkları ve yerel denizcilik ve endüstriyel gereksinimlere uyum sağlar."
+  },
+  "why": {
+    "title": "Neden A'SHERIV",
+    "description": "A'SHERIV, gemi verilerini, telemetriyi ve operasyonel kararları yapılandırılmış istihbarata dönüştüren denizcilik operasyon platformları ve dijital ikiz sistemleri sunar. Tersanelerin, operatörlerin ve paydaşların daha güvenli operasyonlar, daha az plansız arıza ve gemi yaşam döngüsü boyunca hesap verebilirlik için veri odaklı kararlar almasını sağlıyoruz."
+  },
+  "industries": {
+    "title": "Sektörler",
+    "teaser": "A'SHERIV tersanelere, filo sahiplerine, operatörlere, OEM'lere, sigortacılara ve sınıf kuruluşlarına izlenebilirlik, operasyonel netlik ve kanıt sunar.",
+    "learnMore": "Sektörleri görüntüle"
+  },
+  "insights": {
+    "title": "İçgörüler",
+    "teaser": "Denizcilik dijitalleşmesi, dijital ikizler ve operasyonel istihbarat hakkında makaleler, vaka çalışmaları ve araştırmalar.",
+    "learnMore": "İçgörüleri görüntüle"
   },
   "about": {
     "title": "HAKKIMIZDA",
@@ -18,38 +141,8 @@
     "missionText": "A'SHERIV, gemi verilerini, telemetriyi ve operasyonel kararları yapılandırılmış istihbarat katmanlarına birleştiren denizcilik operasyon platformları ve dijital ikiz sistemleri üretir. Tersanelerin, operatörlerin ve paydaşların daha güvenli operasyonları destekleyen, plansız arızaları azaltan ve gemi yaşam döngüsü boyunca daha net hesap verebilirlik sağlayan veri odaklı kararlar almasını sağlıyoruz.",
     "vision": "Vizyon",
     "visionText": "Dijital ikiz sistemleri ve AI destekli risk analizi aracılığıyla bir denizcilik analitik değer zinciri oluşturmak, tersanelerin, operatörlerin ve daha geniş denizcilik endüstrisinin gelecek nesil ihtiyaçlarını desteklemek. Yüksek değerli denizcilik varlıkları için dijital ikiz benimsenmesini standart uygulama haline getirmeyi hedefliyoruz.",
-    "description": "A'SHERIV, mevcut üretim, bakım ve denetim iş akışlarıyla entegre olan operasyonel platformları dağıtmak için tersaneler, operatörler, sahipler, mühendisler, sigortacılar, sınıf toplumları ve OEM'lerle çalışır."
-  },
-  "platform": {
-    "title": "ASHMOP",
-    "description": "AshMOP, A'SHERIV'in denizcilik operasyon platformudur ve gemi varlıklarını, olayları, telemetriyi ve kararları tersaneler, operatörler, mühendisler ve düzenleyici taraflar için rol tabanlı erişimle tutarlı bir dijital ikiz modeline bağlar.",
-    "modules": {
-      "1": {
-        "title": "Dijital İkiz Çalışma Alanı",
-        "description": "Kapsamlı gemi anlayışı için 3D varlık navigasyonu, sistem detaylandırması, risk katmanları ve yaşam döngüsü bağlamı."
-      },
-      "2": {
-        "title": "Telemetri ve Sağlık İzleme",
-        "description": "Bileşen → sistem → gemi için tahmine dayalı bakım planlaması için trend ve anomali sinyalleri ile sağlık puanlama."
-      },
-      "3": {
-        "title": "Operasyonel Kayıtlar Yapılandırılmış Veriye",
-        "description": "İzlenebilirlik ve uyumluluk için operasyonel notları ölçülebilir olaylara, kararlara ve kanıtlara dönüştürün."
-      },
-      "4": {
-        "title": "Kanıt Paketi Oluşturucu",
-        "description": "Yapılandırılmış dokümantasyonla sigorta, sınıf, charterer'lar ve dahili denetim için zaman penceresi kanıt dışa aktarmaları."
-      },
-      "5": {
-        "title": "Tersane Yapılandırma Sistemi",
-        "description": "Operasyonlardan tasarıma yapı özellikleri, BOM, QC kontrol listeleri ve operasyonel geri bildirim döngüleri."
-      },
-      "6": {
-        "title": "Senaryo Oynatma ve Doğrulama",
-        "description": "Canlı entegrasyonlar ve sistem dağıtımlarından önce iş akışlarını doğrulamak için sentetik senaryolar."
-      }
-    },
-    "learnMore": "Daha fazla bilgi →"
+    "description": "A'SHERIV, mevcut üretim, bakım ve denetim iş akışlarıyla entegre olan operasyonel platformları dağıtmak için tersaneler, operatörler, sahipler, mühendisler, sigortacılar, sınıf toplumları ve OEM'lerle çalışır.",
+    "learnMore": "Şirket, Küresel Yapı, Ortaklar"
   },
   "integration": {
     "title": "TERSANE ENTEGRASYONU",
@@ -60,26 +153,8 @@
     },
     "operations": {
       "title": "Operasyonlar ve Bakım",
-      "description": "Tasarım ve yapı özelliklerine operasyonel veri geri bildirimi. Telemetri izleme, bakım planlaması, log izlenebilirliği ve operasyonel filolar için karar desteği."
+      "description": "Tasarım ve yapı özelliklerine operasyonel veri geri bildirimi. Telemetri izleme, bakım planlaması, log izlenebilirliği ve operasyonel filolar için kanıta dayalı görünürlük."
     }
-  },
-  "stakeholders": {
-    "title": "HİZMET VERDİĞİMİZ PAYDAŞLAR",
-    "description": "A'SHERIV platformları denizcilik operasyonları genelinde dağıtılır ve tersaneler, operatörler, sahipler, mühendisler, sigortacılar, sınıf toplumları ve OEM'leri operasyonel verilere ve karar desteğine rol tabanlı erişimle destekler.",
-    "shipyards": "Tersaneler",
-    "shipyardsDesc": "Yapı yapılandırması, QC izlenebilirliği, teslimat dokümantasyonu ve tasarıma operasyonel geri bildirim.",
-    "owners": "Gemi Sahipleri ve Yöneticiler",
-    "ownersDesc": "Yaşam döngüsü görünürlüğü, maliyet ve risk yönetimi, varlık değeri koruması.",
-    "operators": "Operatörler ve Teknik Ekipler",
-    "operatorsDesc": "Operasyonel sağlık izleme, bakım planlaması, log izlenebilirliği.",
-    "engineers": "Baş Mühendisler ve Mürettebat",
-    "engineersDesc": "Yapılandırılmış iş akışları, azaltılmış manuel yük, operasyonel karar desteği.",
-    "insurers": "Sigortacılar",
-    "insurersDesc": "Kanıta dayalı risk değerlendirmesi, talep desteği, maruz kalma azaltma.",
-    "class": "Sınıf ve Bayrak",
-    "classDesc": "Denetime hazır kanıt paketleri, anket hazırlık göstergeleri.",
-    "oems": "OEM'ler ve Hizmet Sağlayıcılar",
-    "oemsDesc": "Performans içgörüleri, garanti bağlamı, hedefli müdahaleler."
   },
   "regions": {
     "title": "COĞRAFİ AYAK İZİ",
@@ -109,11 +184,103 @@
     "rolePlaceholder": "Rolünüz",
     "messagePlaceholder": "Gereksinimleriniz hakkında bize bilgi verin..."
   },
+  "pages": {
+    "backToHome": "Ana Sayfaya Dön",
+    "ctaContact": "İletişime geçin",
+    "ctaPilot": "Pilot Görüşme Başlat",
+    "shipyardIntelligence": {
+      "title": "Tersane İstihbaratı",
+      "intro": "Üretim verisini, kalite kontrol noktalarını ve yapılandırma kayıtlarını izlenebilir operasyonel varlık modellerine dönüştürün. A'SHERIV tersane inşa ortamlarını dijital ikize bağlar; böylece devir ve operasyonlar yapılandırılmış bir temelden başlar.",
+      "body": "Üretim verisi, KA izlenebilirliği ve inşa yapılandırması devir ve operasyonel süreklilik için dijital ikize akar.",
+      "viewAllSolutions": "Tüm çözümleri görüntüle"
+    },
+    "operationalDigitalTwin": {
+      "title": "Operasyonel Dijital İkiz",
+      "intro": "Gemi telemetrisini, alarmları ve günlükleri canlı bir operasyonel istihbarat katmanına dönüştürün. A'SHERIV gemi içi ve kıyı verilerini görünürlük, operasyonel netlik ve kanıt için tek bir dijital ikizde toplar.",
+      "body": "Canlı gemi durumu, telemetri ve alarmlar görünürlük ve kanıt için tek bir operasyonel görünümde toplanır.",
+      "viewAllSolutions": "Tüm çözümleri görüntüle"
+    },
+    "maintenanceIntelligence": {
+      "title": "Bakım İstihbaratı",
+      "intro": "Denetimleri, bakım kayıtlarını ve risk sinyallerini kanıta dayalı planlamayı destekleyecek şekilde bağlayın. A'SHERIV geçmiş ve canlı veriyi birbirine bağlar; böylece bakım kararları gemi yapılandırması ve operasyonel bağlamla bilgilendirilir.",
+      "body": "Denetimler, iş emirleri ve risk sinyalleri kanıta dayalı bakım kararları için gemi yapılandırması ve geçmişiyle bağlanır.",
+      "viewAllSolutions": "Tüm çözümleri görüntüle"
+    },
+    "complianceEvidence": {
+      "title": "Uyumluluk ve Kanıt",
+      "intro": "Denetimler, talepler ve teknik kararlar için yapılandırılmış kanıt zincirleri oluşturun. A'SHERIV, sınıflandırma kuruluşları, sigortacılar ve operatörlere dijital ikizden türetilen izlenebilir dokümantasyon sunar.",
+      "body": "Dijital ikizden gelen yapılandırılmış kanıt, inceleme ve talepler için sınıf, sigortacılar ve operatörlere izlenebilir dokümantasyon sunar.",
+      "viewAllSolutions": "Tüm çözümleri görüntüle"
+    },
+    "contact": {
+      "title": "İletişim",
+      "intro": "Dijital ikiz ve tahmine dayalı bakım platformlarını inceleyen tersaneler, operatörler, sahipler, sigortacılar, sınıf kuruluşları veya OEM'ler için—entegrasyon ve pilot dağıtımı görüşmek üzere A'SHERIV ile iletişime geçin."
+    },
+    "solutions": {
+      "title": "Çözümler",
+      "description": "Denizcilik operasyonları ve dijital ikiz dağıtımı için özel yetenekler.",
+      "shipyard": { "title": "Tersane İstihbaratı", "description": "Gemi inşası üretim verilerini operasyonel kullanım ve yaşam döngüsü analizi için hazır izlenebilir dijital varlık modellerine dönüştürün." },
+      "operationalDigitalTwin": { "title": "Operasyonel Dijital İkiz", "description": "Gemi telemetrisini, alarmları ve günlükleri görünürlük ve kanıt için canlı bir operasyonel istihbarat katmanına dönüştürün." },
+      "maintenance": { "title": "Bakım İstihbaratı", "description": "Kanıta dayalı bakım planlamasını desteklemek için denetimleri, bakım kayıtlarını ve risk sinyallerini bağlayın." },
+      "compliance": { "title": "Uyumluluk ve Kanıt", "description": "İnceleme, talepler, denetimler ve teknik karar alma için yapılandırılmış kanıt zincirleri oluşturun." }
+    },
+    "platform": {
+      "title": "Platform",
+      "description": "Denizcilik operasyonları için mimari, veri entegrasyonu ve donanım.",
+      "architecture": { "title": "Mimari", "description": "A'SHERIV platformu tersane, gemi ve bakım verilerini denizcilik operasyonel istihbaratı için tasarlanmış birleşik bir dijital ikiz ortamında toplar." },
+      "dataIntegration": { "title": "Veri Entegrasyonu", "description": "Veri entegrasyonu, gemi otomasyon sistemleri, tersane veritabanları ve operasyonel günlüklerden yapılandırılmış bilgi çıkaran güvenli salt-okunur bağlayıcılar aracılığıyla gerçekleştirilir." },
+      "sensors": { "title": "Sensörler ve Donanım", "description": "Seçici sensör modülleri, standart gemi içi sistemler üzerinden mevcut olmayan sinyalleri yakalayarak gemi telemetrisini zenginleştirir." }
+    },
+    "lifecycle": {
+      "title": "Yaşam Döngüsü İstihbaratı",
+      "description": "İnşa, operasyon ve hizmet ömrü sonu boyunca gemi yapılandırması, sağlık ve kanıt için tek doğruluk kaynağı.",
+      "body": "Tasarım ve inşadan operasyon ve bakıma kadar tek dijital ikiz; gemi yaşam döngüsü boyunca sürekli istihbarat ve kanıt."
+    },
+    "industries": {
+      "title": "Sektörler",
+      "description": "A'SHERIV tersanelere, filo operatörlerine, OEM'lere, sigortacılara ve sınıf kuruluşlarına izlenebilirlik, operasyonel netlik ve kanıt sunar.",
+      "shipyards": { "title": "Tersaneler", "description": "Gemi inşası üretim verilerini operasyonel kullanım ve yaşam döngüsü analizi için hazır izlenebilir dijital varlık modellerine dönüştürün." },
+      "fleetOwners": { "title": "Filo Sahipleri", "description": "Canlı dijital ikiz izleme ve anomali tespiti ile gemiler genelinde sürekli operasyonel görünürlük elde edin." },
+      "operators": { "title": "Operatörler", "description": "Canlı dijital ikiz izleme ve anomali tespiti ile gemiler genelinde sürekli operasyonel görünürlük elde edin." },
+      "oems": { "title": "OEM'ler", "description": "Filo genelinde ekipman performansını izleyin ve mühendislik geri bildirim döngülerini güçlendirin." },
+      "insurersClass": { "title": "Sigortacılar ve Sınıf", "description": "Sigortacılar: Olay incelemesi ve talep analizi sırasında yapılandırılmış operasyonel kanıt ve bakım geçmişine erişin. Sınıf Kuruluşları: Yapılandırılmış dijital ikiz veri setleri aracılığıyla yapılandırma izlenebilirliği, bakım kayıtları ve operasyonel kanıtları inceleyin." }
+    },
+    "pilotProgram": {
+      "title": "Pilot Program",
+      "description": "Odaklı bir pilot dağıtımı için kapsam, zaman çizelgeleri ve başarı kriterlerini görüşün. Görüşme başlatmak için A'SHERIV ile iletişime geçin.",
+      "body": "Odaklı bir pilot için kapsam, zaman çizelgeleri ve başarı kriterlerini görüşün. A'SHERIV, mevcut gemi veri ortamlarınızı kullanarak dijital ikiz entegrasyonunu doğrular."
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "description": "Şirket, küresel yapı ve ortaklar.",
+      "whyTitle": "Neden A'SHERIV",
+      "why1": "Denizcilik operasyonları tersaneler, gemiler, bakım ekipleri ve düzenleyici ortamlar genelinde büyük miktarda veri üretir. Ancak bu veri kaynakları birbirinden bağlantısız sistemlerde parçalı kalmaya devam ediyor.",
+      "why2": "A'SHERIV bu zorluğu, denizcilik istihbaratını üç katmanda yapılandırarak ele alır: tersane üretim verisi için İnşa İstihbaratı, canlı gemi telemetrisi ve anomali tespiti için Operasyonel İstihbarat ve tasarım, operasyon ve bakımı birbirine bağlayan Yaşam Döngüsü İstihbaratı.",
+      "why3": "Bu mimari, tersanelerin, operatörlerin, OEM'lerin, sigortacıların ve sınıflandırma kuruluşlarının gemi varlıklarının tüm yaşam döngüsü boyunca tutarlı bir dijital ikiz temsiline erişmesini sağlar.",
+      "company": { "title": "Şirket", "description": "A'SHERIV, gemi inşası, gemi operasyonları ve yaşam döngüsü istihbaratı için dijital ikiz altyapısı inşa eden faal, profesyonel bir denizcilik teknolojisi şirketidir." },
+      "globalStructure": { "title": "Küresel Yapı", "description": "A'SHERIV Türkiye, Birleşik Krallık ve Dubai'den faaliyet göstermektedir—bölgesel teslimat, tersane ortaklıkları ve yerel denizcilik ve endüstriyel gereksinimlere uyum sağlar." },
+      "partners": { "title": "Ortaklar", "description": "A'SHERIV, entegrasyon-öncelikli dijital ikiz ve denizcilik istihbarat platformları dağıtmak için tersaneler, operatörler, OEM'ler, sigortacılar ve sınıf kuruluşlarıyla çalışır." }
+    },
+    "insights": {
+      "title": "İçgörüler",
+      "description": "Makaleler, vaka çalışmaları ve araştırma.",
+      "articles": { "title": "Makaleler", "description": "Denizcilik dijitalleşmesi, dijital ikizler ve operasyonel istihbarat üzerine teknik ve sektör perspektifleri." },
+      "caseStudies": { "title": "Vaka Çalışmaları", "description": "Tersane, operatör ve filo dijital ikiz uygulamalarından dağıtım örnekleri ve sonuçlar." },
+      "research": { "title": "Araştırma", "description": "Gemi yaşam döngüsü istihbaratı, sensör entegrasyonu ve kanıta dayalı bakım alanında araştırma ve geliştirme." }
+    }
+  },
   "footer": {
-    "description": "Dijital ikizler ve tahmine dayalı istihbarat için AI destekli dijital denizcilik operasyon platformu.",
+    "description": "Gemi inşası, gemi operasyonları ve yaşam döngüsü istihbaratı için dijital ikiz altyapısı.",
+    "solutions": "Çözümler",
+    "platform": "Platform",
+    "lifecycle": "Yaşam Döngüsü İstihbaratı",
+    "industries": "Sektörler",
+    "pilot": "Pilot Program",
+    "about": "Hakkımızda",
+    "insights": "İçgörüler",
+    "contact": "İletişim",
     "legal": "Yasal",
-    "privacy": "Gizlilik",
-    "contact": "İletişim"
+    "privacy": "Gizlilik"
   },
   "turkey": {
     "title": "Türkiye Operasyonları",

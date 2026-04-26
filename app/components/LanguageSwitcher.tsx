@@ -16,21 +16,21 @@ export default function LanguageSwitcher() {
     <div className="flex items-center space-x-2">
       <button
         onClick={() => switchLocale("en")}
-        className={`px-3 py-1 text-sm rounded transition-colors ${
+        className={`px-3 py-1 text-sm rounded-section transition-colors ${
           locale === "en"
-            ? "bg-primary text-dark font-semibold"
-            : "text-gray-light hover:text-primary"
+            ? "bg-signal text-offwhite font-semibold"
+            : "text-muted hover:text-cyan"
         }`}
       >
         EN
       </button>
-      <span className="text-gray-dark">/</span>
+      <span className="text-muted">/</span>
       <button
         onClick={() => switchLocale("tr")}
-        className={`px-3 py-1 text-sm rounded transition-colors ${
+        className={`px-3 py-1 text-sm rounded-section transition-colors ${
           locale === "tr"
-            ? "bg-primary text-dark font-semibold"
-            : "text-gray-light hover:text-primary"
+            ? "bg-signal text-offwhite font-semibold"
+            : "text-muted hover:text-cyan"
         }`}
       >
         TR
