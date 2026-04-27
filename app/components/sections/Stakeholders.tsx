@@ -102,12 +102,14 @@ const stakeholderTabs = {
   ],
 } as const;
 
+type StakeholderId = (typeof stakeholderTabs.en)[number]["id"];
+
 export default function Stakeholders() {
   const params = useParams();
   const lang = (params?.lang as string) ?? (params?.locale as string) ?? "en";
   const t = strings[lang as keyof typeof strings] ?? strings.en;
   const tabs = stakeholderTabs[lang as keyof typeof stakeholderTabs] ?? stakeholderTabs.en;
-  const [activeId, setActiveId] = useState(tabs[0].id);
+  const [activeId, setActiveId] = useState<StakeholderId>(tabs[0].id as StakeholderId);
   const active = tabs.find((tab) => tab.id === activeId) ?? tabs[0];
 
   return (
