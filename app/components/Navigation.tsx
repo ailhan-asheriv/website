@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { useLocale } from "next-intl";
 import { Link, usePathname, useRouter } from "../../lib/routing";
 
 type MenuKey = "platform" | "intelligence" | "developers" | "company" | null;
@@ -34,8 +35,8 @@ export default function Navigation() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
   const router = useRouter();
-  const locale = pathname.startsWith("/tr") ? "tr" : "en";
-  const isHome = pathname === "/" || pathname === "/en" || pathname === "/tr";
+  const locale = useLocale() as "en" | "tr";
+  const isHome = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -220,17 +221,6 @@ export default function Navigation() {
               </div>
             </div>
 
-            <div className="ml-4 mr-3 h-4 w-px bg-white/20" />
-
-            <a
-              href="http://142.132.168.47"
-              target="_blank"
-              rel="noreferrer"
-              className="text-sm text-white/75 hover:text-white transition-colors px-2 py-1"
-            >
-              Login
-            </a>
-
             <div className="mx-3 h-4 w-px bg-white/20" />
 
             <div className="flex items-center gap-1 text-xs font-semibold">
@@ -317,14 +307,6 @@ export default function Navigation() {
             {companyLinks.map(({ href, label }) => (
               <Link key={`${href}-${label}`} href={href} onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/70 hover:text-[#00D4FF] transition-colors py-2 px-4 pl-6">{label}</Link>
             ))}
-            <a
-              href="http://142.132.168.47"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block w-full text-left text-sm text-white/90 py-3 px-4 underline-offset-4 hover:underline"
-            >
-              Login
-            </a>
             <div className="pt-3 mt-3 border-t border-white/10 space-y-2">
               <div className="px-4 py-2 flex items-center gap-1 text-xs font-semibold">
                 <button onClick={() => switchLocale("en")} className={locale === "en" ? "text-[#00D4FF]" : "text-white/60 hover:text-white"}>EN</button>

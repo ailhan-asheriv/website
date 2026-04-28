@@ -6,7 +6,7 @@ const content = {
   en: {
     title: "AshMOP - Maritime Operations Platform",
     intro:
-      "A modular platform that connects vessel assets, events, telemetry, and decisions into a structured operational record with role-based access for every maritime stakeholder.",
+      "The only platform that connects shipyard build data, operational telemetry, and machinery records into a single vessel intelligence layer - from first steel to decommissioning.",
     section1Title: "Platform Architecture",
     cards1: [
       {
@@ -44,13 +44,16 @@ const content = {
     standardsTitle: "Standards & Compliance",
     standards:
       "AshMOP is designed for compliance with: SFI Group System - ISO 14224 - IACS E26/E27 - IEC 62443 - FMI 2.0 - ISO 13381-1 - IFC 2x3/4 - IMO MSC-FAL.1/Circ.3",
+    demoTitle: "See AshMOP in action",
+    demoSubtext: "Request a live demo to explore the platform with your own vessel context.",
+    demoButton: "Request Demo →",
     backLabel: "Back to Home",
     ctaLabel: "Contact us",
   },
   tr: {
     title: "AshMOP - Denizcilik Operasyonlari Platformu",
     intro:
-      "Gemi varliklarini, olaylarini, telemetrisini ve kararlari her denizcilik paydasi icin rol tabanli erisimle yapilandirilmis bir operasyonel kayda baglayan moduler platform.",
+      "Tersane insaat verilerini, operasyonel telemetriyi ve makine kayitlarini tek bir gemi zekasi katmaninda birlestiren platform - ilk celikten hizmetten cikisa kadar.",
     section1Title: "Platform Mimarisi",
     cards1: [
       {
@@ -88,6 +91,9 @@ const content = {
     standardsTitle: "Standartlar ve Uyumluluk",
     standards:
       "AshMOP su standartlara uygun olarak tasarlanmistir: SFI Grup Sistemi - ISO 14224 - IACS E26/E27 - IEC 62443 - FMI 2.0 - ISO 13381-1 - IFC 2x3/4 - IMO MSC-FAL.1/Circ.3",
+    demoTitle: "AshMOP'u canli gorun",
+    demoSubtext: "Kendi gemi baglaminizla platformu kesfetmek icin canli demo talep edin.",
+    demoButton: "Demo Talep Et →",
     backLabel: "Ana Sayfaya Don",
     ctaLabel: "Iletisime Gec",
   },
@@ -137,6 +143,22 @@ export default async function PlatformPage({
                   <p className="text-sm leading-relaxed text-[#CBD5E1]">{card.desc}</p>
                 </div>
               ))}
+            </div>
+          </Section>
+          <Section variant="dark">
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="font-sans text-2xl font-bold text-white mb-3">
+                {c.demoTitle}
+              </h2>
+              <p className="text-sm text-[#CBD5E1] mb-6">
+                {c.demoSubtext}
+              </p>
+              <a
+                href={locale === "tr" ? "/tr/contact" : "/en/contact"}
+                className="rounded-md bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF] inline-block"
+              >
+                {c.demoButton}
+              </a>
             </div>
           </Section>
           <section className="px-6 py-16 sm:px-10 lg:px-16 bg-[#0D1627] border-t border-white/10">

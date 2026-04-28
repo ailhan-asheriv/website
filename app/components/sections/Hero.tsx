@@ -10,7 +10,7 @@ const strings = {
     headline1: "Operational intelligence.",
     headline2: "Built for the vessel lifecycle.",
     subheadline:
-      "A'SHERIV integrates design data, sensor telemetry, and maintenance history into a unified platform for maritime asset management.",
+      "The only platform that unifies three disconnected data worlds - shipyard build records, operational telemetry, and machinery history - into a single vessel intelligence layer. Built for shipyards, operators, and maritime stakeholders.",
     cta1: "REQUEST DEMO",
     cta2: "EXPLORE PLATFORM",
     stat1label: "Maritime standards supported",
@@ -21,7 +21,7 @@ const strings = {
     headline1: "Operasyonel zeka.",
     headline2: "Gemi yaşam döngüsü için inşa edildi.",
     subheadline:
-      "A'SHERIV, tasarım verilerini, sensör telemetrisini ve bakım geçmişini denizcilik varlık yönetimi için birleşik bir platformda entegre eder.",
+      "Tersane insaat kayitlarini, operasyonel telemetriyi ve makine gecmisini tek bir gemi zekasi katmaninda birlestiren platform. Tersaneler, operatorler ve denizcilik paydaslari icin.",
     cta1: "DEMO TALEP ET",
     cta2: "PLATFORMU KEŞFET",
     stat1label: "Desteklenen denizcilik standardı",
