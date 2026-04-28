@@ -1,8 +1,12 @@
 "use client";
 
 import { Link } from "../../lib/routing";
+import { usePathname } from "../../lib/routing";
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isTr = pathname.startsWith("/tr");
+
   return (
     <footer className="bg-[#070C18] border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 py-16">
@@ -16,8 +20,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/sim" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
+                  SIM
+                </Link>
+              </li>
+              <li>
                 <Link href="/compliance-evidence" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  Evidence Pack
+                  {isTr ? "Kanit Paketi" : "Evidence Pack"}
                 </Link>
               </li>
               <li>

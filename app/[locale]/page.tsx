@@ -41,7 +41,8 @@ export default async function HomePage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  await params;
+  const { locale } = await params;
+  const isTr = locale === "tr";
 
   return (
     <>
@@ -50,6 +51,48 @@ export default async function HomePage({
         <Hero />
         <ContextSection />
         <HowItWorks />
+        <section className="px-6 py-20 sm:px-10 lg:px-16 lg:py-24 bg-[#0D1627] border-y border-white/10">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="font-sans text-3xl sm:text-4xl font-bold text-white text-center mb-10">
+              {isTr ? "Uc urun. Tek gemi zekasi katmani." : "Three products. One vessel intelligence layer."}
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-semibold text-white mb-3">AshMOP</h3>
+                <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
+                  {isTr
+                    ? "Denizcilik Operasyonlari Platformu. Operasyonel dijital twin - telemetri, anomali tespiti, bakim zekasi ve rol bazli karar destegi."
+                    : "Maritime Operations Platform. The operational digital twin - telemetry, anomaly detection, maintenance intelligence, and role-based decision support."}
+                </p>
+                <a href={isTr ? "/tr/platform" : "/en/platform"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                  {isTr ? "AshMOP'u Kesfet →" : "Explore AshMOP →"}
+                </a>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-semibold text-white mb-3">SIM</h3>
+                <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
+                  {isTr
+                    ? "Gemi Bilgi Modellemesi. Tersane tasarim ve insaat verilerini dijital twin'e baglayin."
+                    : "Ship Information Modelling. Connect shipyard design and build data to the digital twin. From IFC geometry to operational baseline."}
+                </p>
+                <a href={isTr ? "/tr/sim" : "/en/sim"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                  {isTr ? "SIM'i Kesfet →" : "Explore SIM →"}
+                </a>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-semibold text-white mb-3">{isTr ? "Kanit Paketi" : "Evidence Pack"}</h3>
+                <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
+                  {isTr
+                    ? "Uyumluluk ve Dokumantasyon. Sinif denetimleri ve sigorta talepleri icin yapilandirilmis disa aktarimlar."
+                    : "Compliance & Documentation. Structured exports for class surveys, insurance claims, and charter disputes - without requiring full platform adoption."}
+                </p>
+                <a href={isTr ? "/tr/compliance-evidence" : "/en/compliance-evidence"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                  {isTr ? "Kanit Paketini Kesfet →" : "Explore Evidence Pack →"}
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
         <ThreeLayers />
         <Stakeholders />
         <VisionTimeline />

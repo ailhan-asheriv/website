@@ -9,6 +9,7 @@ type MenuKey = "platform" | "intelligence" | "developers" | "company" | null;
 
 const platformLinks = [
   { href: "/platform", label: "AshMOP", desc: "Maritime Operations Platform" },
+  { href: "/sim", label: "SIM", desc: "Ship Information Modelling" },
   { href: "/compliance-evidence", label: "Evidence Pack", desc: "Audit-ready documentation" },
 ];
 
