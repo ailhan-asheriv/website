@@ -7,7 +7,6 @@ import ThreeLayers from "../components/sections/ThreeLayers";
 import Stakeholders from "../components/sections/Stakeholders";
 import VisionTimeline from "../components/sections/VisionTimeline";
 import Developers from "../components/sections/Developers";
-import GeographicPresence from "../components/sections/GeographicPresence";
 import ContactCTA from "../components/sections/ContactCTA";
 import type { Metadata } from "next";
 
@@ -54,9 +53,9 @@ export default async function HomePage({
         <section className="px-6 py-20 sm:px-10 lg:px-16 lg:py-24 bg-[#0D1627] border-y border-white/10">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-sans text-3xl sm:text-4xl font-bold text-white text-center mb-10">
-              {isTr ? "Uc urun. Tek gemi zekasi katmani." : "Three products. One vessel intelligence layer."}
+              {isTr ? "Dort urun. Tek gemi zekasi katmani." : "Four products. One vessel intelligence layer."}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
                 <h3 className="text-xl font-semibold text-white mb-3">AshMOP</h3>
                 <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
@@ -66,6 +65,17 @@ export default async function HomePage({
                 </p>
                 <a href={isTr ? "/tr/platform" : "/en/platform"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
                   {isTr ? "AshMOP'u Kesfet →" : "Explore AshMOP →"}
+                </a>
+              </div>
+              <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+                <h3 className="text-xl font-semibold text-white mb-3">AshFI</h3>
+                <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
+                  {isTr
+                    ? "Filo Zekasi. AIS tabanli gemi sagligi ve RUL ongoruleri, sensor entegrasyonu gerektirmez. Dijital ikizi besler."
+                    : "Fleet Intelligence. AIS-derived vessel health and RUL insights, no sensor integration required. Feeds the digital twin."}
+                </p>
+                <a href={isTr ? "/tr/ashfi" : "/en/ashfi"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                  {isTr ? "AshFI'yi Kesfet →" : "Explore AshFI →"}
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
@@ -97,7 +107,6 @@ export default async function HomePage({
         <Stakeholders />
         <VisionTimeline />
         <Developers />
-        <GeographicPresence />
         <ContactCTA />
       </main>
 

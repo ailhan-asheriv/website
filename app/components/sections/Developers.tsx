@@ -8,7 +8,7 @@ const strings = {
     label: "FOR DEVELOPERS",
     headline: "Build on maritime operational data.",
     subheadline:
-      "Access vessel health, telemetry, and lifecycle records through the A'SHERIV API. Integrate maritime intelligence into your systems and applications.",
+      "API access is available to approved partners after onboarding. Request a demo to learn what data and endpoints are available through the AshMOP platform. The capabilities below describe what the API provides, not public endpoints you can call directly from this site.",
     features: [
       {
         title: "REST API",
@@ -33,13 +33,13 @@ const strings = {
       },
     ],
     apiAccessBtn: "REQUEST API ACCESS",
-    docsLink: "View Documentation →",
+    docsLink: "Request a demo →",
   },
   tr: {
     label: "GELISTIRICILER ICIN",
     headline: "Denizcilik operasyonel verisi uzerine insa edin.",
     subheadline:
-      "A'SHERIV API'si araciligiyla gemi sagligi, telemetri ve yasam dongusu kayitlarina erisin. Denizcilik zekasini kendi sistemlerinize ve uygulamalariniza entegre edin.",
+      "API erisimi, onboarding sonrasinda onayli ortaklara acilir. AshMOP platformu uzerinden hangi veri ve endpoint'lere erisebileceginizi ogrenmek icin demo talep edin. Asagidaki ozellikler API'nin sundugu yetenekleri aciklar, bu siteden dogrudan cagirabileceginiz herkese acik endpoint'ler degildir.",
     features: [
       {
         title: "REST API",
@@ -64,7 +64,7 @@ const strings = {
       },
     ],
     apiAccessBtn: "API ERISIMI TALEP ET",
-    docsLink: "Dokumantasyonu Goruntule →",
+    docsLink: "Demo talep edin →",
   },
 } as const;
 
@@ -150,7 +150,7 @@ export default function Developers() {
         </div>
 
         <div className="mt-10 rounded-xl border border-white/10 bg-[#0D1627] p-6 font-mono text-sm">
-          <p className="text-[#9CA3AF]">{"// Example: Get vessel health score"}</p>
+          <p className="text-[#9CA3AF]">{"// Illustrative capability (credentials required after onboarding)"}</p>
           <p className="mt-2 text-white">GET /api/v1/vessels/{"{imo}"}/health</p>
           <p className="mt-4 text-[#9CA3AF]">Response:</p>
           <pre className="mt-2 overflow-x-auto whitespace-pre-wrap">
@@ -175,7 +175,7 @@ export default function Developers() {
           >
             {t.apiAccessBtn}
           </a>
-          <a href="#developers" className="text-sm font-semibold text-white hover:text-[#00D4FF]">
+          <a href="/contact" className="text-sm font-semibold text-white hover:text-[#00D4FF]">
             {t.docsLink}
           </a>
         </div>

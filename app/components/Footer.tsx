@@ -1,87 +1,210 @@
 "use client";
 
+import type { ReactNode } from "react";
+import { useTranslations } from "next-intl";
 import { Link } from "../../lib/routing";
-import { usePathname } from "../../lib/routing";
+
+function LinkedInIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 114.126 0 2.063 2.063 0 01-2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+function TwitterIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+function WhatsAppIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  );
+}
+
+function WeChatIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M8.691 2.188C3.891 2.188 0 5.476 0 9.53c0 2.212 1.17 4.203 3.002 5.55a.59.59 0 01.213.665l-.39 1.48c-.019.07-.048.141-.048.213 0 .163.13.295.29.295a.326.326 0 00.167-.054l1.903-1.114a.864.864 0 01.717-.098 10.16 10.16 0 002.837.403c.276 0 .543-.027.811-.05-.857-2.578.157-4.972 1.932-6.446 1.703-1.415 3.882-1.98 5.853-1.838-.576-3.583-4.196-6.348-8.596-6.348zM5.785 5.991c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178A1.17 1.17 0 014.623 7.17c0-.651.52-1.18 1.162-1.18zm5.813 0c.642 0 1.162.529 1.162 1.18a1.17 1.17 0 01-1.162 1.178 1.17 1.17 0 01-1.162-1.178c0-.651.52-1.18 1.162-1.18zm5.34 2.867c-1.797-.052-3.746.512-5.28 1.786-1.72 1.428-2.687 3.72-1.78 6.22.942 2.453 3.666 4.087 6.704 4.087.826 0 1.622-.12 2.361-.336a.722.722 0 01.598.082l1.584.926a.272.272 0 00.14.047c.134 0 .24-.111.24-.247 0-.06-.023-.12-.038-.177l-.327-1.233a.582.582 0 01-.023-.156.49.49 0 01.201-.398C23.024 18.48 24 16.82 24 14.98c0-3.21-2.931-5.837-6.656-6.088V8.89c-.135-.01-.27-.027-.407-.032zm-2.53 3.274c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.97-.982zm4.844 0c.535 0 .969.44.969.982a.976.976 0 01-.969.983.976.976 0 01-.969-.983c0-.542.434-.982.969-.982z" />
+    </svg>
+  );
+}
+
+function FooterColumn({
+  title,
+  children,
+}: {
+  title: string;
+  children: ReactNode;
+}) {
+  return (
+    <div>
+      <h4 className="text-xs font-semibold tracking-[0.2em] text-white/50 uppercase mb-4">
+        {title}
+      </h4>
+      <ul className="space-y-2">{children}</ul>
+    </div>
+  );
+}
+
+function FooterLink({
+  href,
+  children,
+  external,
+}: {
+  href: string;
+  children: ReactNode;
+  external?: boolean;
+}) {
+  const className =
+    "text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors text-left";
+
+  if (external) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
 
 export default function Footer() {
-  const pathname = usePathname();
-  const isTr = pathname.startsWith("/tr");
+  const t = useTranslations("footer");
 
   return (
     <footer className="bg-[#070C18] border-t border-white/10">
       <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
-          <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] text-white/50 uppercase mb-4">Platform</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/platform" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  AshMOP
-                </Link>
-              </li>
-              <li>
-                <Link href="/sim" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  SIM
-                </Link>
-              </li>
-              <li>
-                <Link href="/compliance-evidence" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  {isTr ? "Kanit Paketi" : "Evidence Pack"}
-                </Link>
-              </li>
-              <li>
-                <Link href="/maintenance-intelligence" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  Asset Intelligence
-                </Link>
-              </li>
-              <li>
-                <Link href="/lifecycle-intelligence" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  Lifecycle Intelligence
-                </Link>
-              </li>
-            </ul>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12 mb-12">
+          <FooterColumn title={t("products")}>
+            <li>
+              <FooterLink href="/platform">{t("ashmop")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/ashfi">{t("ashfi")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/sim">{t("sim")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/compliance-evidence">{t("evidencePack")}</FooterLink>
+            </li>
+          </FooterColumn>
+
+          <FooterColumn title={t("company")}>
+            <li>
+              <FooterLink href="/about">{t("about")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/careers">{t("careers")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/contact">{t("contact")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/research">{t("research")}</FooterLink>
+            </li>
+          </FooterColumn>
+
+          <FooterColumn title={t("resources")}>
+            <li>
+              <FooterLink href="/coming-soon">{t("blog")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/coming-soon">{t("caseStudies")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/coming-soon">{t("documentation")}</FooterLink>
+            </li>
+          </FooterColumn>
+
+          <FooterColumn title={t("legal")}>
+            <li>
+              <FooterLink href="/terms">{t("termsOfUse")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/privacy">{t("privacyPolicy")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/cookies">{t("cookiePolicy")}</FooterLink>
+            </li>
+          </FooterColumn>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+          <FooterColumn title={t("developers")}>
+            <li>
+              <FooterLink href="/coming-soon">{t("apiDocumentation")}</FooterLink>
+            </li>
+            <li>
+              <FooterLink href="/coming-soon">{t("statusPage")}</FooterLink>
+            </li>
+          </FooterColumn>
 
           <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] text-white/50 uppercase mb-4">Company</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/about" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-xs font-semibold tracking-[0.2em] text-white/50 uppercase mb-4">Contact</h4>
-            <div className="space-y-2">
+            <h4 className="text-xs font-semibold tracking-[0.2em] text-white/50 uppercase mb-4">
+              {t("followUs")}
+            </h4>
+            <div className="flex items-center gap-4">
               <a
-                href="mailto:info@asheriv.com"
-                className="text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
-              >
-                info@asheriv.com
-              </a>
-              <a
-                href="https://www.linkedin.com/company/a-sheriv"
+                href="https://linkedin.com/company/asheriv"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block text-sm text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
+                className="text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
+                aria-label="LinkedIn"
               >
-                LinkedIn
+                <LinkedInIcon className="h-5 w-5" />
+              </a>
+              <a
+                href="https://twitter.com/asheriv"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
+                aria-label="Twitter"
+              >
+                <TwitterIcon className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
+                aria-label="WhatsApp"
+              >
+                <WhatsAppIcon className="h-5 w-5" />
+              </a>
+              <a
+                href="#"
+                className="text-[#9CA3AF] hover:text-[#00D4FF] transition-colors"
+                aria-label="WeChat"
+              >
+                <WeChatIcon className="h-5 w-5" />
               </a>
             </div>
           </div>
+        </div>
+
+        <div className="pt-8 border-t border-white/10">
+          <p className="text-xs text-[#9CA3AF]/80">{t("copyright")}</p>
         </div>
       </div>
     </footer>
