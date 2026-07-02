@@ -9,8 +9,8 @@ export const LAYOUT_IMAGES = {
 } as const;
 
 export const LAYOUT_IMAGE_DIMS = {
-  hero: { width: 1866, height: 2048 },
-  secondHero: { width: 1998, height: 2048 },
+  hero: { width: 1024, height: 918 },
+  secondHero: { width: 1024, height: 831 },
 } as const;
 
 /** CSS replacement for low-res gradient PNG (sampled from original asset). */

@@ -82,11 +82,11 @@ export default function ThreeLayers() {
           className="layout-image gradient-pull-up"
         />
 
-        <div className="hidden absolute inset-x-0 top-0 px-6 pb-16 pt-64 sm:px-10 lg:block lg:px-16 lg:pt-48">
+        <div className="hidden absolute inset-x-0 top-0 px-6 pb-16 pt-32 sm:px-10 lg:block lg:px-16 lg:pt-16">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-md">
               <p className="text-xs font-semibold tracking-[0.24em] text-brand-cyan">{t.label}</p>
-              <h2 className="mt-4 font-heading text-3xl font-bold text-[#0A0F1E] sm:text-4xl">
+              <h2 className="mt-4 font-heading text-3xl font-bold text-white sm:text-4xl">
                 {t.headline}
               </h2>
 
