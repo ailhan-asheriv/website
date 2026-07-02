@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/fleetintelligence/api/:path*",
+      "destination": "http://142.132.168.47/fleetintelligence/api/:path*"
+    },
+    {
+      "source": "/fleetintelligence",
+      "destination": "http://142.132.168.47/fleetintelligence/"
+    },
+    {
+      "source": "/fleetintelligence/:path*",
+      "destination": "http://142.132.168.47/fleetintelligence/:path*"
+    }
+  ]
+}
