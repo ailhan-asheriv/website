@@ -7,7 +7,6 @@ const content = {
     title: "Privacy Policy",
     subtitle: "Website privacy policy",
     lastUpdated: "Last updated: June 2026",
-    backLabel: "Back to Home",
     note:
       "This policy covers the asheriv.com marketing website, contact forms, and general site analytics. It does not cover personal data processed inside ASHFI, ASHMOP, or other Asheriv products, which are governed by separate product privacy terms provided to registered users.",
     sections: [
@@ -57,7 +56,6 @@ const content = {
     title: "Gizlilik Politikasi",
     subtitle: "Web sitesi gizlilik politikasi",
     lastUpdated: "Son guncelleme: Haziran 2026",
-    backLabel: "Ana Sayfaya Don",
     note:
       "Bu politika asheriv.com pazarlama web sitesini, iletisim formlarini ve genel site analitigini kapsar. ASHFI, ASHMOP veya diger Asheriv urunleri icinde islenen kisisel verileri kapsamaz; bunlar kayitli kullanicilara saglanan ayri urun gizlilik kosullarina tabidir.",
     sections: [
@@ -119,13 +117,6 @@ export default async function PrivacyPage({
       <main id="main-content" className="pt-32 pb-12 min-h-screen bg-[#0A0F1E]">
         <div className="container-width section-padding">
           <div className="max-w-4xl">
-            <Link
-              href="/"
-              locale={locale}
-              className="inline-flex items-center text-[#00D4FF]/70 hover:text-[#00D4FF] mb-8 transition-colors text-sm gap-1"
-            >
-              ← {c.backLabel}
-            </Link>
             <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2">
               {c.title}
             </h1>

@@ -1,6 +1,4 @@
 import { ReactNode } from "react";
-import { Link } from "../../../lib/routing";
-import Section from "./Section";
 
 export interface PageScaffoldProps {
   /** Page title (hero) */
@@ -29,23 +27,21 @@ export default function PageScaffold({
   children,
   ctaLabel = "Contact us",
   ctaHref = "/#contact",
-  backLabel = "Back to Home",
+  backLabel = "",
   backHref = "/",
   locale,
   heroExtra,
 }: PageScaffoldProps) {
+  void ctaLabel;
+  void ctaHref;
+  void backLabel;
+  void backHref;
+  void locale;
   return (
     <>
       <section className="pt-32 pb-16 sm:pt-40 bg-[#0A0F1E] border-b border-white/10">
         <div className="container-width section-padding">
           <div className="max-w-4xl mx-auto">
-            <Link
-              href={backHref}
-              locale={locale}
-              className="inline-flex items-center text-[#00D4FF]/70 hover:text-[#00D4FF] mb-8 transition-colors text-sm gap-1"
-            >
-              ← {backLabel}
-            </Link>
             <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">{title}</h1>
             {intro != null && (
               <div className="text-lg text-[#00D4FF] leading-relaxed max-w-2xl">

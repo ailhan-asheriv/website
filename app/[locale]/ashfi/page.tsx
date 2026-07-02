@@ -1,6 +1,5 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
-import AshfiDemoForm from "../../components/sections/AshfiDemoForm";
 import { Link } from "../../../lib/routing";
 import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
@@ -40,7 +39,6 @@ const content = {
     ],
     formTitle: "Request a demo",
     heroCtaPrimary: "Request Demo",
-    heroCtaSecondary: "Explore AshMOP",
     suiteTitle: "AshFI and the Asheriv suite",
     suiteBody:
       "AshFI is one of three products in the Asheriv maritime intelligence suite. ASHSIM connects shipyard design and build data to the digital twin. ASHMOP is the full operational digital twin platform. AshFI provides fleet intelligence without requiring sensor integration, serving as both a standalone tool and a feed into ASHMOP.",
@@ -83,7 +81,6 @@ const content = {
     ],
     formTitle: "Demo talep edin",
     heroCtaPrimary: "Demo Talep Et",
-    heroCtaSecondary: "AshMOP'u Kesfet",
     suiteTitle: "AshFI ve Asheriv paketi",
     suiteBody:
       "AshFI, Asheriv denizcilik zekasi paketindeki uc urunden biridir. ASHSIM, tersane tasarim ve insaat verisini dijital ikize baglar. ASHMOP, tam operasyonel dijital ikiz platformudur. AshFI, sensor entegrasyonu gerektirmeden filo zekasi sunar, hem bagimsiz bir arac hem de ASHMOP'a beslenen bir veri kaynagi olarak hizmet eder.",
@@ -117,11 +114,8 @@ export default async function AshfiPage({
             <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
             <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+              <Link href="/contact" className="rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
                 {c.heroCtaPrimary}
-              </Link>
-              <Link href="/platform" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                {c.heroCtaSecondary}
               </Link>
             </div>
           </div>
@@ -168,13 +162,6 @@ export default async function AshfiPage({
                 </div>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-7xl rounded-xl border border-[#E3E8EB] bg-white p-6 sm:p-8">
-            <h2 className="text-center text-2xl font-semibold text-[#0A0F1E] mb-8">{c.formTitle}</h2>
-            <AshfiDemoForm locale={locale} />
           </div>
         </section>
 

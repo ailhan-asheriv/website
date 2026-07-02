@@ -14,7 +14,7 @@ const strings = {
     subheadline:
       "The only platform that unifies three disconnected data worlds - shipyard build records, operational telemetry, and machinery history - into a single vessel intelligence layer. Built for shipyards, operators, and maritime stakeholders.",
     cta1: "Request Demo",
-    cta2: "Explore Platform",
+    cta2: "Explore Tools",
     stat1label: "Maritime standards supported",
     stat2label: "Stakeholder role types served",
     stat3label: "Platform microservices",
@@ -25,7 +25,7 @@ const strings = {
     subheadline:
       "Tersane insaat kayitlarini, operasyonel telemetriyi ve makine gecmisini tek bir gemi zekasi katmaninda birlestiren platform. Tersaneler, operatorler ve denizcilik paydaslari icin.",
     cta1: "DEMO TALEP ET",
-    cta2: "PLATFORMU KEŞFET",
+    cta2: "ARACLARI KESFET",
     stat1label: "Desteklenen denizcilik standardi",
     stat2label: "Hizmet verilen paydas rol tipi",
     stat3label: "Platform mikroservisi",

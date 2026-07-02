@@ -50,7 +50,6 @@ const content = {
     demoTitle: "See AshMOP in action",
     demoSubtext: "Request a live demo to explore the platform with your own vessel context.",
     demoButton: "Request Demo",
-    secondaryCta: "Explore Intelligence",
     suiteTitle: "Part of the Asheriv suite",
     suiteBody:
       "AshMOP works alongside AshFI, SIM, and Evidence Pack to deliver one connected vessel intelligence stack.",
@@ -104,7 +103,6 @@ const content = {
     demoTitle: "AshMOP'u canli gorun",
     demoSubtext: "Kendi gemi baglaminizla platformu kesfetmek icin canli demo talep edin.",
     demoButton: "Demo Talep Et",
-    secondaryCta: "Intelligence Sayfalarini Kesfet",
     suiteTitle: "Asheriv paketinin bir parcasi",
     suiteBody:
       "AshMOP, AshFI, SIM ve Kanit Paketi ile birlikte tek bir bagli gemi zekasi yiginini tamamlar.",
@@ -138,11 +136,8 @@ export default async function PlatformPage({
             <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
             <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+              <Link href="/contact" className="rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
                 {c.demoButton}
-              </Link>
-              <Link href="/maintenance-intelligence" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                {c.secondaryCta}
               </Link>
             </div>
           </div>

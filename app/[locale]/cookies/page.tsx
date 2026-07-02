@@ -6,7 +6,6 @@ const content = {
   en: {
     title: "Cookie Policy",
     lastUpdated: "Last updated: June 2026",
-    backLabel: "Back to Home",
     sections: [
       {
         heading: "1. What are cookies",
@@ -43,7 +42,6 @@ const content = {
   tr: {
     title: "Cerez Politikasi",
     lastUpdated: "Son guncelleme: Haziran 2026",
-    backLabel: "Ana Sayfaya Don",
     sections: [
       {
         heading: "1. Cerezler nedir",
@@ -93,13 +91,6 @@ export default async function CookiesPage({
       <main id="main-content" className="pt-32 pb-12 min-h-screen bg-[#0A0F1E]">
         <div className="container-width section-padding">
           <div className="max-w-4xl">
-            <Link
-              href="/"
-              locale={locale}
-              className="inline-flex items-center text-[#00D4FF]/70 hover:text-[#00D4FF] mb-8 transition-colors text-sm gap-1"
-            >
-              ← {c.backLabel}
-            </Link>
             <h1 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
               {c.title}
             </h1>

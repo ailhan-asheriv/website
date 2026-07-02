@@ -39,6 +39,22 @@ export const PRODUCT_HERO_IMAGES = {
     "https://images.unsplash.com/photo-1749867053314-ebfa14d9b9c4?auto=format&fit=crop&w=2400&q=80",
 } as const;
 
+/** Unsplash hero imagery for supporting pages in refurbishment phase. */
+export const SUPPORT_HERO_IMAGES = {
+  // About: shipyard aerial context.
+  about:
+    "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?auto=format&fit=crop&w=2400&q=80",
+  // Asset Intelligence: machinery monitoring context.
+  maintenance:
+    "https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=2400&q=80",
+  // Operational Intelligence: vessel bridge and operations context.
+  operational:
+    "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?auto=format&fit=crop&w=2400&q=80",
+  // Lifecycle Intelligence: drydock and commissioning context.
+  lifecycle:
+    "https://images.unsplash.com/photo-1569263979104-865ab7cd8d13?auto=format&fit=crop&w=2400&q=80",
+} as const;
+
 /** @deprecated Use LAYOUT_IMAGES for homepage; kept for any legacy references */
 export const HERO_IMAGES = {
   homepage: LAYOUT_IMAGES.hero,

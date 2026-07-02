@@ -28,6 +28,7 @@ const content = {
         desc: "Management-level summaries with drill-down access to underlying data. Customisable reporting periods and asset scope.",
       },
     ],
+    capabilitiesTitle: "Core capabilities",
     howTitle: "How it works",
     steps: [
       "Select the vessel and time window for the event under review.",
@@ -49,8 +50,7 @@ const content = {
         desc: "Timestamped operational records for laytime and off-hire disputes.",
       },
     ],
-    heroCtaPrimary: "Contact Team",
-    heroCtaSecondary: "Explore AshMOP",
+    heroCtaPrimary: "Request Demo",
     suiteTitle: "Part of the Asheriv suite",
     suiteBody:
       "Evidence Pack completes the operational stack by turning AshMOP and AshFI data into structured external proof.",
@@ -82,6 +82,7 @@ const content = {
         desc: "Temel verilere detay gorunumu erisimiyle yonetim duzeyinde ozetler. Ozellestirilebilir raporlama donemleri ve varlik kapsami.",
       },
     ],
+    capabilitiesTitle: "Temel ozellikler",
     howTitle: "Nasil calisir",
     steps: [
       "Incelenecek olay icin gemi ve zaman penceresi secilir.",
@@ -103,8 +104,7 @@ const content = {
         desc: "Laytime ve off-hire anlasmazliklari icin zaman damgali operasyon kayitlari.",
       },
     ],
-    heroCtaPrimary: "Ekiple Iletisime Gec",
-    heroCtaSecondary: "AshMOP'u Kesfet",
+    heroCtaPrimary: "Demo Talep Et",
     suiteTitle: "Asheriv paketinin bir parcasi",
     suiteBody:
       "Kanit Paketi, AshMOP ve AshFI verilerini dis paydaslara yonelik yapilandirilmis kanita donusturur.",
@@ -138,11 +138,8 @@ export default async function ComplianceEvidencePage({
             <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
             <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+              <Link href="/contact" className="rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
                 {c.heroCtaPrimary}
-              </Link>
-              <Link href="/platform" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                {c.heroCtaSecondary}
               </Link>
             </div>
           </div>
@@ -160,7 +157,7 @@ export default async function ComplianceEvidencePage({
 
         <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-white">Capabilities</h2>
+            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.capabilitiesTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {c.features.map((feature) => (
                 <div key={feature.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">

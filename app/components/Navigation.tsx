@@ -10,7 +10,7 @@ type MenuKey = "platform" | "intelligence" | "developers" | "company" | null;
 const platformLinks = [
   { href: "/platform", label: "AshMOP", desc: "Maritime Operations Platform" },
   { href: "/ashfi", label: "AshFI", desc: "Fleet intelligence from AIS data" },
-  { href: "/sim", label: "SIM", desc: "Ship Information Modelling" },
+  { href: "/sim", label: "AshSIM", desc: "Ship Information Modelling" },
   { href: "/compliance-evidence", label: "Evidence Pack", desc: "Audit-ready documentation" },
 ];
 
@@ -101,7 +101,7 @@ export default function Navigation() {
 
           <div className="hidden lg:flex items-center">
             <div className="flex items-center gap-1 xl:gap-2 flex-shrink min-w-0">
-              {/* Platform dropdown */}
+              {/* Tools dropdown */}
               <div
                 className="relative"
                 onMouseEnter={() => setOpenDropdown("platform")}
@@ -113,7 +113,7 @@ export default function Navigation() {
                   aria-expanded={openDropdown === "platform"}
                   aria-haspopup="true"
                 >
-                  Platform
+                  Tools
                   <svg className="w-4 h-4 ml-0.5 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
@@ -288,7 +288,7 @@ export default function Navigation() {
         {/* Mobile menu (below lg) */}
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-white/10 py-4 space-y-1 max-h-[80vh] overflow-y-auto">
-            <Link href="/platform" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/90 hover:text-[#00D4FF] transition-colors py-3 px-4">Platform</Link>
+            <Link href="/platform" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/90 hover:text-[#00D4FF] transition-colors py-3 px-4">Tools</Link>
             {platformLinks.map(({ href, label, desc }) => (
               <Link key={`${href}-${label}`} href={href} onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left transition-colors py-2 px-4 pl-6 hover:bg-white/5">
                 <p className="text-sm text-white/70 hover:text-[#00D4FF]">{label}</p>

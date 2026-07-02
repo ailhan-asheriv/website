@@ -5,7 +5,7 @@ import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
 const content = {
   en: {
-    title: "SIM",
+    title: "ASHSIM",
     tagline: "Connect shipyard build data to the operational digital twin.",
     intro:
       "Ship Information Modelling (SIM) is A'SHERIV's framework for connecting shipyard design and build data to the operational digital twin. Where BIM ends at building handover, SIM extends through the vessel's entire operational life - mapping IFC geometry, SFI classifications, QC records, and test results into a queryable intelligence layer from day one.",
@@ -42,10 +42,10 @@ const content = {
     firstSteelTitle: "From first steel to digital twin",
     firstSteelBody:
       "SIM bridges the gap between shipyard build history and vessel operations by carrying structured design and QC records into the live digital twin used by technical teams.",
+    capabilitiesTitle: "Core capabilities",
     ctaTitle: "Connect your shipyard to the digital twin",
-    ctaBody: "SIM integrates with AutoCAD, AVEVA Marine, and major IFC-compatible design tools.",
-    ctaButton: "Request Integration Demo",
-    heroCtaSecondary: "Explore AshMOP",
+    ctaBody: "ASHSIM integrates with AutoCAD, AVEVA Marine, and major IFC-compatible design tools.",
+    ctaButton: "Request Demo",
     suiteTitle: "Part of the Asheriv suite",
     suiteBody:
       "SIM, AshMOP, AshFI, and Evidence Pack work as one chain from design to operations and compliance.",
@@ -54,7 +54,7 @@ const content = {
     linkEvidence: "Explore Evidence Pack",
   },
   tr: {
-    title: "SIM",
+    title: "ASHSIM",
     tagline: "Tersane insaat verisini operasyonel dijital ikize baglayin.",
     intro:
       "Gemi Bilgi Modellemesi (SIM), A'SHERIV'in tersane tasarim ve insaat verilerini operasyonel dijital twin'e baglayan cercevesidir. BIM bina tesliminde sona ererken, SIM geminin tum operasyonel omru boyunca devam eder - IFC geometrisini, SFI siniflandirmalarini, QC kayitlarini ve test sonuclarini ilk gunden itibaren sorgulanabilir bir zeka katmanina esler.",
@@ -91,10 +91,10 @@ const content = {
     firstSteelTitle: "Ilk celikten dijital ikize",
     firstSteelBody:
       "SIM, tersane insaat gecmisi ile operasyonu baglayarak tasarim ve QC kayitlarini teknik ekiplerin kullandigi canli dijital ikize tasir.",
+    capabilitiesTitle: "Temel ozellikler",
     ctaTitle: "Tersanenizi dijital twin'e baglayin",
-    ctaBody: "SIM, AutoCAD, AVEVA Marine ve baslica IFC uyumlu tasarim araclariyla entegre olur.",
-    ctaButton: "Entegrasyon Demosu Talep Edin",
-    heroCtaSecondary: "AshMOP'u Kesfet",
+    ctaBody: "ASHSIM, AutoCAD, AVEVA Marine ve baslica IFC uyumlu tasarim araclariyla entegre olur.",
+    ctaButton: "Demo Talep Et",
     suiteTitle: "Asheriv paketinin bir parcasi",
     suiteBody:
       "SIM, AshMOP, AshFI ve Kanit Paketi birlikte tasarimdan operasyona ve uyumluluga uzanan tek zinciri olusturur.",
@@ -128,11 +128,8 @@ export default async function SimPage({
             <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
             <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+              <Link href="/contact" className="rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
                 {c.ctaButton}
-              </Link>
-              <Link href="/platform" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                {c.heroCtaSecondary}
               </Link>
             </div>
           </div>
@@ -149,7 +146,7 @@ export default async function SimPage({
 
         <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-white">Capabilities</h2>
+            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.capabilitiesTitle}</h2>
             <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
               {c.features.map((feature) => (
                 <div key={feature.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">

@@ -22,13 +22,6 @@ export default async function UKPage({
         </div>
         <div className="container-width section-padding relative z-10">
           <div className="max-w-4xl mx-auto">
-            <Link
-              href="/"
-              locale={locale}
-              className="inline-flex items-center text-[#00D4FF]/70 hover:text-[#00D4FF] mb-8 transition-colors gap-1"
-            >
-              ← {locale === "tr" ? "Ana Sayfaya Dön" : "Back to Home"}
-            </Link>
             <h1 className="font-sans text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white mb-6">
               {t("title")}
             </h1>
