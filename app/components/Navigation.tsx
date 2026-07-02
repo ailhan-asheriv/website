@@ -21,14 +21,14 @@ const intelligenceLinks = [
 ];
 
 const developerLinks = [
-  { href: "/coming-soon", label: "API Documentation" },
-  { href: "/coming-soon", label: "Status Page" },
+  { href: "/developers", label: "API Documentation" },
+  { href: "/developers", label: "Status Page" },
 ];
 
 const companyLinks = [
   { href: "/about", label: "About A'SHERIV" },
   { href: "/#roadmap", label: "Our Vision" },
-  { href: "/contact", label: "Contact" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navigation() {
@@ -170,7 +170,7 @@ export default function Navigation() {
                 onMouseLeave={() => setOpenDropdown(null)}
               >
                 <Link
-                  href="/coming-soon"
+                  href="/developers"
                   className={`${navLinkClass} inline-flex items-center gap-0.5`}
                   aria-expanded={openDropdown === "developers"}
                   aria-haspopup="true"
@@ -302,7 +302,7 @@ export default function Navigation() {
                 <p className="text-xs text-white/50">{desc}</p>
               </Link>
             ))}
-            <Link href="/coming-soon" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/90 hover:text-[#00D4FF] transition-colors py-3 px-4">Developers</Link>
+            <Link href="/developers" onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/90 hover:text-[#00D4FF] transition-colors py-3 px-4">Developers</Link>
             {developerLinks.map(({ href, label }) => (
               <Link key={`${href}-${label}`} href={href} onClick={() => setIsMobileMenuOpen(false)} className="block w-full text-left text-sm text-white/70 hover:text-[#00D4FF] transition-colors py-2 px-4 pl-6">{label}</Link>
             ))}

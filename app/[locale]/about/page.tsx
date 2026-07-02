@@ -2,6 +2,7 @@ import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Link } from "../../../lib/routing";
 import { SUPPORT_HERO_IMAGES } from "../../../lib/imagery";
+import JoinUsForm from "../../components/JoinUsForm";
 
 const content = {
   en: {
@@ -13,12 +14,23 @@ const content = {
     visionTitle: "Vision",
     vision:
       "A future where unplanned vessel failures are the exception, not the norm. Where every maintenance decision is backed by traceable data. Where design, operational, and machinery records are unified in a single platform that grows with the vessel.",
-    founderTitle: "Founder",
-    founderBody:
-      "A'SHERIV was founded by Asli Ilhan, an AI engineer and PhD candidate in Naval Architecture & Marine Engineering at Istanbul Technical University. With an MSc in AI & Data Science (Distinction, top graduate - UAL), research collaborations with NVIDIA, and experience building production AI systems across computer vision and generative pipelines, she founded A'SHERIV to solve a problem the maritime industry hasn't solved: unifying design, operational, and machinery data into a single vessel intelligence layer.",
-    researchTitle: "Research foundation",
+    rdTitle: "R&D and Partnerships",
     researchBody:
-      "ASHFI and ASHMOP's predictive maintenance methodology is informed by active PhD research in AI-driven maritime systems at Istanbul Technical University's Faculty of Naval Architecture and Ocean Engineering, focusing on physics-informed neural networks for remaining useful life estimation and cross-vessel transfer learning.",
+      "A'SHERIV's predictive maintenance and vessel intelligence methodology is developed through an active research program in collaboration with Istanbul Technical University's Faculty of Naval Architecture and Ocean Engineering. Current research focuses on physics-informed neural network approaches to remaining useful life estimation, cross-vessel transfer learning for predictive maintenance models, and the integration of shipyard construction data with operational digital twins.",
+    rdBody2:
+      "We are building partnerships with class societies, shipyard operators, and maritime research institutions to validate and extend this methodology against real operational data.",
+    partnerPlaceholder: "Partner logos coming soon",
+    researchCta: "Discuss a research partnership",
+    recognitionTitle: "Recognition and Memberships",
+    recognitionBody:
+      "A'SHERIV's research and platform work has been presented at and recognised by leading institutions in maritime technology and AI.",
+    pressTitle: "Press and Media",
+    pressPlaceholder: "Coverage logos coming soon",
+    certTitle: "Certifications and Memberships",
+    certPlaceholder: "Certification logos coming soon",
+    joinTitle: "Join Us",
+    joinBody:
+      "We are a small, focused team building maritime intelligence infrastructure. We consider both internship and full-time applications on an ongoing basis from engineers, researchers, and maritime domain experts.",
     productsTitle: "Products",
     legalLine: "A'SHERIV Intelligent Marine Technologies Ltd. is registered in England and Wales.",
     contactCta: "Work with us - info@asheriv.com",
@@ -32,12 +44,23 @@ const content = {
     visionTitle: "Vizyon",
     vision:
       "Plansiz gemi arizalarinin norm degil, istisna oldugu bir gelecek. Her bakim kararinin izlenebilir verilerle desteklendigi. Tasarim, operasyonel ve makine kayitlarinin gemiyle birlikte buyuyen tek bir platformda birlestirildigi.",
-    founderTitle: "Kurucu",
-    founderBody:
-      "A'SHERIV, Istanbul Teknik Universitesi Gemi ve Deniz Teknolojisi Muhendisligi doktora adayi ve AI muhendisi Asli Ilhan tarafindan kuruldu. UAL'da birincilikle tamamlanan Yapay Zeka ve Veri Bilimi yuksek lisansi, NVIDIA ile arastirma is birlikleri ve uretim AI sistemleri gelistirme deneyimiyle A'SHERIV'i, denizcilik sektorunun cozemedigi bir sorunu cozmek icin kurdu: tasarim, operasyonel ve makine verilerini tek bir gemi zekasi katmaninda birlestirmek.",
-    researchTitle: "Arastirma temeli",
+    rdTitle: "Ar-Ge ve Ortakliklar",
     researchBody:
-      "ASHFI ve ASHMOP'un kestirimci bakim metodolojisi, Istanbul Teknik Universitesi Gemi Insaati ve Okyanus Muhendisligi Fakultesi'nde yuruyen, fizik bilgili sinir aglariyla kalan faydali omur tahmini ve gemiler arasi transfer ogrenmeye odaklanan AI tabanli denizcilik sistemleri doktora arastirmasiyla beslenir.",
+      "A'SHERIV'in kestirimci bakim ve gemi zekasi metodolojisi, Istanbul Teknik Universitesi Gemi Insaati ve Okyanus Muhendisligi Fakultesi ile is birligi icindeki aktif arastirma programi ile gelistirilmektedir. Guncel odak, fizik bilgili sinir aglariyla kalan faydali omur tahmini, gemiler arasi transfer ogrenme ve tersane insa verilerinin operasyonel dijital ikizlerle entegrasyonudur.",
+    rdBody2:
+      "Bu metodolojiyi gercek operasyonel verilerle dogrulamak ve genisletmek icin klas kuruluslari, tersane operatorleri ve denizcilik arastirma kurumlariyla ortakliklar kuruyoruz.",
+    partnerPlaceholder: "Partner logolari yakinda",
+    researchCta: "Arastirma ortakligi icin iletisime gec",
+    recognitionTitle: "Taninma ve Uyelikler",
+    recognitionBody:
+      "A'SHERIV'in arastirma ve platform calismalari, denizcilik teknolojisi ve AI alaninda onde gelen kurumlar tarafindan sunulmus ve taninmistir.",
+    pressTitle: "Basin ve Medya",
+    pressPlaceholder: "Basin logolari yakinda",
+    certTitle: "Sertifikasyonlar ve Uyelikler",
+    certPlaceholder: "Sertifikasyon logolari yakinda",
+    joinTitle: "Bize Katilin",
+    joinBody:
+      "Denizcilik zeka altyapisini kuran kucuk ve odakli bir ekibiz. Muhendisler, arastirmacilar ve denizcilik alan uzmanlarindan staj ve tam zamanli basvurulari surekli degerlendiriyoruz.",
     productsTitle: "Urunler",
     legalLine: "A'SHERIV Intelligent Marine Technologies Ltd. England and Wales kayitlidir.",
     contactCta: "Bizimle calisin - info@asheriv.com",
@@ -83,10 +106,34 @@ export default async function AboutPage({
           </div>
         </section>
 
-        <section className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
+        <section id="rd-partnerships" className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-5xl rounded-xl border border-white/15 bg-[#0A0F1E]/35 p-8">
-            <h2 className="font-heading text-3xl font-bold text-white">{c.researchTitle}</h2>
+            <h2 className="font-heading text-3xl font-bold text-white">{c.rdTitle}</h2>
             <p className="mt-4 leading-relaxed text-[#DCE3EC]">{c.researchBody}</p>
+            <p className="mt-4 leading-relaxed text-[#DCE3EC]">{c.rdBody2}</p>
+            <div className="mt-6 rounded-xl border border-dashed border-white/30 bg-white/[0.03] px-5 py-8 text-center text-sm text-[#9CB0C9]">
+              {c.partnerPlaceholder}
+            </div>
+            <Link href="/#contact" className="mt-6 inline-block rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+              {c.researchCta}
+            </Link>
+          </div>
+        </section>
+
+        <section id="recognition" className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="font-heading text-3xl font-bold text-white">{c.recognitionTitle}</h2>
+            <p className="mt-4 max-w-4xl leading-relaxed text-[#CBD5E1]">{c.recognitionBody}</p>
+            <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
+              <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
+                <p className="text-lg font-semibold text-[#00D4FF]">{c.pressTitle}</p>
+                <p className="mt-3 text-sm text-[#9CB0C9]">{c.pressPlaceholder}</p>
+              </div>
+              <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
+                <p className="text-lg font-semibold text-[#00D4FF]">{c.certTitle}</p>
+                <p className="mt-3 text-sm text-[#9CB0C9]">{c.certPlaceholder}</p>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -118,10 +165,13 @@ export default async function AboutPage({
           </div>
         </section>
 
-        <section className="bg-[#0A0F1E] px-6 pb-16 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-[#0D1627] p-8">
-            <h2 className="font-sans text-2xl font-bold text-[#00D4FF] mb-4 text-center">{c.founderTitle}</h2>
-            <p className="text-sm leading-relaxed text-[#CBD5E1] text-center">{c.founderBody}</p>
+        <section id="join-us" className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-5xl rounded-xl border border-[#E3E8EB] bg-white p-8">
+            <h2 className="font-heading text-3xl font-bold text-[#0A0F1E]">{c.joinTitle}</h2>
+            <p className="mt-4 text-sm leading-relaxed text-[#3D4852]">{c.joinBody}</p>
+            <div className="mt-8">
+              <JoinUsForm locale={locale} />
+            </div>
           </div>
         </section>
       </main>

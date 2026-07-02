@@ -117,25 +117,25 @@ export default function Footer() {
               <FooterLink href="/about">{t("about")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/careers">{t("careers")}</FooterLink>
+              <FooterLink href="/about#join-us">{t("careers")}</FooterLink>
             </li>
             <li>
               <FooterLink href="/contact">{t("contact")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/research">{t("research")}</FooterLink>
+              <FooterLink href="/about#rd-partnerships">{t("research")}</FooterLink>
             </li>
           </FooterColumn>
 
           <FooterColumn title={t("resources")}>
             <li>
-              <FooterLink href="/coming-soon">{t("blog")}</FooterLink>
+              <FooterLink href="/blog">{t("blog")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/coming-soon">{t("caseStudies")}</FooterLink>
+              <FooterLink href="/case-studies">{t("caseStudies")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/coming-soon">{t("documentation")}</FooterLink>
+              <FooterLink href="/documentation">{t("documentation")}</FooterLink>
             </li>
           </FooterColumn>
 
@@ -155,10 +155,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
           <FooterColumn title={t("developers")}>
             <li>
-              <FooterLink href="/coming-soon">{t("apiDocumentation")}</FooterLink>
+              <FooterLink href="/developers">{t("apiDocumentation")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/coming-soon">{t("statusPage")}</FooterLink>
+              <FooterLink href="/developers">{t("statusPage")}</FooterLink>
             </li>
           </FooterColumn>
 

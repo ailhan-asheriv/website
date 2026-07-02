@@ -6,10 +6,13 @@ const content = {
   en: {
     title: "Terms of Use",
     lastUpdated: "Last updated: June 2026",
+    servicesCoveredTitle: "Services Covered",
+    servicesCoveredBody:
+      "These Terms apply to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and ASHSIM (Ship Information Modelling). Where a term applies to a specific service only, it is clearly indicated.",
     sections: [
       {
         heading: "1. Scope",
-        body: "These Terms of Use govern your access to and use of the asheriv.com website operated by A'SHERIV Intelligent Marine Technologies Ltd. They do not govern use of ASHFI, ASHMOP, SIM, or other Asheriv products, which are subject to separate product terms.",
+        body: "These Terms of Use govern your access to and use of the asheriv.com website and the Asheriv platform services operated by A'SHERIV Intelligent Marine Technologies Ltd.",
       },
       {
         heading: "2. Acceptable use",
@@ -21,11 +24,11 @@ const content = {
       },
       {
         heading: "4. Disclaimer of warranties",
-        body: "Website content is provided for general information only. We make no warranties, express or implied, about the accuracy, completeness, or suitability of website content for any particular purpose. Product capabilities described on this site are subject to change.",
+        body: "Website content and the Asheriv platform services are provided for general information and operational use. We make no warranties, express or implied, about the accuracy, completeness, or suitability of content for any particular purpose. Product capabilities are subject to change.",
       },
       {
         heading: "5. Limitation of liability",
-        body: "To the fullest extent permitted by law, A'SHERIV shall not be liable for any indirect, incidental, or consequential losses arising from your use of this website. Nothing in these terms excludes liability that cannot be excluded under applicable law.",
+        body: "To the fullest extent permitted by law, A'SHERIV shall not be liable for any indirect, incidental, or consequential losses arising from your use of this website or the Asheriv platform services. Nothing in these terms excludes liability that cannot be excluded under applicable law.",
       },
       {
         heading: "6. Governing law",
@@ -33,7 +36,7 @@ const content = {
       },
       {
         heading: "7. Product terms",
-        body: "Users of ASHFI and other Asheriv products are subject to separate product Terms of Service and Privacy Policy provided at registration or upon request. For ASHFI, see the product page or contact info@asheriv.com.",
+        body: "Users of AshMOP, ASHFI, ASHSIM, and related Asheriv platform services may also be subject to service-specific terms and privacy documents provided at registration or upon request.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI product page",
       },
@@ -46,10 +49,13 @@ const content = {
   tr: {
     title: "Kullanim Sartlari",
     lastUpdated: "Son guncelleme: Haziran 2026",
+    servicesCoveredTitle: "Kapsanan Hizmetler",
+    servicesCoveredBody:
+      "Bu Sartlar, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan saglanan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve ASHSIM (Ship Information Modelling). Bir kosul sadece belirli bir hizmet icin gecerliyse acikca belirtilir.",
     sections: [
       {
         heading: "1. Kapsam",
-        body: "Bu Kullanim Sartlari, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan isletilen asheriv.com web sitesine erisiminizi ve kullaniminizi duzenler. ASHFI, ASHMOP, SIM veya diger Asheriv urunlerinin kullanimi ayri urun kosullarina tabidir.",
+        body: "Bu Kullanim Sartlari, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan isletilen asheriv.com web sitesine ve Asheriv platform hizmetlerine erisim ve kullaniminizi duzenler.",
       },
       {
         heading: "2. Kabul edilebilir kullanim",
@@ -61,11 +67,11 @@ const content = {
       },
       {
         heading: "4. Garanti reddi",
-        body: "Web sitesi icerigi yalnizca genel bilgi amaciyla sunulmaktadir. Web sitesi iceriginin dogrulugu, butunlugu veya belirli bir amaca uygunlugu hakkinda acik veya zimni hicbir garanti vermiyoruz. Bu sitede aciklanan urun yetenekleri degisiklige tabidir.",
+        body: "Web sitesi icerigi ve Asheriv platform hizmetleri genel bilgi ve operasyonel kullanim icin sunulur. Icerigin dogrulugu, butunlugu veya belirli bir amaca uygunlugu hakkinda acik veya zimni garanti vermiyoruz. Urun yetenekleri degisiklik gosterebilir.",
       },
       {
         heading: "5. Sorumluluk sinirlamasi",
-        body: "Yasalarin izin verdigi olcude, A'SHERIV bu web sitesini kullaniminizdan kaynaklanan dolayli, arızi veya sonuc olarak ortaya cikan kayiplardan sorumlu olmayacaktir. Bu kosullar, uygulanabilir hukuk kapsaminda dislanamayacak sorumlulugu dislamaz.",
+        body: "Yasalarin izin verdigi olcude, A'SHERIV web sitesi veya Asheriv platform hizmetlerinin kullanimindan dogan dolayli, arizi veya sonuc niteligindeki kayiplardan sorumlu olmayacaktir. Bu kosullar, uygulanabilir hukuk kapsaminda dislanamayacak sorumlulugu dislamaz.",
       },
       {
         heading: "6. Uygulanacak hukuk",
@@ -73,7 +79,7 @@ const content = {
       },
       {
         heading: "7. Urun kosullari",
-        body: "ASHFI ve diger Asheriv urunlerinin kullanicilari, kayit sirasinda veya talep uzerine saglanan ayri urun Hizmet Sartlari ve Gizlilik Politikasina tabidir. ASHFI icin urun sayfasina bakin veya info@asheriv.com adresine yazin.",
+        body: "AshMOP, ASHFI, ASHSIM ve ilgili Asheriv platform hizmetlerinin kullanicilari, kayit sirasinda veya talep uzerine saglanan hizmete ozel kosullara ve gizlilik metinlerine de tabi olabilir.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI urun sayfasi",
       },
@@ -103,6 +109,10 @@ export default async function TermsPage({
               {c.title}
             </h1>
             <p className="text-sm text-[#CBD5E1] mb-8">{c.lastUpdated}</p>
+            <section className="mb-8 space-y-3 rounded-xl border border-white/10 bg-white/[0.04] p-5">
+              <h2 className="text-xl font-bold text-white">{c.servicesCoveredTitle}</h2>
+              <p className="text-[#CBD5E1] leading-relaxed">{c.servicesCoveredBody}</p>
+            </section>
             <div className="space-y-8">
               {c.sections.map((section) => (
                 <section key={section.heading} className="space-y-3">

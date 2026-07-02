@@ -7,8 +7,11 @@ const content = {
     title: "Privacy Policy",
     subtitle: "Website privacy policy",
     lastUpdated: "Last updated: June 2026",
+    servicesCoveredTitle: "Services Covered",
+    servicesCoveredBody:
+      "This Privacy Policy applies to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and ASHSIM (Ship Information Modelling).",
     note:
-      "This policy covers the asheriv.com marketing website, contact forms, and general site analytics. It does not cover personal data processed inside ASHFI, ASHMOP, or other Asheriv products, which are governed by separate product privacy terms provided to registered users.",
+      "This policy covers the asheriv.com marketing website, contact forms, and general site analytics, as well as high-level processing principles for the Asheriv platform services.",
     sections: [
       {
         heading: "1. Who we are",
@@ -16,11 +19,11 @@ const content = {
       },
       {
         heading: "2. What we collect on this website",
-        body: "When you use our contact forms or request information, we may collect your name, email address, company name, job role, and message content. We also collect limited technical data such as IP address, browser type, and pages visited, primarily through server logs and essential cookies.",
+        body: "When you use our contact forms or request information, we may collect your name, email address, company name, job role, and message content. We also collect limited technical data such as IP address, browser type, and pages visited, primarily through server logs and essential cookies. For the Asheriv platform services, account and service usage data may be processed according to applicable service terms.",
       },
       {
         heading: "3. How we use website data",
-        body: "We use this information to respond to inquiries, improve the website, and understand aggregate interest in our products. We do not sell personal data collected through this website.",
+        body: "We use this information to respond to inquiries, improve the website, and understand aggregate interest in our products and platform services. We do not sell personal data collected through this website.",
       },
       {
         heading: "4. Cookies and analytics",
@@ -42,7 +45,7 @@ const content = {
       },
       {
         heading: "8. Product data",
-        body: "If you are an ASHFI or ASHMOP user, product-specific privacy terms apply to vessel analysis data, account information, and fleet data processed inside those platforms. Contact info@asheriv.com or refer to your product agreement for details.",
+        body: "If you are a user of AshMOP, ASHFI, or ASHSIM, service-specific privacy terms may apply to vessel analysis data, account information, BIM and operational records, and fleet data processed inside those services. Contact info@asheriv.com or refer to your product agreement for details.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI product page",
       },
@@ -56,8 +59,11 @@ const content = {
     title: "Gizlilik Politikasi",
     subtitle: "Web sitesi gizlilik politikasi",
     lastUpdated: "Son guncelleme: Haziran 2026",
+    servicesCoveredTitle: "Kapsanan Hizmetler",
+    servicesCoveredBody:
+      "Bu Gizlilik Politikasi, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan sunulan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve ASHSIM (Ship Information Modelling).",
     note:
-      "Bu politika asheriv.com pazarlama web sitesini, iletisim formlarini ve genel site analitigini kapsar. ASHFI, ASHMOP veya diger Asheriv urunleri icinde islenen kisisel verileri kapsamaz; bunlar kayitli kullanicilara saglanan ayri urun gizlilik kosullarina tabidir.",
+      "Bu politika asheriv.com pazarlama web sitesini, iletisim formlarini ve genel site analitigini kapsar, ayrica Asheriv platform hizmetlerine iliskin yuksek seviyeli veri isleme ilkelerini aciklar.",
     sections: [
       {
         heading: "1. Biz kimiz",
@@ -65,11 +71,11 @@ const content = {
       },
       {
         heading: "2. Bu web sitesinde ne topluyoruz",
-        body: "Iletisim formlarimizi kullandiginizda veya bilgi talep ettiginizde adiniz, e-posta adresiniz, sirket adiniz, unvaniniz ve mesaj iceriginiz toplanabilir. Ayrica IP adresi, tarayici turu ve ziyaret edilen sayfalar gibi sinirli teknik veriler, agirlikli olarak sunucu gunlukleri ve gerekli cerezler araciligiyla toplanir.",
+        body: "Iletisim formlarimizi kullandiginizda veya bilgi talep ettiginizde adiniz, e-posta adresiniz, sirket adiniz, unvaniniz ve mesaj iceriginiz toplanabilir. Ayrica IP adresi, tarayici turu ve ziyaret edilen sayfalar gibi sinirli teknik veriler, agirlikli olarak sunucu gunlukleri ve gerekli cerezler araciligiyla toplanir. Asheriv platform hizmetleri icin hesap ve hizmet kullanim verileri, ilgili hizmet kosullarina gore islenebilir.",
       },
       {
         heading: "3. Web sitesi verilerini nasil kullaniyoruz",
-        body: "Bu bilgileri sorulara yanit vermek, web sitesini iyilestirmek ve urunlerimize yonelik toplu ilgiyi anlamak icin kullaniriz. Bu web sitesi uzerinden toplanan kisisel verileri satmiyoruz.",
+        body: "Bu bilgileri sorulara yanit vermek, web sitesini iyilestirmek ve urunlerimize ve platform hizmetlerimize yonelik toplu ilgiyi anlamak icin kullaniriz. Bu web sitesi uzerinden toplanan kisisel verileri satmiyoruz.",
       },
       {
         heading: "4. Cerezler ve analitik",
@@ -91,7 +97,7 @@ const content = {
       },
       {
         heading: "8. Urun verileri",
-        body: "ASHFI veya ASHMOP kullanicisiysaniz, gemi analiz verileri, hesap bilgileri ve bu platformlar icinde islenen filo verileri icin urune ozel gizlilik kosullari gecerlidir. Ayrintilar icin info@asheriv.com adresine yazin veya urun sozlesmenize bakin.",
+        body: "AshMOP, ASHFI veya ASHSIM kullanicisiysaniz, gemi analiz verileri, hesap bilgileri, BIM ve operasyonel kayitlar ile filo verileri icin hizmete ozel gizlilik kosullari gecerli olabilir. Ayrintilar icin info@asheriv.com adresine yazin veya urun sozlesmenize bakin.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI urun sayfasi",
       },
@@ -122,6 +128,10 @@ export default async function PrivacyPage({
             </h1>
             <p className="text-sm text-[#00D4FF] mb-2">{c.subtitle}</p>
             <p className="text-sm text-[#CBD5E1] mb-6">{c.lastUpdated}</p>
+            <section className="mb-6 space-y-3 rounded-xl border border-white/10 bg-white/[0.04] p-5">
+              <h2 className="text-xl font-bold text-white">{c.servicesCoveredTitle}</h2>
+              <p className="text-[#CBD5E1] leading-relaxed">{c.servicesCoveredBody}</p>
+            </section>
             <p className="text-[#CBD5E1] leading-relaxed mb-8 rounded-xl border border-white/10 bg-white/[0.04] p-5">
               {c.note}
             </p>
