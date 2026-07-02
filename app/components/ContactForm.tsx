@@ -1,17 +1,21 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useSearchParams } from "next/navigation";
 
 export default function ContactForm() {
   const t = useTranslations("contact");
   const searchParams = useSearchParams();
+  const locale = useLocale();
+  const isTr = locale === "tr";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     company: "",
     role: searchParams.get("role") ?? "",
+    subject: searchParams.get("subject") ?? "",
+    product: searchParams.get("product") ?? "",
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -37,6 +41,8 @@ export default function ContactForm() {
           email: "",
           company: "",
           role: "",
+          subject: "",
+          product: "",
           message: "",
         });
       }
@@ -138,6 +144,47 @@ export default function ContactForm() {
           <option value="Insurer">Insurer</option>
           <option value="OEM">OEM</option>
           <option value="Other">Other</option>
+        </select>
+      </div>
+
+
+
+      <div>
+        <label htmlFor="subject" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
+          {isTr ? "Konu" : "Subject"}
+        </label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          required
+          value={formData.subject}
+          onChange={handleChange}
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
+          placeholder={isTr ? "Talebinizin konusu" : "Subject of your request"}
+        />
+      </div>
+
+      <div>
+        <label htmlFor="product" className="block text-xs font-medium text-[#9CA3AF] mb-2 uppercase tracking-wide">
+          {isTr ? "Urun" : "Product"}
+        </label>
+        <select
+          id="product"
+          name="product"
+          required
+          value={formData.product}
+          onChange={handleChange}
+          className="w-full px-4 py-3 bg-white/[0.04] border border-white/10 text-white placeholder-[#6B7280] rounded-lg focus:border-[#00D4FF] focus:outline-none focus:ring-1 focus:ring-[#00D4FF]/30 transition-all text-sm"
+        >
+          <option value="" disabled>
+            {isTr ? "Urun secin" : "Select a product"}
+          </option>
+          <option value="AshMOP">AshMOP</option>
+          <option value="AshFI">AshFI</option>
+          <option value="ASHSIM">ASHSIM</option>
+          <option value="Evidence Pack">Evidence Pack</option>
+          <option value="General">{isTr ? "Genel" : "General"}</option>
         </select>
       </div>
 

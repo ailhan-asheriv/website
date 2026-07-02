@@ -257,7 +257,7 @@ export default function Navigation() {
               </button>
             ) : (
               <Link
-                href="/contact"
+                href="/#contact"
                 className="rounded-full bg-[#0A0F1E] px-5 py-2 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A] whitespace-nowrap"
               >
                 Request Demo
@@ -319,7 +319,7 @@ export default function Navigation() {
               {isHome ? (
                 <button onClick={() => scrollToSection("contact")} className="block w-full rounded-full bg-[#0A0F1E] px-4 py-3 text-center text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">Request Demo</button>
               ) : (
-                <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="block w-full rounded-full bg-[#0A0F1E] px-4 py-3 text-center text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">Request Demo</Link>
+                <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="block w-full rounded-full bg-[#0A0F1E] px-4 py-3 text-center text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">Request Demo</Link>
               )}
             </div>
           </div>

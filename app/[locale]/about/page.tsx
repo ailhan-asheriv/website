@@ -32,8 +32,6 @@ const content = {
     joinBody:
       "We are a small, focused team building maritime intelligence infrastructure. We consider both internship and full-time applications on an ongoing basis from engineers, researchers, and maritime domain experts.",
     productsTitle: "Products",
-    legalLine: "A'SHERIV Intelligent Marine Technologies Ltd. is registered in England and Wales.",
-    contactCta: "Work with us - info@asheriv.com",
   },
   tr: {
     title: "A'SHERIV Hakkinda",
@@ -62,8 +60,6 @@ const content = {
     joinBody:
       "Denizcilik zeka altyapisini kuran kucuk ve odakli bir ekibiz. Muhendisler, arastirmacilar ve denizcilik alan uzmanlarindan staj ve tam zamanli basvurulari surekli degerlendiriyoruz.",
     productsTitle: "Urunler",
-    legalLine: "A'SHERIV Intelligent Marine Technologies Ltd. England and Wales kayitlidir.",
-    contactCta: "Bizimle calisin - info@asheriv.com",
   },
 } as const;
 
@@ -111,9 +107,9 @@ export default async function AboutPage({
             <h2 className="font-heading text-3xl font-bold text-white">{c.rdTitle}</h2>
             <p className="mt-4 leading-relaxed text-[#DCE3EC]">{c.researchBody}</p>
             <p className="mt-4 leading-relaxed text-[#DCE3EC]">{c.rdBody2}</p>
-            <div className="mt-6 rounded-xl border border-dashed border-white/30 bg-white/[0.03] px-5 py-8 text-center text-sm text-[#9CB0C9]">
+            {/* <div className="mt-6 rounded-xl border border-dashed border-white/30 bg-white/[0.03] px-5 py-8 text-center text-sm text-[#9CB0C9]">
               {c.partnerPlaceholder}
-            </div>
+            </div> */}
             <Link href="/#contact" className="mt-6 inline-block rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
               {c.researchCta}
             </Link>
@@ -125,14 +121,14 @@ export default async function AboutPage({
             <h2 className="font-heading text-3xl font-bold text-white">{c.recognitionTitle}</h2>
             <p className="mt-4 max-w-4xl leading-relaxed text-[#CBD5E1]">{c.recognitionBody}</p>
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
-              <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
+              {/* <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
                 <p className="text-lg font-semibold text-[#00D4FF]">{c.pressTitle}</p>
                 <p className="mt-3 text-sm text-[#9CB0C9]">{c.pressPlaceholder}</p>
-              </div>
-              <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
+              </div> */}
+              {/* <div className="rounded-xl border border-dashed border-white/30 bg-[#0D1627] p-8">
                 <p className="text-lg font-semibold text-[#00D4FF]">{c.certTitle}</p>
                 <p className="mt-3 text-sm text-[#9CB0C9]">{c.certPlaceholder}</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -153,15 +149,6 @@ export default async function AboutPage({
                 </Link>
               ))}
             </div>
-          </div>
-        </section>
-
-        <section className="bg-[#0A0F1E] px-6 py-12 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-7xl">
-            <p className="text-sm text-[#CBD5E1]">{c.legalLine}</p>
-            <Link href="/contact" className="mt-5 inline-block text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF]">
-              {c.contactCta}
-            </Link>
           </div>
         </section>
 

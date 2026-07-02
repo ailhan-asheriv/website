@@ -120,7 +120,7 @@ export default function Footer() {
               <FooterLink href="/about#join-us">{t("careers")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/contact">{t("contact")}</FooterLink>
+              <FooterLink href="/#contact">{t("contact")}</FooterLink>
             </li>
             <li>
               <FooterLink href="/about#rd-partnerships">{t("research")}</FooterLink>
