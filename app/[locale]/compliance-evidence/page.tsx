@@ -1,12 +1,15 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
-import { PageScaffold, Section } from "../../components/sections";
+import { Link } from "../../../lib/routing";
+import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
 const content = {
   en: {
     title: "Evidence Pack",
+    tagline: "Structured compliance evidence for class, insurance, and charter.",
     intro: "Structured, time-windowed documentation exports for class surveys, insurance, and compliance review.",
     body: "An Evidence Pack is a structured export of operational data - sensor readings, alarm events, maintenance actions, and decisions - for a defined time window. Formatted for the specific requirements of class surveyors, flag state inspectors, P&I clubs, charterers, and internal audit teams.",
+    introStat: "Time-window exports reduce evidence prep cycles from days to hours.",
     features: [
       {
         title: "Class Survey Ready",
@@ -25,13 +28,42 @@ const content = {
         desc: "Management-level summaries with drill-down access to underlying data. Customisable reporting periods and asset scope.",
       },
     ],
-    backLabel: "Back to Home",
-    ctaLabel: "Contact us",
+    howTitle: "How it works",
+    steps: [
+      "Select the vessel and time window for the event under review.",
+      "Compile alarms, maintenance actions, and supporting records into a structured package.",
+      "Export a review-ready dossier for survey, claims, or dispute workflows.",
+    ],
+    useCasesTitle: "Use cases",
+    useCases: [
+      {
+        title: "Insurance Claims",
+        desc: "Time-window evidence exports for P&I and hull claims.",
+      },
+      {
+        title: "Class Society Surveys",
+        desc: "Structured alarm, maintenance, and inspection timelines for survey preparation.",
+      },
+      {
+        title: "Charter Disputes",
+        desc: "Timestamped operational records for laytime and off-hire disputes.",
+      },
+    ],
+    heroCtaPrimary: "Contact Team",
+    heroCtaSecondary: "Explore AshMOP",
+    suiteTitle: "Part of the Asheriv suite",
+    suiteBody:
+      "Evidence Pack completes the operational stack by turning AshMOP and AshFI data into structured external proof.",
+    linkAshmop: "Explore AshMOP",
+    linkAshfi: "Explore AshFI",
+    linkSim: "Explore SIM",
   },
   tr: {
     title: "Kanit Paketi",
+    tagline: "Sinif, sigorta ve charter icin yapilandirilmis uyumluluk kaniti.",
     intro: "Sinif sorveyleri, sigorta ve uyumluluk incelemesi icin yapilandirilmis, zaman pencereli belge disa aktarmalari.",
     body: "Kanit Paketi, tanimlanmis bir zaman penceresi icin operasyonel verilerin - sensor okumalari, alarm olaylari, bakim aksiyonlari ve kararlar - yapilandirilmis bir disa aktarimidir. Klaslama sorveyorleri, bayrak devleti mufettisleri, P&I kulupleri, chartererlar ve ic denetim ekiplerinin ozel gereksinimleri icin bicimlendirilmistir.",
+    introStat: "Zaman pencereli disa aktarimlar kanit hazirlama suresini gunlerden saatlere indirir.",
     features: [
       {
         title: "Sinif Sorvey Hazir",
@@ -50,8 +82,35 @@ const content = {
         desc: "Temel verilere detay gorunumu erisimiyle yonetim duzeyinde ozetler. Ozellestirilebilir raporlama donemleri ve varlik kapsami.",
       },
     ],
-    backLabel: "Ana Sayfaya Don",
-    ctaLabel: "Iletisime Gec",
+    howTitle: "Nasil calisir",
+    steps: [
+      "Incelenecek olay icin gemi ve zaman penceresi secilir.",
+      "Alarm, bakim aksiyonlari ve destekleyici kayitlar yapilandirilmis pakete toplanir.",
+      "Sorvey, hasar veya anlasmazlik surecine hazir dosya disa aktarilir.",
+    ],
+    useCasesTitle: "Kullanim senaryolari",
+    useCases: [
+      {
+        title: "Sigorta Talepleri",
+        desc: "P&I ve hull talepleri icin zaman pencereli kanit disa aktarmalari.",
+      },
+      {
+        title: "Sinif Kurulusu Sorveyleri",
+        desc: "Sorvey hazirligi icin yapilandirilmis alarm, bakim ve inceleme zaman cizelgeleri.",
+      },
+      {
+        title: "Charter Anlasmazliklari",
+        desc: "Laytime ve off-hire anlasmazliklari icin zaman damgali operasyon kayitlari.",
+      },
+    ],
+    heroCtaPrimary: "Ekiple Iletisime Gec",
+    heroCtaSecondary: "AshMOP'u Kesfet",
+    suiteTitle: "Asheriv paketinin bir parcasi",
+    suiteBody:
+      "Kanit Paketi, AshMOP ve AshFI verilerini dis paydaslara yonelik yapilandirilmis kanita donusturur.",
+    linkAshmop: "AshMOP'u Kesfet",
+    linkAshfi: "AshFI'yi Kesfet",
+    linkSim: "SIM'i Kesfet",
   },
 } as const;
 
@@ -66,31 +125,95 @@ export default async function ComplianceEvidencePage({
   return (
     <>
       <Navigation />
-      <main id="main-content" className="min-h-screen bg-[#0A0F1E]">
-        <PageScaffold
-          title={c.title}
-          intro={c.intro}
-          backLabel={c.backLabel}
-          ctaLabel={c.ctaLabel}
-          ctaHref="/#contact"
-          locale={locale}
+      <main id="main-content" className="min-h-screen bg-[#0A0F1E] text-white">
+        <section
+          className="relative border-b border-white/10 pt-32 pb-20 sm:pt-40"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(10,15,30,0.78), rgba(10,15,30,0.82)), url(${PRODUCT_HERO_IMAGES.evidencePack})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <Section variant="dark">
-            <div className="max-w-3xl mx-auto text-center">
-              <p className="text-[#CBD5E1] leading-relaxed">{c.body}</p>
+          <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+                {c.heroCtaPrimary}
+              </Link>
+              <Link href="/platform" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                {c.heroCtaSecondary}
+              </Link>
             </div>
-          </Section>
-          <Section variant="light">
+          </div>
+        </section>
+
+        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-5xl">
+            <p className="text-lg leading-relaxed">{c.intro}</p>
+            <p className="mt-6 rounded-lg border-l-4 border-[#00D4FF] bg-white px-5 py-4 text-sm font-semibold text-[#1C3D5A]">
+              {c.introStat}
+            </p>
+            <p className="mt-8 leading-relaxed text-[#3D4852]">{c.body}</p>
+          </div>
+        </section>
+
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white">Capabilities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {c.features.map((feature) => (
-                <div key={feature.title} className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
+                <div key={feature.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">
+                  <div className="mb-4 h-2 w-10 rounded-full bg-[#00D4FF]" />
                   <h3 className="text-lg font-semibold text-white mb-3">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-[#CBD5E1]">{feature.desc}</p>
                 </div>
               ))}
             </div>
-          </Section>
-        </PageScaffold>
+          </div>
+        </section>
+
+        <section className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white mb-8">{c.howTitle}</h2>
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+              {c.steps.map((step, index) => (
+                <div key={step} className="rounded-xl border border-white/15 bg-[#0A0F1E]/35 p-6 text-center">
+                  <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#00D4FF]/15 text-sm font-bold text-[#00D4FF]">
+                    {index + 1}
+                  </div>
+                  <p className="text-sm leading-relaxed text-[#CBD5E1]">{step}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="font-heading text-3xl font-bold text-[#0A0F1E]">{c.useCasesTitle}</h2>
+            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+              {c.useCases.map((useCase) => (
+                <div key={useCase.title} className="rounded-xl border border-[#E3E8EB] bg-white p-6">
+                  <h3 className="text-lg font-semibold text-[#0A0F1E]">{useCase.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[#3D4852]">{useCase.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-[#0D1627] p-8 text-center">
+            <h2 className="text-2xl font-semibold text-white mb-4">{c.suiteTitle}</h2>
+            <p className="text-[#CBD5E1] leading-relaxed mb-6">{c.suiteBody}</p>
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 text-sm font-semibold">
+              <Link href="/platform" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshmop}</Link>
+              <Link href="/ashfi" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshfi}</Link>
+              <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

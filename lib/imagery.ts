@@ -20,6 +20,25 @@ export const LAYOUT_GRADIENT_BAND = {
     "linear-gradient(to bottom, #ffffff 0%, #d3d4d6 25%, #81858e 50%, #19212e 75%, #0D1424 100%)",
 } as const;
 
+/**
+ * Unsplash hero imagery for product pages.
+ * Sources are royalty-free under Unsplash License.
+ */
+export const PRODUCT_HERO_IMAGES = {
+  // AshMOP: dark bridge control room, deep navy tones.
+  ashmop:
+    "https://images.unsplash.com/photo-1641467613990-b74163e280e3?auto=format&fit=crop&w=2400&q=80",
+  // AshFI: aerial cargo vessel, teal-blue open sea background.
+  ashfi:
+    "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?auto=format&fit=crop&w=2400&q=80",
+  // SIM: shipyard dry dock with cranes, steel-blue industrial scene.
+  sim:
+    "https://images.unsplash.com/photo-1777315169375-5408ebea2734?auto=format&fit=crop&w=2400&q=80",
+  // Evidence Pack: ship inspection under hull, neutral gray with worksite contrast.
+  evidencePack:
+    "https://images.unsplash.com/photo-1749867053314-ebfa14d9b9c4?auto=format&fit=crop&w=2400&q=80",
+} as const;
+
 /** @deprecated Use LAYOUT_IMAGES for homepage; kept for any legacy references */
 export const HERO_IMAGES = {
   homepage: LAYOUT_IMAGES.hero,

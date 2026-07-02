@@ -1,12 +1,13 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import AshfiDemoForm from "../../components/sections/AshfiDemoForm";
-import { PageScaffold, Section } from "../../components/sections";
 import { Link } from "../../../lib/routing";
+import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
 const content = {
   en: {
-    title: "AshFI - Asheriv Fleet Intelligence",
+    title: "AshFI",
+    tagline: "Fleet intelligence from AIS data. No sensors required.",
     intro:
       "AshFI brings AIS-derived vessel intelligence, physics-informed health indicators, and remaining useful life estimation to any fleet, without requiring sensor integration or onboard hardware. It is the data layer that feeds ASHMOP, the operational digital twin, and stands on its own for operators who need fleet visibility today.",
     whyTitle: "Why AshFI",
@@ -38,17 +39,18 @@ const content = {
       "Our team follows up to scope a fleet-wide deployment suited to your operation",
     ],
     formTitle: "Request a demo",
+    heroCtaPrimary: "Request Demo",
+    heroCtaSecondary: "Explore AshMOP",
     suiteTitle: "AshFI and the Asheriv suite",
     suiteBody:
       "AshFI is one of three products in the Asheriv maritime intelligence suite. ASHSIM connects shipyard design and build data to the digital twin. ASHMOP is the full operational digital twin platform. AshFI provides fleet intelligence without requiring sensor integration, serving as both a standalone tool and a feed into ASHMOP.",
     linkAshmop: "Explore ASHMOP →",
     linkSim: "Explore ASHSIM →",
     linkEvidence: "Explore Evidence Pack →",
-    backLabel: "Back to Home",
-    ctaLabel: "Contact us",
   },
   tr: {
-    title: "AshFI - Asheriv Filo Zekasi",
+    title: "AshFI",
+    tagline: "AIS verisinden filo zekasi. Sensor entegrasyonu gerekmez.",
     intro:
       "AshFI, sensor entegrasyonu veya gemi uzeri donanim gerektirmeden, herhangi bir filoya AIS tabanli gemi zekasi, fizik bilgili saglik gostergeleri ve kalan kullanim omru (RUL) tahmini sunar. ASHMOP'un operasyonel dijital ikizini besleyen veri katmanidir ve filo gorunurlugune bugun ihtiyaci olan operatorler icin de bagimsiz olarak calisir.",
     whyTitle: "Neden AshFI",
@@ -80,14 +82,14 @@ const content = {
       "Ekibimiz, operasyonunuza uygun filo capinda bir dagitimi kapsamlandirmak icin sizinle iletisime gecer",
     ],
     formTitle: "Demo talep edin",
+    heroCtaPrimary: "Demo Talep Et",
+    heroCtaSecondary: "AshMOP'u Kesfet",
     suiteTitle: "AshFI ve Asheriv paketi",
     suiteBody:
       "AshFI, Asheriv denizcilik zekasi paketindeki uc urunden biridir. ASHSIM, tersane tasarim ve insaat verisini dijital ikize baglar. ASHMOP, tam operasyonel dijital ikiz platformudur. AshFI, sensor entegrasyonu gerektirmeden filo zekasi sunar, hem bagimsiz bir arac hem de ASHMOP'a beslenen bir veri kaynagi olarak hizmet eder.",
     linkAshmop: "ASHMOP'u Kesfet →",
     linkSim: "ASHSIM'i Kesfet →",
     linkEvidence: "Kanit Paketini Kesfet →",
-    backLabel: "Ana Sayfaya Don",
-    ctaLabel: "Iletisime Gec",
   },
 } as const;
 
@@ -102,42 +104,63 @@ export default async function AshfiPage({
   return (
     <>
       <Navigation />
-      <main id="main-content" className="min-h-screen bg-[#0A0F1E]">
-        <PageScaffold
-          title={c.title}
-          intro={c.intro}
-          backLabel={c.backLabel}
-          ctaLabel={c.ctaLabel}
-          ctaHref="/#contact"
-          locale={locale}
+      <main id="main-content" className="min-h-screen bg-[#0A0F1E] text-white">
+        <section
+          className="relative border-b border-white/10 pt-32 pb-20 sm:pt-40"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(10,15,30,0.8), rgba(10,15,30,0.8)), url(${PRODUCT_HERO_IMAGES.ashfi})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <Section variant="dark">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl font-semibold text-white mb-4">{c.whyTitle}</h2>
-              <p className="text-[#CBD5E1] leading-relaxed">{c.whyBody}</p>
+          <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
+                {c.heroCtaPrimary}
+              </Link>
+              <Link href="/platform" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                {c.heroCtaSecondary}
+              </Link>
             </div>
-          </Section>
+          </div>
+        </section>
 
-          <Section variant="light">
-            <h2 className="text-2xl font-semibold text-white text-center mb-8">{c.featuresTitle}</h2>
+        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-5xl">
+            <p className="text-lg leading-relaxed">{c.intro}</p>
+            <div className="mt-8 border-l-4 border-[#00D4FF] bg-white px-6 py-5">
+              <h2 className="text-2xl font-semibold text-[#0A0F1E]">{c.whyTitle}</h2>
+              <p className="mt-3 leading-relaxed text-[#3D4852]">{c.whyBody}</p>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.featuresTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {c.features.map((feature) => (
                 <div
                   key={feature.title}
-                  className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm"
+                  className="rounded-xl border border-white/10 bg-[#0D1627] p-6"
                 >
+                  <div className="mb-4 h-2 w-10 rounded-full bg-[#00D4FF]" />
                   <h3 className="text-lg font-semibold text-white mb-3">{feature.title}</h3>
                   <p className="text-sm leading-relaxed text-[#CBD5E1]">{feature.desc}</p>
                 </div>
               ))}
             </div>
-          </Section>
+          </div>
+        </section>
 
-          <Section variant="dark">
-            <h2 className="text-2xl font-semibold text-white text-center mb-8">{c.howTitle}</h2>
+        <section className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white mb-8">{c.howTitle}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
               {c.steps.map((step, index) => (
-                <div key={step} className="text-center rounded-xl border border-white/10 bg-white/[0.04] p-6">
+                <div key={step} className="text-center rounded-xl border border-white/10 bg-[#0A0F1E]/35 p-6">
                   <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#00D4FF]/15 text-sm font-bold text-[#00D4FF]">
                     {index + 1}
                   </div>
@@ -145,34 +168,36 @@ export default async function AshfiPage({
                 </div>
               ))}
             </div>
-          </Section>
+          </div>
+        </section>
 
-          <Section variant="light">
-            <h2 className="text-2xl font-semibold text-white text-center mb-8">{c.formTitle}</h2>
+        <section className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl rounded-xl border border-[#E3E8EB] bg-white p-6 sm:p-8">
+            <h2 className="text-center text-2xl font-semibold text-[#0A0F1E] mb-8">{c.formTitle}</h2>
             <AshfiDemoForm locale={locale} />
-          </Section>
+          </div>
+        </section>
 
-          <Section variant="dark">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-2xl font-semibold text-white mb-4">{c.suiteTitle}</h2>
-              <p className="text-[#CBD5E1] leading-relaxed mb-6">{c.suiteBody}</p>
-              <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 text-sm font-semibold">
-                <Link href="/platform" className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {c.linkAshmop}
-                </Link>
-                <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {c.linkSim}
-                </Link>
-                <Link
-                  href="/compliance-evidence"
-                  className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors"
-                >
-                  {c.linkEvidence}
-                </Link>
-              </div>
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-[#0D1627] p-8 text-center">
+            <h2 className="text-2xl font-semibold text-white mb-4">{c.suiteTitle}</h2>
+            <p className="text-[#CBD5E1] leading-relaxed mb-6">{c.suiteBody}</p>
+            <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 text-sm font-semibold">
+              <Link href="/platform" className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                {c.linkAshmop}
+              </Link>
+              <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                {c.linkSim}
+              </Link>
+              <Link
+                href="/compliance-evidence"
+                className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors"
+              >
+                {c.linkEvidence}
+              </Link>
             </div>
-          </Section>
-        </PageScaffold>
+          </div>
+        </section>
       </main>
       <Footer />
     </>

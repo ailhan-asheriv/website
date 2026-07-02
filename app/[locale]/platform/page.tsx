@@ -1,12 +1,15 @@
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
-import { PageScaffold, Section } from "../../components/sections";
+import { Link } from "../../../lib/routing";
+import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
 const content = {
   en: {
-    title: "AshMOP - Maritime Operations Platform",
+    title: "AshMOP",
+    tagline: "The operational digital twin for maritime asset management.",
     intro:
       "The only platform that connects shipyard build data, operational telemetry, and machinery records into a single vessel intelligence layer - from first steel to decommissioning.",
+    introStat: "17 microservices run in the current AshMOP production architecture.",
     section1Title: "Platform Architecture",
     cards1: [
       {
@@ -41,19 +44,26 @@ const content = {
         desc: "IFC and BIM data parsed and mapped to the operational asset registry. Build QC records, handover documentation, and design specifications linked to the live twin.",
       },
     ],
+    howTitle: "How it works",
     standardsTitle: "Standards & Compliance",
-    standards:
-      "AshMOP is designed for compliance with: SFI Group System - ISO 14224 - IACS E26/E27 - IEC 62443 - FMI 2.0 - ISO 13381-1 - IFC 2x3/4 - IMO MSC-FAL.1/Circ.3",
+    standardsIntro: "AshMOP is designed for compliance with the following maritime and industry standards.",
     demoTitle: "See AshMOP in action",
     demoSubtext: "Request a live demo to explore the platform with your own vessel context.",
-    demoButton: "Request Demo →",
-    backLabel: "Back to Home",
-    ctaLabel: "Contact us",
+    demoButton: "Request Demo",
+    secondaryCta: "Explore Intelligence",
+    suiteTitle: "Part of the Asheriv suite",
+    suiteBody:
+      "AshMOP works alongside AshFI, SIM, and Evidence Pack to deliver one connected vessel intelligence stack.",
+    linkAshfi: "Explore AshFI",
+    linkSim: "Explore SIM",
+    linkEvidence: "Explore Evidence Pack",
   },
   tr: {
-    title: "AshMOP - Denizcilik Operasyonlari Platformu",
+    title: "AshMOP",
+    tagline: "Denizcilik varlik yonetimi icin operasyonel dijital ikiz.",
     intro:
       "Tersane insaat verilerini, operasyonel telemetriyi ve makine kayitlarini tek bir gemi zekasi katmaninda birlestiren platform - ilk celikten hizmetten cikisa kadar.",
+    introStat: "AshMOP mevcut production mimarisinde 17 mikroservis calisir.",
     section1Title: "Platform Mimarisi",
     cards1: [
       {
@@ -88,14 +98,19 @@ const content = {
         desc: "IFC ve BIM verileri ayristirilir ve operasyonel varlik kaydina eslenir. Insaat QC kayitlari, teslimat belgeleri ve tasarim ozellikleri canli ikize baglanir.",
       },
     ],
+    howTitle: "Nasil calisir",
     standardsTitle: "Standartlar ve Uyumluluk",
-    standards:
-      "AshMOP su standartlara uygun olarak tasarlanmistir: SFI Grup Sistemi - ISO 14224 - IACS E26/E27 - IEC 62443 - FMI 2.0 - ISO 13381-1 - IFC 2x3/4 - IMO MSC-FAL.1/Circ.3",
+    standardsIntro: "AshMOP asagidaki denizcilik ve endustri standartlariyla uyumlu olarak tasarlanmistir.",
     demoTitle: "AshMOP'u canli gorun",
     demoSubtext: "Kendi gemi baglaminizla platformu kesfetmek icin canli demo talep edin.",
-    demoButton: "Demo Talep Et →",
-    backLabel: "Ana Sayfaya Don",
-    ctaLabel: "Iletisime Gec",
+    demoButton: "Demo Talep Et",
+    secondaryCta: "Intelligence Sayfalarini Kesfet",
+    suiteTitle: "Asheriv paketinin bir parcasi",
+    suiteBody:
+      "AshMOP, AshFI, SIM ve Kanit Paketi ile birlikte tek bir bagli gemi zekasi yiginini tamamlar.",
+    linkAshfi: "AshFI'yi Kesfet",
+    linkSim: "SIM'i Kesfet",
+    linkEvidence: "Kanit Paketini Kesfet",
   },
 } as const;
 
@@ -110,94 +125,103 @@ export default async function PlatformPage({
   return (
     <>
       <Navigation />
-      <main id="main-content" className="min-h-screen bg-[#0A0F1E]">
-        <PageScaffold
-          title={c.title}
-          intro={c.intro}
-          backLabel={c.backLabel}
-          ctaLabel={c.ctaLabel}
-          ctaHref="/#contact"
-          locale={locale}
+      <main id="main-content" className="min-h-screen bg-[#0A0F1E] text-white">
+        <section
+          className="relative border-b border-white/10 pt-32 pb-20 sm:pt-40"
+          style={{
+            backgroundImage: `linear-gradient(to bottom, rgba(10,15,30,0.82), rgba(10,15,30,0.82)), url(${PRODUCT_HERO_IMAGES.ashmop})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
         >
-          <Section variant="dark">
-            <h2 className="font-sans text-2xl font-bold text-[#00D4FF] mb-8 text-center">
-              {c.section1Title}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              {c.cards1.map((card) => (
-                <div key={card.title} className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-                  <h3 className="text-lg font-semibold text-white mb-3">{card.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#CBD5E1]">{card.desc}</p>
-                </div>
-              ))}
-            </div>
-          </Section>
-          <Section variant="light">
-            <h2 className="font-sans text-2xl font-bold text-[#00D4FF] mb-8 text-center">
-              {c.section2Title}
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-              {c.cards2.map((card) => (
-                <div key={card.title} className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-                  <h3 className="text-lg font-semibold text-white mb-3">{card.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#CBD5E1]">{card.desc}</p>
-                </div>
-              ))}
-            </div>
-          </Section>
-          <Section variant="dark">
-            <div className="mx-auto max-w-3xl text-center">
-              <h2 className="font-sans text-2xl font-bold text-white mb-3">
-                {c.demoTitle}
-              </h2>
-              <p className="text-sm text-[#CBD5E1] mb-6">
-                {c.demoSubtext}
-              </p>
-              <a
-                href={locale === "tr" ? "/tr/contact" : "/en/contact"}
-                className="rounded-md bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF] inline-block"
-              >
+          <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link href="/contact" className="rounded-full bg-[#00D4FF] px-6 py-3 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#67E5FF]">
                 {c.demoButton}
-              </a>
+              </Link>
+              <Link href="/maintenance-intelligence" className="rounded-full border border-white/30 bg-transparent px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                {c.secondaryCta}
+              </Link>
             </div>
-          </Section>
-          <section className="px-6 py-16 sm:px-10 lg:px-16 bg-[#0D1627] border-t border-white/10">
-            <div className="mx-auto max-w-5xl">
-              <p className="text-xs font-semibold tracking-[0.24em] text-[#00D4FF] mb-2">
-                {locale === "tr" ? "STANDARTLAR VE UYUMLULUK" : "STANDARDS & COMPLIANCE"}
-              </p>
-              <p className="text-[#9CA3AF] text-sm mb-8 max-w-xl">
-                {locale === "tr"
-                  ? "AshMOP aşağıdaki denizcilik ve endüstri standartlarıyla uyumlu olarak tasarlanmıştır."
-                  : "AshMOP is designed for compliance with the following maritime and industry standards."}
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {[
-                  { code: "SFI Group System", desc: "Asset classification" },
-                  { code: "ISO 14224", desc: "Reliability & maintenance data" },
-                  { code: "IACS E26/E27", desc: "Cyber resilience" },
-                  { code: "IEC 62443", desc: "Industrial cybersecurity" },
-                  { code: "FMI 2.0", desc: "Simulation interface" },
-                  { code: "ISO 13381-1", desc: "Prognostics & health management" },
-                  { code: "IFC 2x3 / IFC 4", desc: "BIM data exchange" },
-                  { code: "IMO MSC-FAL.1/Circ.3", desc: "Maritime digital data" },
-                ].map((std) => (
-                  <div
-                    key={std.code}
-                    className="flex items-center gap-3 rounded-lg border border-white/10 bg-white/[0.03] px-4 py-3"
-                  >
-                    <span className="font-mono text-sm font-semibold text-white whitespace-nowrap">
-                      {std.code}
-                    </span>
-                    <span className="text-xs text-[#6B7280] whitespace-nowrap">
-                      {std.desc}
-                    </span>
-                  </div>
-                ))}
-              </div>
+          </div>
+        </section>
+
+        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-5xl">
+            <p className="text-lg leading-relaxed">{c.intro}</p>
+            <p className="mt-6 rounded-lg border-l-4 border-[#00D4FF] bg-white px-5 py-4 text-sm font-semibold text-[#1C3D5A]">
+              {c.introStat}
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.section2Title}</h2>
+            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+              {c.cards2.map((card) => (
+                <div key={card.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">
+                  <div className="mb-4 h-2 w-10 rounded-full bg-[#00D4FF]" />
+                  <h3 className="text-lg font-semibold text-white">{card.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[#CBD5E1]">{card.desc}</p>
+                </div>
+              ))}
             </div>
-          </section>
-        </PageScaffold>
+          </div>
+        </section>
+
+        <section className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.howTitle}</h2>
+            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+              {c.cards1.map((card, index) => (
+                <div key={card.title} className="rounded-xl border border-white/15 bg-[#0A0F1E]/40 p-6">
+                  <p className="text-sm font-bold text-[#00D4FF]">0{index + 1}</p>
+                  <h3 className="mt-2 text-lg font-semibold text-white">{card.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[#DCE3EC]">{card.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-7xl">
+            <h2 className="font-heading text-3xl font-bold text-[#0A0F1E]">{c.standardsTitle}</h2>
+            <p className="mt-3 max-w-3xl text-sm text-[#3D4852]">{c.standardsIntro}</p>
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+              {[
+                { code: "SFI Group System", desc: "Asset classification" },
+                { code: "ISO 14224", desc: "Reliability & maintenance data" },
+                { code: "IACS E26/E27", desc: "Cyber resilience" },
+                { code: "IEC 62443", desc: "Industrial cybersecurity" },
+                { code: "FMI 2.0", desc: "Simulation interface" },
+                { code: "ISO 13381-1", desc: "Prognostics & health management" },
+                { code: "IFC 2x3 / IFC 4", desc: "BIM data exchange" },
+                { code: "IMO MSC-FAL.1/Circ.3", desc: "Maritime digital data" },
+              ].map((std) => (
+                <div key={std.code} className="rounded-lg border border-[#E3E8EB] bg-white p-5">
+                  <p className="font-semibold text-[#0A0F1E]">{std.code}</p>
+                  <p className="mt-2 text-sm text-[#3D4852]">{std.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
+          <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-[#0D1627] p-8 text-center">
+            <h2 className="font-heading text-3xl font-bold text-white">{c.suiteTitle}</h2>
+            <p className="mt-3 text-sm leading-relaxed text-[#CBD5E1]">{c.suiteBody}</p>
+            <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm font-semibold">
+              <Link href="/ashfi" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshfi}</Link>
+              <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
+              <Link href="/compliance-evidence" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkEvidence}</Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
