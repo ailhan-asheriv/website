@@ -76,12 +76,12 @@ function Counter({ value, suffix = "", label }: CounterProps) {
   }, [started, value]);
 
   return (
-    <div ref={ref} className="space-y-0.5 text-left lg:text-right">
+    <div ref={ref} className="space-y-0.5 text-center lg:text-right">
       <p className="font-mono text-2xl font-bold tracking-tight text-white sm:text-3xl">
         {count}
         {suffix}
       </p>
-      <p className="max-w-[11rem] text-xs leading-snug text-white/70 lg:ml-auto">{label}</p>
+      <p className="mx-auto max-w-[11rem] text-xs leading-snug text-white/70 lg:ml-auto">{label}</p>
     </div>
   );
 }
@@ -93,7 +93,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative overflow-hidden bg-[#F7F9FA]">
-      <div className="relative w-full leading-[0] section-seam-down">
+      <div className="relative hidden w-full leading-[0] section-seam-down lg:block">
         <LayoutImage
           src={LAYOUT_IMAGES.hero}
           alt="Aerial view of offshore platform and support vessels at sea"
@@ -103,9 +103,9 @@ export default function Hero() {
           priority
         />
 
-        <div className="absolute inset-x-0 top-0 h-[55%] bg-gradient-to-b from-[#0A0F1E]/85 via-[#0A0F1E]/35 to-transparent" />
+        <div className="absolute inset-x-0 top-0 hidden h-[55%] bg-gradient-to-b from-[#0A0F1E]/85 via-[#0A0F1E]/35 to-transparent lg:block" />
 
-        <div className="absolute inset-x-0 top-0 px-6 pb-12 pt-28 sm:px-10 lg:px-16 lg:pb-16 lg:pt-32">
+        <div className="hidden absolute inset-x-0 top-0 px-6 pb-12 pt-28 sm:px-10 lg:block lg:px-16 lg:pb-16 lg:pt-32">
           <div className="mx-auto flex max-w-7xl flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
             <motion.div
               initial={{ opacity: 0, y: 24 }}
@@ -148,6 +148,51 @@ export default function Hero() {
               <Counter value={17} label={t.stat3label} />
             </motion.div>
           </div>
+        </div>
+      </div>
+
+      <div className="bg-[#0D1424] px-6 pb-8 pt-24 text-white sm:px-10 lg:hidden">
+        <div className="mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.45 }}
+            className="max-w-2xl"
+          >
+            <h1 className="font-heading text-3xl font-bold leading-[1.12] text-white sm:text-4xl">
+              {t.headline1}
+              <br />
+              {t.headline2}
+            </h1>
+            <p className="mt-4 text-sm leading-relaxed text-white/85 sm:text-base">{t.subheadline}</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Link
+                href="#contact"
+                className="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-[#0A0F1E] transition hover:bg-[#F7F9FA]"
+              >
+                {t.cta1}
+              </Link>
+              <Link
+                href="#platform"
+                className="rounded-full border border-white/35 bg-transparent px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-white/10"
+              >
+                {t.cta2}
+              </Link>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ delay: 0.1, duration: 0.4 }}
+            className="mt-7 grid grid-cols-3 gap-4"
+          >
+            <Counter value={9} label={t.stat1label} />
+            <Counter value={7} label={t.stat2label} />
+            <Counter value={17} label={t.stat3label} />
+          </motion.div>
         </div>
       </div>
     </section>
