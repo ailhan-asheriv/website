@@ -15,7 +15,7 @@
 
   body {
     @apply bg-navy text-offwhite;
-    font-family: var(--font-sans);
+    font-family: Calibri, "Segoe UI", Arial, Helvetica, sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -38,6 +38,42 @@
 }
 
 @layer utilities {
+  .section-seam-up {
+    margin-top: -12px;
+  }
+
+  .section-seam-up-lg {
+    margin-top: -12px;
+  }
+
+  @media (min-width: 768px) {
+    .section-seam-up-lg {
+      margin-top: -24px;
+    }
+  }
+
+  .section-seam-down {
+    margin-bottom: -12px;
+  }
+
+  .gradient-pull-up {
+    margin-top: -28px;
+  }
+
+  @media (min-width: 768px) {
+    .gradient-pull-up {
+      margin-top: -40px;
+    }
+  }
+
+  .layout-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    line-height: 0;
+  }
+
   .geo-pulse {
     animation: geo-pulse 2.2s ease-out infinite;
   }

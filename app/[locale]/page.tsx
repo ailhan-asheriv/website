@@ -2,11 +2,11 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Hero from "../components/sections/Hero";
 import ContextSection from "../components/sections/ContextSection";
+import ContextGradientBand from "../components/sections/ContextGradientBand";
 import HowItWorks from "../components/sections/HowItWorks";
 import ThreeLayers from "../components/sections/ThreeLayers";
 import Stakeholders from "../components/sections/Stakeholders";
 import VisionTimeline from "../components/sections/VisionTimeline";
-import Developers from "../components/sections/Developers";
 import ContactCTA from "../components/sections/ContactCTA";
 import type { Metadata } from "next";
 
@@ -49,8 +49,9 @@ export default async function HomePage({
       <main id="main-content">
         <Hero />
         <ContextSection />
+        <ContextGradientBand />
         <HowItWorks />
-        <section className="px-6 py-20 sm:px-10 lg:px-16 lg:py-24 bg-[#0D1627] border-y border-white/10">
+        <section className="section-seam-up-lg border-b border-white/10 bg-brand-gradient px-6 py-20 sm:px-10 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-7xl">
             <h2 className="font-sans text-3xl sm:text-4xl font-bold text-white text-center mb-10">
               {isTr ? "Dort urun. Tek gemi zekasi katmani." : "Four products. One vessel intelligence layer."}
@@ -106,7 +107,6 @@ export default async function HomePage({
         <ThreeLayers />
         <Stakeholders />
         <VisionTimeline />
-        <Developers />
         <ContactCTA />
       </main>
 

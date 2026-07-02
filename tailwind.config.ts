@@ -9,9 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        brand: {
+          navy: "#0A0F1E",
+          gradient: "#0D1424",
+          steel: "#1C3D5A",
+          cyan: "#00D4FF",
+          offwhite: "#F7F9FA",
+          slate: "#3D4852",
+          ice: "#E3E8EB",
+        },
         navy: {
-          DEFAULT: "#0B1F3B",
-          light: "#132847",
+          DEFAULT: "#0A0F1E",
+          light: "#1C3D5A",
         },
         charcoal: {
           DEFAULT: "#111827",
@@ -26,8 +35,8 @@ const config: Config = {
           dark: "#C42D2D",
         },
         cyan: {
-          DEFAULT: "#4FC3F7",
-          dark: "#3BA3D9",
+          DEFAULT: "#00D4FF",
+          dark: "#00B8D9",
         },
         muted: {
           DEFAULT: "#9CA3AF",
@@ -35,8 +44,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-sans)", "system-ui", "sans-serif"],
-        heading: ["var(--font-sans)", "system-ui", "sans-serif"],
+        sans: ["var(--font-sans)", "Calibri", "Segoe UI", "Arial", "Helvetica", "sans-serif"],
+        heading: ["var(--font-sans)", "Calibri", "Segoe UI", "Arial", "Helvetica", "sans-serif"],
+        body: ["Calibri", "Segoe UI", "Arial", "Helvetica", "sans-serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       borderRadius: {

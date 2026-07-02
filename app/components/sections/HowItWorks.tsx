@@ -79,10 +79,10 @@ export default function HowItWorks() {
   return (
     <section
       id="platform"
-      className="bg-[#0A0F1E] px-6 py-20 text-white sm:px-10 lg:px-16 lg:py-28"
+      className="section-seam-up-lg bg-brand-gradient px-6 pb-20 pt-14 text-white sm:px-10 lg:px-16 lg:pb-28 lg:pt-16"
     >
       <div className="mx-auto max-w-7xl">
-        <p className="text-xs font-semibold tracking-[0.24em] text-[#00D4FF]">{t.label}</p>
+        <p className="text-xs font-semibold tracking-[0.24em] text-brand-cyan">{t.label}</p>
         <h2 className="mt-4 font-sans text-3xl font-bold sm:text-5xl">{t.headline}</h2>
 
         <div className="mt-10 flex flex-wrap gap-3">
@@ -93,8 +93,8 @@ export default function HowItWorks() {
               onClick={() => setActiveKey(tab.key)}
               className={`rounded-md border px-4 py-2 text-sm font-semibold tracking-wide transition ${
                 activeKey === tab.key
-                  ? "border-[#00D4FF] bg-[#00D4FF] text-[#0A0F1E]"
-                  : "border-white/20 text-white hover:border-[#00D4FF]/80"
+                  ? "border-brand-cyan bg-brand-cyan text-[#0A0F1E]"
+                  : "border-white/20 text-white hover:border-brand-cyan/80"
               }`}
             >
               {tab.title}
@@ -112,7 +112,7 @@ export default function HowItWorks() {
               transition={{ duration: 0.25 }}
               className="rounded-xl border border-white/10 bg-white/[0.04] p-8"
             >
-              <ActiveIcon className="h-10 w-10 text-[#00D4FF]" />
+              <ActiveIcon className="h-10 w-10 text-brand-cyan" />
               <h3 className="mt-5 text-2xl font-semibold text-white">{active.heading}</h3>
               <p className="mt-4 max-w-xl text-sm leading-relaxed text-[#CBD5E1]">{active.body}</p>
             </motion.div>

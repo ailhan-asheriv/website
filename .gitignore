@@ -34,4 +34,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# design working exports (screenshots for Photoshop, etc.)
+/design-exports/
+
 

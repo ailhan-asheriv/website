@@ -118,7 +118,7 @@ export default function Stakeholders() {
       className="bg-white px-6 py-20 text-[#1A1A2E] sm:px-10 lg:px-16 lg:py-28"
     >
       <div className="mx-auto max-w-7xl">
-        <p className="text-xs font-semibold tracking-[0.24em] text-[#00B4D8]">{t.label}</p>
+        <p className="text-xs font-semibold tracking-[0.24em] text-brand-cyan">{t.label}</p>
         <h2 className="mt-4 font-sans text-3xl font-bold text-[#1A1A2E] sm:text-5xl">
           {t.headline}
         </h2>
