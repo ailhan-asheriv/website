@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { LAYOUT_IMAGES, LAYOUT_IMAGE_DIMS } from "../../../lib/imagery";
+import { LAYOUT_GRADIENT_BAND } from "../../../lib/imagery";
 
 const strings = {
   en: {
@@ -47,15 +46,19 @@ export default function ContextGradientBand() {
       className="section-seam-up-lg relative overflow-hidden bg-brand-gradient"
       aria-label={lang === "tr" ? "Operasyonel istatistikler" : "Operational statistics"}
     >
+      <div
+        className="pointer-events-none absolute inset-x-0 top-0 z-[1] h-6 sm:h-10 lg:h-12"
+        style={{ background: "linear-gradient(to bottom, rgba(247, 249, 250, 0.94) 0%, rgba(247, 249, 250, 0) 100%)" }}
+        aria-hidden
+      />
       <div className="relative w-full overflow-hidden leading-[0]">
-        <Image
-          src={LAYOUT_IMAGES.heroGradient}
-          alt=""
+        <div
+          className="gradient-pull-up w-full"
+          style={{
+            aspectRatio: LAYOUT_GRADIENT_BAND.aspectRatio,
+            background: LAYOUT_GRADIENT_BAND.background,
+          }}
           aria-hidden
-          width={LAYOUT_IMAGE_DIMS.heroGradient.width}
-          height={LAYOUT_IMAGE_DIMS.heroGradient.height}
-          className="layout-image gradient-pull-up"
-          sizes="100vw"
         />
         <div className="absolute inset-0 flex items-end pb-6 sm:pb-8 lg:pb-10">
           <motion.div

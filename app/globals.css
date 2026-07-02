@@ -72,6 +72,8 @@
     height: auto;
     vertical-align: bottom;
     line-height: 0;
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
   .geo-pulse {

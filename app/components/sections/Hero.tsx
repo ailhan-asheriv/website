@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Image from "next/image";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
+import LayoutImage from "../LayoutImage";
 import { Link } from "../../../lib/routing";
 import { LAYOUT_IMAGES, LAYOUT_IMAGE_DIMS } from "../../../lib/imagery";
 
@@ -94,14 +94,13 @@ export default function Hero() {
   return (
     <section id="hero" className="relative overflow-hidden bg-[#F7F9FA]">
       <div className="relative w-full leading-[0] section-seam-down">
-        <Image
+        <LayoutImage
           src={LAYOUT_IMAGES.hero}
           alt="Aerial view of offshore platform and support vessels at sea"
           width={LAYOUT_IMAGE_DIMS.hero.width}
           height={LAYOUT_IMAGE_DIMS.hero.height}
           className="layout-image"
           priority
-          sizes="100vw"
         />
 
         <div className="absolute inset-x-0 top-0 h-[55%] bg-gradient-to-b from-[#0A0F1E]/85 via-[#0A0F1E]/35 to-transparent" />

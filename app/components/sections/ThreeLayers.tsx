@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import LayoutImage from "../LayoutImage";
 import { useParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Gauge, GitBranch, ShipWheel } from "lucide-react";
@@ -74,13 +74,12 @@ export default function ThreeLayers() {
   return (
     <section id="intelligence" className="section-seam-up-lg overflow-hidden bg-brand-gradient">
       <div className="relative w-full overflow-hidden leading-[0]">
-        <Image
+        <LayoutImage
           src={LAYOUT_IMAGES.secondHero}
           alt="Industrial crane with digital twin overlay above and subsea ROV below the waterline"
           width={LAYOUT_IMAGE_DIMS.secondHero.width}
           height={LAYOUT_IMAGE_DIMS.secondHero.height}
           className="layout-image gradient-pull-up"
-          sizes="100vw"
         />
 
         <div className="absolute inset-x-0 top-0 px-6 pb-16 pt-64 sm:px-10 sm:pt-40 lg:px-16 lg:pt-48">

@@ -1,17 +1,23 @@
 /**
  * Homepage layout imagery (user-provided clean PNG assets).
+ * Hero WebPs are 2x upscaled exports for retina / wide viewports.
  */
 
 export const LAYOUT_IMAGES = {
-  hero: "/images/home/hero.png",
-  heroGradient: "/images/home/gradient-from-bottom.png",
-  secondHero: "/images/home/second-hero.png",
+  hero: "/images/home/hero.webp",
+  secondHero: "/images/home/second-hero.webp",
 } as const;
 
 export const LAYOUT_IMAGE_DIMS = {
-  hero: { width: 933, height: 1024 },
-  heroGradient: { width: 1024, height: 298 },
-  secondHero: { width: 999, height: 1024 },
+  hero: { width: 1866, height: 2048 },
+  secondHero: { width: 1998, height: 2048 },
+} as const;
+
+/** CSS replacement for low-res gradient PNG (sampled from original asset). */
+export const LAYOUT_GRADIENT_BAND = {
+  aspectRatio: "1024 / 298",
+  background:
+    "linear-gradient(to bottom, #ffffff 0%, #d3d4d6 25%, #81858e 50%, #19212e 75%, #0D1424 100%)",
 } as const;
 
 /** @deprecated Use LAYOUT_IMAGES for homepage; kept for any legacy references */
