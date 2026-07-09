@@ -89,7 +89,7 @@ export default async function ShipyardIntelligencePage({
                 ? "Shipyard Intelligence yetenekleri AshSIM urun sayfasinda detaylandirilmistir."
                 : "Full shipyard integration capabilities are detailed on the AshSIM product page."}
             </p>
-            <Link href="/sim" locale={locale} className="mt-6 inline-block rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
+            <Link href="/ashsim" locale={locale} className="mt-6 inline-block rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
               {isTr ? "AshSIM'e git" : "Go to AshSIM"}
             </Link>
           </div>

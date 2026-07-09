@@ -25,11 +25,11 @@ export default async function IndustriesPage({
         <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: t("shipyards.title"), desc: t("shipyards.description"), href: "/sim" },
-              { title: t("fleetOwners.title"), desc: t("fleetOwners.description"), href: "/platform" },
+              { title: t("shipyards.title"), desc: t("shipyards.description"), href: "/ashsim" },
+              { title: t("fleetOwners.title"), desc: t("fleetOwners.description"), href: "/ashmop" },
               { title: t("operators.title"), desc: t("operators.description"), href: "/ashfi" },
               { title: t("oems.title"), desc: t("oems.description"), href: "/maintenance-intelligence" },
-              { title: t("insurersClass.title"), desc: t("insurersClass.description"), href: "/compliance-evidence" },
+              { title: t("insurersClass.title"), desc: t("insurersClass.description"), href: "/evidence-pack" },
             ].map((item, idx) => (
               <Link key={item.title} href={item.href} locale={locale} className={`rounded-xl border border-white/10 p-6 transition hover:border-[#00D4FF] ${idx % 2 === 0 ? "bg-[#0D1627]" : "bg-[#1C3D5A]/35"}`}>
                 <h2 className="text-xl font-bold text-white mb-3 font-heading">{item.title}</h2>

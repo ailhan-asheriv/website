@@ -131,7 +131,7 @@ const homeContentEn: HomeContent = {
     ctaPrimary: "Start a Pilot Discussion",
     ctaSecondary: "Platform Overview",
     ctaPrimaryHref: "/#pilot",
-    ctaSecondaryHref: "/platform",
+    ctaSecondaryHref: "/ashmop",
   },
   problem: {
     headline:
@@ -195,7 +195,7 @@ const homeContentEn: HomeContent = {
         description:
           "Generate structured evidence chains for review, claims, audits, and technical decision-making.",
         cta: "Explore Compliance & Evidence",
-        ctaHref: "/compliance-evidence",
+        ctaHref: "/evidence-pack",
       },
     ],
   },
@@ -317,7 +317,7 @@ const homeContentTr: HomeContent = {
     ctaPrimary: "Pilot Görüşme Başlat",
     ctaSecondary: "Platform Özeti",
     ctaPrimaryHref: "/#pilot",
-    ctaSecondaryHref: "/platform",
+    ctaSecondaryHref: "/ashmop",
   },
   problem: {
     headline:
@@ -381,7 +381,7 @@ const homeContentTr: HomeContent = {
         description:
           "İnceleme, talepler, denetimler ve teknik karar alma için yapılandırılmış kanıt zincirleri oluşturun.",
         cta: "Uyumluluk ve Kanıtı Keşfet",
-        ctaHref: "/compliance-evidence",
+        ctaHref: "/evidence-pack",
       },
     ],
   },

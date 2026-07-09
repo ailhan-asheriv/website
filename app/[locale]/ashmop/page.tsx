@@ -212,8 +212,8 @@ export default async function PlatformPage({
             <p className="mt-3 text-sm leading-relaxed text-[#CBD5E1]">{c.suiteBody}</p>
             <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm font-semibold">
               <Link href="/ashfi" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshfi}</Link>
-              <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
-              <Link href="/compliance-evidence" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkEvidence}</Link>
+              <Link href="/ashsim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
+              <Link href="/evidence-pack" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkEvidence}</Link>
             </div>
           </div>
         </section>

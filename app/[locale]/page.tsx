@@ -64,7 +64,7 @@ export default async function HomePage({
                     ? "Denizcilik Operasyonlari Platformu. Operasyonel dijital twin - telemetri, anomali tespiti, bakim zekasi ve rol bazli karar destegi."
                     : "Maritime Operations Platform. The operational digital twin - telemetry, anomaly detection, maintenance intelligence, and role-based decision support."}
                 </p>
-                <a href={isTr ? "/tr/platform" : "/en/platform"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                <a href={isTr ? "/tr/ashmop" : "/en/ashmop"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
                   AshMOP →
                 </a>
               </div>
@@ -86,7 +86,7 @@ export default async function HomePage({
                     ? "Gemi Bilgi Modellemesi. Tersane tasarim ve insaat verilerini dijital twin'e baglayin."
                     : "Ship Information Modelling. Connect shipyard design and build data to the digital twin. From IFC geometry to operational baseline."}
                 </p>
-                <a href={isTr ? "/tr/sim" : "/en/sim"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                <a href={isTr ? "/tr/ashsim" : "/en/ashsim"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
                   AshSIM →
                 </a>
               </div>
@@ -97,7 +97,7 @@ export default async function HomePage({
                     ? "Uyumluluk ve Dokumantasyon. Sinif denetimleri ve sigorta talepleri icin yapilandirilmis disa aktarimlar."
                     : "Compliance & Documentation. Structured exports for class surveys, insurance claims, and charter disputes - without requiring full platform adoption."}
                 </p>
-                <a href={isTr ? "/tr/compliance-evidence" : "/en/compliance-evidence"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
+                <a href={isTr ? "/tr/evidence-pack" : "/en/evidence-pack"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
                   Evidence Pack →
                 </a>
               </div>

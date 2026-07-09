@@ -33,10 +33,10 @@ export default async function ComingSoonPage({
         <section className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { href: "/platform", label: "AshMOP" },
+              { href: "/ashmop", label: "AshMOP" },
               { href: "/ashfi", label: "AshFI" },
-              { href: "/sim", label: "AshSIM" },
-              { href: "/compliance-evidence", label: "Evidence Pack" },
+              { href: "/ashsim", label: "AshSIM" },
+              { href: "/evidence-pack", label: "Evidence Pack" },
             ].map((item) => (
               <Link key={item.href} href={item.href} locale={locale} className="rounded-xl border border-[#E3E8EB] bg-white px-5 py-4 text-sm font-semibold text-[#0A0F1E] transition hover:border-[#00D4FF]">
                 {item.label}

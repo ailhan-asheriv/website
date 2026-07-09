@@ -231,7 +231,7 @@ export default async function SimPage({
                 {c.linkAshfi}
               </Link>
               <Link
-                href="/compliance-evidence"
+                href="/evidence-pack"
                 className="text-[#00D4FF] hover:text-[#67E5FF] transition-colors"
               >
                 {c.linkEvidence}

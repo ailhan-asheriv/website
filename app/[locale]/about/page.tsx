@@ -138,10 +138,10 @@ export default async function AboutPage({
             <h2 className="font-heading text-3xl font-bold text-[#0A0F1E] mb-8">{c.productsTitle}</h2>
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
-                { href: "/platform", title: "AshMOP", desc: "Operational digital twin platform." },
+                { href: "/ashmop", title: "AshMOP", desc: "Operational digital twin platform." },
                 { href: "/ashfi", title: "AshFI", desc: "Fleet intelligence from AIS data." },
-                { href: "/sim", title: "AshSIM", desc: "Shipyard-to-operations data continuity." },
-                { href: "/compliance-evidence", title: "Evidence Pack", desc: "Structured compliance exports." },
+                { href: "/ashsim", title: "AshSIM", desc: "Shipyard-to-operations data continuity." },
+                { href: "/evidence-pack", title: "Evidence Pack", desc: "Structured compliance exports." },
               ].map((product) => (
                 <Link key={product.href} href={product.href} className="rounded-xl border border-[#E3E8EB] bg-white p-5 transition hover:border-[#00D4FF]">
                   <p className="font-semibold text-[#0A0F1E]">{product.title}</p>

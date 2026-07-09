@@ -32,7 +32,7 @@ export default async function SolutionsPage({
               { href: "/shipyard-intelligence", title: t("shipyard.title"), desc: t("shipyard.description") },
               { href: "/operational-digital-twin", title: t("operationalDigitalTwin.title"), desc: t("operationalDigitalTwin.description") },
               { href: "/maintenance-intelligence", title: t("maintenance.title"), desc: t("maintenance.description") },
-              { href: "/compliance-evidence", title: t("compliance.title"), desc: t("compliance.description") },
+              { href: "/evidence-pack", title: t("compliance.title"), desc: t("compliance.description") },
             ].map((card, idx) => (
               <Link key={card.href} href={card.href} locale={locale} className={`rounded-xl border border-white/10 p-6 transition hover:border-[#00D4FF] ${idx % 2 === 0 ? "bg-[#0D1627]" : "bg-[#1C3D5A]/35"}`}>
                 <div className="mb-4 h-2 w-10 rounded-full bg-[#00D4FF]" />

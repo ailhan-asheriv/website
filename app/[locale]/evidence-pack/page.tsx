@@ -205,9 +205,9 @@ export default async function ComplianceEvidencePage({
             <h2 className="text-2xl font-semibold text-white mb-4">{c.suiteTitle}</h2>
             <p className="text-[#CBD5E1] leading-relaxed mb-6">{c.suiteBody}</p>
             <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4 text-sm font-semibold">
-              <Link href="/platform" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshmop}</Link>
+              <Link href="/ashmop" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshmop}</Link>
               <Link href="/ashfi" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshfi}</Link>
-              <Link href="/sim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
+              <Link href="/ashsim" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkSim}</Link>
             </div>
           </div>
         </section>

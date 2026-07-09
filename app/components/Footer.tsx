@@ -99,16 +99,16 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-12 mb-12">
           <FooterColumn title={t("products")}>
             <li>
-              <FooterLink href="/platform">{t("ashmop")}</FooterLink>
+              <FooterLink href="/ashmop">{t("ashmop")}</FooterLink>
             </li>
             <li>
               <FooterLink href="/ashfi">{t("ashfi")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/sim">{t("sim")}</FooterLink>
+              <FooterLink href="/ashsim">{t("sim")}</FooterLink>
             </li>
             <li>
-              <FooterLink href="/compliance-evidence">{t("evidencePack")}</FooterLink>
+              <FooterLink href="/evidence-pack">{t("evidencePack")}</FooterLink>
             </li>
           </FooterColumn>
 
