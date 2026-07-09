@@ -350,6 +350,20 @@
       "productisation": "Productisation: Commercial product development and market readiness",
       "delivery": "Partner-Led Delivery: Collaborative delivery with maritime industry partners"
     }
+  },
+  "ashsim": {
+    "title": "ASHSIM",
+    "subheading": "Ship Information Modelling Intelligence",
+    "tagline": "Connect your existing 3D design software to an AI analysis layer. Get clash detection, rule compliance checks, and structured build records without changing your workflow.",
+    "heroCtaPrimary": "Request early access",
+    "heroCtaSecondary": "See how it works",
+    "howTitle": "How it works",
+    "featuresTitle": "What ASHSIM analyses",
+    "pricingTitle": "Simple, project-based pricing",
+    "pricingNote": "Enterprise pricing available for shipyard groups and class societies. Contact info@asheriv.com",
+    "earlyTitle": "Currently in early access",
+    "earlyBody": "ASHSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want to pilot AI-powered model analysis, we would like to work with you.",
+    "earlyCta": "Apply for early access"
   }
 }
 

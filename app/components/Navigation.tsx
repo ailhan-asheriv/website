@@ -10,7 +10,7 @@ type MenuKey = "platform" | "intelligence" | "developers" | "company" | null;
 const platformLinks = [
   { href: "/platform", label: "AshMOP", desc: "Maritime Operations Platform" },
   { href: "/ashfi", label: "AshFI", desc: "Fleet intelligence from AIS data" },
-  { href: "/sim", label: "AshSIM", desc: "Ship Information Modelling" },
+  { href: "/ashsim", label: "ASHSIM", desc: "Ship Information Modelling" },
   { href: "/compliance-evidence", label: "Evidence Pack", desc: "Audit-ready documentation" },
 ];
 

@@ -350,6 +350,20 @@
       "productisation": "Ürünleştirme: Ticari ürün geliştirme ve piyasa hazırlığı",
       "delivery": "Ortak Liderliğinde Teslimat: Denizcilik endüstrisi ortaklarıyla işbirlikçi teslimat"
     }
+  },
+  "ashsim": {
+    "title": "ASHSIM",
+    "subheading": "Gemi Bilgi Modelleme Zekasi",
+    "tagline": "Mevcut 3B tasarim yaziliminizi bir AI analiz katmanina baglayin. Is akisinizi degistirmeden cakisma tespiti, kural uyumluluk kontrolleri ve yapilandirilmis insaat kayitlari alin.",
+    "heroCtaPrimary": "Erken erisim talep et",
+    "heroCtaSecondary": "Nasil calisir",
+    "howTitle": "Nasil calisir",
+    "featuresTitle": "ASHSIM ne analiz eder",
+    "pricingTitle": "Basit, proje bazli fiyatlandirma",
+    "pricingNote": "Tersane gruplari ve klas kuruluslari icin kurumsal fiyatlandirma mevcuttur. info@asheriv.com adresinden iletisime gecin",
+    "earlyTitle": "Su anda erken erisimde",
+    "earlyBody": "ASHSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve AI destekli model analizini pilot olarak denemek istiyorsaniz, sizinle calismak isteriz.",
+    "earlyCta": "Erken erisim basvurusu"
   }
 }
 
