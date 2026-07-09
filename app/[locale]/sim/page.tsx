@@ -1,108 +1,71 @@
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import { CircleGauge, Cpu, Layers, Ship, Wrench } from "lucide-react";
+
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
 import { Link } from "../../../lib/routing";
-import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
+import { routing } from "../../../lib/routing";
 
-const content = {
-  en: {
-    title: "ASHSIM",
-    tagline: "Connect shipyard build data to the operational digital twin.",
-    intro:
-      "Ship Information Modelling (SIM) is A'SHERIV's framework for connecting shipyard design and build data to the operational digital twin. Where BIM ends at building handover, SIM extends through the vessel's entire operational life - mapping IFC geometry, SFI classifications, QC records, and test results into a queryable intelligence layer from day one.",
-    introStat: "IFC and QC handover records become operationally queryable from day one.",
-    features: [
-      {
-        title: "Design Data Ingestion",
-        desc: "IFC files from AutoCAD, AVEVA Marine, and Rhino are parsed, validated, and mapped to the A'SHERIV asset registry. Every structural element, system, and component is classified using the SFI Group System.",
-      },
-      {
-        title: "Build QC & Traceability",
-        desc: "Weld records, material certificates, pressure test results, and inspection sign-offs are linked to the corresponding asset in the digital twin - creating an auditable build history from first steel.",
-      },
-      {
-        title: "Clash & Compliance Detection",
-        desc: "Geometric clashes, missing components, and IACS compliance gaps are detected at the design stage - before they become costly on-site corrections.",
-      },
-      {
-        title: "Handover to Operations",
-        desc: "At vessel delivery, the SIM package transfers to AshMOP - populating the operational twin with verified build specifications, commissioning records, and baseline performance parameters.",
-      },
-    ],
-    threadTitle: "SIM and AshMOP",
-    threadBody:
-      "SIM and AshMOP work together as the Vessel Digital Thread (VDT) - a continuous data chain from design through operations. SIM captures what was built. AshMOP tracks what happens during service. Together, they give every stakeholder a single, traceable version of the vessel's truth.",
-    processTitle: "How it works",
-    processSteps: [
-      "Ingest shipyard design files, test records, and handover documentation.",
-      "Normalize data against the asset hierarchy and SFI mapping.",
-      "Publish a verified baseline to AshMOP as the operational digital twin foundation.",
-    ],
-    formatsTitle: "Supported formats",
-    formats: ["IFC 2x3", "IFC 4", "AutoCAD DWG", "STEP"],
-    firstSteelTitle: "From first steel to digital twin",
-    firstSteelBody:
-      "SIM bridges the gap between shipyard build history and vessel operations by carrying structured design and QC records into the live digital twin used by technical teams.",
-    capabilitiesTitle: "Core capabilities",
-    ctaTitle: "Connect your shipyard to the digital twin",
-    ctaBody: "ASHSIM integrates with AutoCAD, AVEVA Marine, and major IFC-compatible design tools.",
-    ctaButton: "Request Demo",
-    suiteTitle: "Part of the Asheriv suite",
-    suiteBody:
-      "SIM, AshMOP, AshFI, and Evidence Pack work as one chain from design to operations and compliance.",
-    linkAshmop: "Explore AshMOP",
-    linkAshfi: "Explore AshFI",
-    linkEvidence: "Explore Evidence Pack",
-  },
-  tr: {
-    title: "ASHSIM",
-    tagline: "Tersane insaat verisini operasyonel dijital ikize baglayin.",
-    intro:
-      "Gemi Bilgi Modellemesi (SIM), A'SHERIV'in tersane tasarim ve insaat verilerini operasyonel dijital twin'e baglayan cercevesidir. BIM bina tesliminde sona ererken, SIM geminin tum operasyonel omru boyunca devam eder - IFC geometrisini, SFI siniflandirmalarini, QC kayitlarini ve test sonuclarini ilk gunden itibaren sorgulanabilir bir zeka katmanina esler.",
-    introStat: "IFC ve QC teslim verileri ilk gunden operasyonel olarak sorgulanabilir hale gelir.",
-    features: [
-      {
-        title: "Tasarim Verisi Alimi",
-        desc: "AutoCAD, AVEVA Marine ve Rhino'dan gelen IFC dosyalari ayristirilir, dogrulanir ve A'SHERIV varlik kaydina eslenir.",
-      },
-      {
-        title: "Insaat QC ve Izlenebilirlik",
-        desc: "Kaynak kayitlari, malzeme sertifikalari ve test sonuclari dijital twin'deki ilgili varlikla iliskilendirilir.",
-      },
-      {
-        title: "Cakisma ve Uyumluluk Tespiti",
-        desc: "Geometrik cakismalar ve IACS uyumsuzluklari tasarim asamasinda tespit edilir.",
-      },
-      {
-        title: "Operasyona Devir",
-        desc: "Gemi tesliminde SIM paketi AshMOP'a aktarilir.",
-      },
-    ],
-    threadTitle: "SIM ve AshMOP",
-    threadBody:
-      "SIM ve AshMOP, Gemi Dijital Ipligi (VDT) olarak birlikte calisir - tasarimdan operasyona kesintisiz veri zinciri.",
-    processTitle: "Nasil calisir",
-    processSteps: [
-      "Tersane tasarim dosyalari, test kayitlari ve teslim belgeleri alinir.",
-      "Veriler varlik hiyerarsisi ve SFI eslemeleri ile normalize edilir.",
-      "Dogrulanmis temel veriler AshMOP dijital ikizine aktarilir.",
-    ],
-    formatsTitle: "Desteklenen formatlar",
-    formats: ["IFC 2x3", "IFC 4", "AutoCAD DWG", "STEP"],
-    firstSteelTitle: "Ilk celikten dijital ikize",
-    firstSteelBody:
-      "SIM, tersane insaat gecmisi ile operasyonu baglayarak tasarim ve QC kayitlarini teknik ekiplerin kullandigi canli dijital ikize tasir.",
-    capabilitiesTitle: "Temel ozellikler",
-    ctaTitle: "Tersanenizi dijital twin'e baglayin",
-    ctaBody: "ASHSIM, AutoCAD, AVEVA Marine ve baslica IFC uyumlu tasarim araclariyla entegre olur.",
-    ctaButton: "Demo Talep Et",
-    suiteTitle: "Asheriv paketinin bir parcasi",
-    suiteBody:
-      "SIM, AshMOP, AshFI ve Kanit Paketi birlikte tasarimdan operasyona ve uyumluluga uzanan tek zinciri olusturur.",
-    linkAshmop: "AshMOP'u Kesfet",
-    linkAshfi: "AshFI'yi Kesfet",
-    linkEvidence: "Kanit Paketini Kesfet",
-  },
-} as const;
+const BG_DARK = "#04070F";
+const BG_OFFWHITE = "#EEF2F6";
+const HEADLINE = "#EEF2F6";
+const SIGNAL_CYAN = "#00D4FF";
+const BODY_ON_LIGHT = "#3D4852";
+const MUTED_ON_DARK = "#CBD5E1";
+const CARD_DARK = "#0D1627";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isEn = locale === "en";
+  return {
+    title: isEn
+      ? "ASHSIM - Ship Information Modelling Intelligence"
+      : "ASHSIM - Gemi Bilgi Modelleme Zekasi",
+    description: isEn
+      ? "AI analysis and structured build records for shipyards. Connect your existing CAD workflow to ASHSIM for clash detection, IACS rule compliance, and digital handover."
+      : "Tersaneler icin AI analizi ve yapilandirilmis insaat kayitlari. Mevcut CAD is akisinizi ASHSIM'e baglayin: cakisma tespiti, IACS kural uyumlulugu ve dijital devir.",
+    keywords: isEn
+      ? [
+          "ship information modelling",
+          "shipyard AI",
+          "IFC analysis",
+          "class society compliance",
+          "digital shipbuilding",
+        ]
+      : [
+          "gemi bilgi modelleme",
+          "tersane AI",
+          "IFC analizi",
+          "sinif kurulusu uyumlulugu",
+          "dijital gemi insaati",
+        ],
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+const heroFeatures = [
+  { key: "analysis" as const, Icon: CircleGauge },
+  { key: "compliance" as const, Icon: Cpu },
+  { key: "records" as const, Icon: Layers },
+];
+
+const capabilityCards = [
+  { key: "ifc" as const, Icon: Ship },
+  { key: "drawings" as const, Icon: Layers },
+  { key: "workflow" as const, Icon: Wrench },
+];
+
+const complianceItems = ["grades", "ifc", "class", "handover"] as const;
+
+const howSteps = ["step1", "step2", "step3"] as const;
 
 export default async function SimPage({
   params,
@@ -110,99 +73,159 @@ export default async function SimPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const c = content[locale as keyof typeof content] ?? content.en;
+  const t = await getTranslations({ locale, namespace: "sim" });
 
   return (
     <>
       <Navigation />
-      <main id="main-content" className="min-h-screen bg-[#0A0F1E] text-white">
+      <main id="main-content" className="min-h-screen" style={{ backgroundColor: BG_DARK, color: HEADLINE }}>
+        {/* Section 1: Hero */}
         <section
           className="relative border-b border-white/10 pt-32 pb-20 sm:pt-40"
-          style={{
-            backgroundImage: `linear-gradient(to bottom, rgba(10,15,30,0.8), rgba(10,15,30,0.8)), url(${PRODUCT_HERO_IMAGES.sim})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
+          style={{ backgroundColor: BG_DARK }}
         >
           <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
-            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link href="/#contact" className="rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
-                {c.ctaButton}
+            <span className="inline-flex items-center rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.14em] text-[#CBD5E1]">
+              {t("hero.eyebrow")}
+            </span>
+
+            <h1
+              className="mt-8 max-w-[820px] font-heading text-[clamp(32px,4.2vw,52px)] font-bold leading-[1.05] tracking-[-0.02em]"
+              style={{ color: HEADLINE }}
+            >
+              <span className="bg-gradient-to-r from-[#00d4ff] via-[#4facfe] to-[#00f2fe] bg-clip-text italic text-transparent">
+                {t("hero.headlineHighlight")}
+              </span>{" "}
+              {t("hero.headlineRest")}
+            </h1>
+
+            <p className="mt-6 max-w-3xl text-lg leading-relaxed" style={{ color: MUTED_ON_DARK }}>
+              {t("hero.subcopy")}
+            </p>
+
+            <div className="mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
+              {heroFeatures.map(({ key, Icon }) => (
+                <div
+                  key={key}
+                  className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-4"
+                >
+                  <Icon className="mt-0.5 h-5 w-5 shrink-0" style={{ color: SIGNAL_CYAN }} aria-hidden />
+                  <span className="text-sm font-medium leading-snug" style={{ color: HEADLINE }}>
+                    {t(`hero.features.${key}`)}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-10">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]"
+                style={{ backgroundColor: BG_DARK }}
+              >
+                {t("hero.cta")}
+                <span aria-hidden style={{ color: SIGNAL_CYAN }}>
+                  →
+                </span>
               </Link>
             </div>
           </div>
         </section>
 
-        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-5xl">
-            <p className="text-lg leading-relaxed">{c.intro}</p>
-            <p className="mt-6 rounded-lg border-l-4 border-[#00D4FF] bg-white px-5 py-4 text-sm font-semibold text-[#1C3D5A]">
-              {c.introStat}
+        {/* Section 2: How it works */}
+        <section className="px-6 py-16 sm:px-10 lg:px-16" style={{ backgroundColor: BG_OFFWHITE, color: BODY_ON_LIGHT }}>
+          <div className="mx-auto max-w-7xl">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em]" style={{ color: SIGNAL_CYAN }}>
+              {t("howItWorks.eyebrow")}
             </p>
-          </div>
-        </section>
-
-        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-7xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-white">{c.capabilitiesTitle}</h2>
-            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
-              {c.features.map((feature) => (
-                <div key={feature.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">
-                  <div className="mb-4 h-2 w-10 rounded-full bg-[#00D4FF]" />
-                  <h3 className="text-lg font-semibold text-white mb-3">{feature.title}</h3>
-                  <p className="text-sm leading-relaxed text-[#CBD5E1]">{feature.desc}</p>
+            <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-3">
+              {howSteps.map((stepKey, index) => (
+                <div key={stepKey}>
+                  <p
+                    className="font-heading text-5xl font-bold leading-none sm:text-6xl"
+                    style={{ color: `${SIGNAL_CYAN}33` }}
+                  >
+                    {String(index + 1).padStart(2, "0")}
+                  </p>
+                  <h2 className="mt-4 font-heading text-xl font-semibold" style={{ color: BG_DARK }}>
+                    {t(`howItWorks.${stepKey}.title`)}
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed">{t(`howItWorks.${stepKey}.body`)}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="bg-[#1C3D5A] px-6 py-16 sm:px-10 lg:px-16">
+        {/* Section 3: Capabilities */}
+        <section className="px-6 py-16 sm:px-10 lg:px-16" style={{ backgroundColor: BG_DARK }}>
           <div className="mx-auto max-w-7xl">
-            <h2 className="text-center font-heading text-3xl font-bold text-white mb-8">{c.processTitle}</h2>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-              {c.processSteps.map((step, index) => (
-                <div key={step} className="rounded-xl border border-white/15 bg-[#0A0F1E]/35 p-6 text-center">
-                  <div className="mx-auto mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-[#00D4FF]/15 text-sm font-bold text-[#00D4FF]">
-                    {index + 1}
-                  </div>
-                  <p className="text-sm leading-relaxed text-[#CBD5E1]">{step}</p>
+            <h2 className="text-center font-heading text-3xl font-bold" style={{ color: HEADLINE }}>
+              {t("capabilities.eyebrow")}
+            </h2>
+            <div className="mx-auto mt-10 grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-3">
+              {capabilityCards.map(({ key, Icon }) => (
+                <div
+                  key={key}
+                  className="rounded-xl border border-white/10 p-6"
+                  style={{ backgroundColor: CARD_DARK }}
+                >
+                  <Icon className="mb-4 h-6 w-6" style={{ color: SIGNAL_CYAN }} aria-hidden />
+                  <h3 className="text-lg font-semibold" style={{ color: HEADLINE }}>
+                    {t(`capabilities.cards.${key}.title`)}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed" style={{ color: MUTED_ON_DARK }}>
+                    {t(`capabilities.cards.${key}.body`)}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="bg-[#F7F9FA] px-6 py-16 text-[#3D4852] sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-7xl">
-            <h2 className="font-heading text-3xl font-bold text-[#0A0F1E]">{c.formatsTitle}</h2>
-            <div className="mt-6 flex flex-wrap gap-3">
-              {c.formats.map((format) => (
-                <span key={format} className="rounded-full border border-[#E3E8EB] bg-white px-4 py-2 text-sm font-semibold text-[#1C3D5A]">
-                  {format}
+        {/* Section 4: Compliance */}
+        <section className="px-6 py-16 sm:px-10 lg:px-16" style={{ backgroundColor: BG_OFFWHITE, color: BODY_ON_LIGHT }}>
+          <div className="mx-auto max-w-5xl">
+            <h2 className="font-heading text-3xl font-bold" style={{ color: BG_DARK }}>
+              {t("compliance.eyebrow")}
+            </h2>
+            <p className="mt-4 max-w-3xl text-lg leading-relaxed">{t("compliance.body")}</p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              {complianceItems.map((item) => (
+                <span
+                  key={item}
+                  className="rounded-full border bg-white px-4 py-2 text-sm font-semibold"
+                  style={{ borderColor: "#E3E8EB", color: "#1C3D5A" }}
+                >
+                  {t(`compliance.items.${item}`)}
                 </span>
               ))}
             </div>
-            <div className="mt-10 rounded-xl border border-[#E3E8EB] bg-white p-8">
-              <h3 className="text-2xl font-semibold text-[#0A0F1E]">{c.firstSteelTitle}</h3>
-              <p className="mt-3 text-[#3D4852] leading-relaxed">{c.firstSteelBody}</p>
-            </div>
           </div>
         </section>
 
-        <section className="bg-[#0A0F1E] px-6 py-16 sm:px-10 lg:px-16">
-          <div className="mx-auto max-w-4xl rounded-xl border border-white/10 bg-[#0D1627] p-8 text-center">
-            <h2 className="text-2xl font-semibold text-white mb-4">{c.threadTitle}</h2>
-            <p className="text-[#CBD5E1] leading-relaxed mb-6">{c.threadBody}</p>
-            <h3 className="text-xl font-semibold text-white">{c.ctaTitle}</h3>
-            <p className="mt-2 text-sm text-[#CBD5E1]">{c.ctaBody}</p>
-            <div className="mt-6 flex flex-wrap justify-center gap-4 text-sm font-semibold">
-              <Link href="/platform" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshmop}</Link>
-              <Link href="/ashfi" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkAshfi}</Link>
-              <Link href="/compliance-evidence" className="text-[#00D4FF] hover:text-[#67E5FF]">{c.linkEvidence}</Link>
-            </div>
+        {/* Section 5: Early access */}
+        <section className="px-6 py-16 sm:px-10 lg:px-16" style={{ backgroundColor: BG_DARK }}>
+          <div
+            className="mx-auto max-w-4xl rounded-xl border border-white/10 p-8 text-center sm:p-10"
+            style={{ backgroundColor: CARD_DARK }}
+          >
+            <h2 className="font-heading text-2xl font-semibold sm:text-3xl" style={{ color: HEADLINE }}>
+              {t("access.eyebrow")}
+            </h2>
+            <p className="mt-4 leading-relaxed" style={{ color: MUTED_ON_DARK }}>
+              {t("access.body")}
+            </p>
+            <Link
+              href="/contact"
+              className="mt-8 inline-flex items-center gap-2 rounded-full px-8 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]"
+              style={{ backgroundColor: BG_DARK }}
+            >
+              {t("access.cta")}
+              <span aria-hidden style={{ color: SIGNAL_CYAN }}>
+                →
+              </span>
+            </Link>
           </div>
         </section>
       </main>

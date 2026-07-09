@@ -351,6 +351,68 @@
       "delivery": "Ortak Liderliğinde Teslimat: Denizcilik endüstrisi ortaklarıyla işbirlikçi teslimat"
     }
   },
+  "sim": {
+    "hero": {
+      "eyebrow": "ASHSIM",
+      "headlineHighlight": "AI destekli",
+      "headlineRest": "gemi insaati, CAD is akisinizdan ayrilmadan.",
+      "headline": "AI destekli gemi insaati, CAD is akisinizdan ayrilmadan.",
+      "subcopy": "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
+      "features": {
+        "analysis": "Gercek zamanli AI analizi",
+        "compliance": "IACS kural uyumlulugu",
+        "records": "Yapilandirilmis insaat kayitlari"
+      },
+      "cta": "Erken erisim talep et"
+    },
+    "howItWorks": {
+      "eyebrow": "Nasil calisir",
+      "step1": {
+        "title": "CAD yaziliminizdan disa aktarin",
+        "body": "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile calisir. Mevcut tasarim sisteminizden tek tikla IFC veya STEP disa aktarimi."
+      },
+      "step2": {
+        "title": "Dakikalar icinde AI analizi",
+        "body": "ASHSIM'e yukleyin. Aninda analiz raporu alin: geometrik cakisma tespiti, IACS malzeme sinifi kontrolleri, eleman tamligi ve onceliklendirilmis oneriler."
+      },
+      "step3": {
+        "title": "Yapilandirilmis dijital kayit",
+        "body": "Her bulgu, cizim, kaynak ve URT tek yerde kalir. Teslimatta armatore eksiksiz dijital devir paketi olusturun."
+      }
+    },
+    "capabilities": {
+      "eyebrow": "ASHSIM ne analiz eder",
+      "cards": {
+        "ifc": {
+          "title": "IFC model analizi",
+          "body": "AABB toleransi ile geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi kontrolleri ve yapisal modelde anomali tespiti."
+        },
+        "drawings": {
+          "title": "Teknik resimler",
+          "body": "PDF ve cizim ciktilarini yukleyin. AI boyutlari, revizyon gecmisini ve uyumluluk notlarini cikarir. Sinif onay durumu resim bazinda izlenir."
+        },
+        "workflow": {
+          "title": "Insaat is akisi",
+          "body": "Blok takibi, kaynak QC, URT yonetimi, kilometre taslari, ekipman kaydi ve malzeme sertifikalari icin istege bagli moduller. Ihtiyaciniz olani ekleyin."
+        }
+      }
+    },
+    "compliance": {
+      "eyebrow": "Siniflandirma icin tasarlandi",
+      "body": "ASHSIM ciktilari IACS yapisal kurallariyla uyumludur ve DNV, BV, LR, ABS ve Turk Loydu devir paketleri icin survey tanik kayitlarini destekler.",
+      "items": {
+        "grades": "IACS malzeme siniflari",
+        "ifc": "IFC 2x3 ve IFC 4",
+        "class": "DNV, BV, LR, ABS, Turk Loydu",
+        "handover": "SOLAS uyumlu devir"
+      }
+    },
+    "access": {
+      "eyebrow": "Su anda erken erisimde",
+      "body": "ASHSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
+      "cta": "Erken erisim talep et"
+    }
+  },
   "ashsim": {
     "title": "ASHSIM",
     "subheading": "Gemi Bilgi Modelleme Zekasi",
