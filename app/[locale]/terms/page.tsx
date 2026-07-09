@@ -8,7 +8,7 @@ const content = {
     lastUpdated: "Last updated: June 2026",
     servicesCoveredTitle: "Services Covered",
     servicesCoveredBody:
-      "These Terms apply to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and ASHSIM (Ship Information Modelling). Where a term applies to a specific service only, it is clearly indicated.",
+      "These Terms apply to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and AshSIM (Ship Information Modelling). Where a term applies to a specific service only, it is clearly indicated.",
     sections: [
       {
         heading: "1. Scope",
@@ -36,7 +36,7 @@ const content = {
       },
       {
         heading: "7. Product terms",
-        body: "Users of AshMOP, ASHFI, ASHSIM, and related Asheriv platform services may also be subject to service-specific terms and privacy documents provided at registration or upon request.",
+        body: "Users of AshMOP, ASHFI, AshSIM, and related Asheriv platform services may also be subject to service-specific terms and privacy documents provided at registration or upon request.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI product page",
       },
@@ -51,7 +51,7 @@ const content = {
     lastUpdated: "Son guncelleme: Haziran 2026",
     servicesCoveredTitle: "Kapsanan Hizmetler",
     servicesCoveredBody:
-      "Bu Sartlar, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan saglanan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve ASHSIM (Ship Information Modelling). Bir kosul sadece belirli bir hizmet icin gecerliyse acikca belirtilir.",
+      "Bu Sartlar, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan saglanan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve AshSIM (Ship Information Modelling). Bir kosul sadece belirli bir hizmet icin gecerliyse acikca belirtilir.",
     sections: [
       {
         heading: "1. Kapsam",
@@ -79,7 +79,7 @@ const content = {
       },
       {
         heading: "7. Urun kosullari",
-        body: "AshMOP, ASHFI, ASHSIM ve ilgili Asheriv platform hizmetlerinin kullanicilari, kayit sirasinda veya talep uzerine saglanan hizmete ozel kosullara ve gizlilik metinlerine de tabi olabilir.",
+        body: "AshMOP, ASHFI, AshSIM ve ilgili Asheriv platform hizmetlerinin kullanicilari, kayit sirasinda veya talep uzerine saglanan hizmete ozel kosullara ve gizlilik metinlerine de tabi olabilir.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI urun sayfasi",
       },

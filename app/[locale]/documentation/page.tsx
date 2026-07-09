@@ -28,7 +28,7 @@ const docs = [
     desc: "Fleet analysis endpoints, authentication, response schemas.",
   },
   {
-    title: "SIM Integration Guide",
+    title: "AshSIM Integration Guide",
     desc: "IFC parsing, BIM data mapping, handover workflow.",
   },
   {

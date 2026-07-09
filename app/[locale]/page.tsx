@@ -80,14 +80,14 @@ export default async function HomePage({
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold text-white mb-3">SIM</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">AshSIM</h3>
                 <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
                   {isTr
                     ? "Gemi Bilgi Modellemesi. Tersane tasarim ve insaat verilerini dijital twin'e baglayin."
                     : "Ship Information Modelling. Connect shipyard design and build data to the digital twin. From IFC geometry to operational baseline."}
                 </p>
                 <a href={isTr ? "/tr/sim" : "/en/sim"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {isTr ? "SIM'i Kesfet →" : "Explore SIM →"}
+                  {isTr ? "AshSIM'i Kesfet →" : "Explore AshSIM →"}
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">

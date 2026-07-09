@@ -52,9 +52,9 @@ const content = {
     demoButton: "Request Demo",
     suiteTitle: "Part of the Asheriv suite",
     suiteBody:
-      "AshMOP works alongside AshFI, SIM, and Evidence Pack to deliver one connected vessel intelligence stack.",
+      "AshMOP works alongside AshFI, AshSIM, and Evidence Pack to deliver one connected vessel intelligence stack.",
     linkAshfi: "Explore AshFI",
-    linkSim: "Explore SIM",
+    linkSim: "Explore AshSIM",
     linkEvidence: "Explore Evidence Pack",
   },
   tr: {
@@ -105,9 +105,9 @@ const content = {
     demoButton: "Demo Talep Et",
     suiteTitle: "Asheriv paketinin bir parcasi",
     suiteBody:
-      "AshMOP, AshFI, SIM ve Kanit Paketi ile birlikte tek bir bagli gemi zekasi yiginini tamamlar.",
+      "AshMOP, AshFI, AshSIM ve Kanit Paketi ile birlikte tek bir bagli gemi zekasi yiginini tamamlar.",
     linkAshfi: "AshFI'yi Kesfet",
-    linkSim: "SIM'i Kesfet",
+    linkSim: "AshSIM'i Kesfet",
     linkEvidence: "Kanit Paketini Kesfet",
   },
 } as const;

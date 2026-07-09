@@ -8,30 +8,30 @@ const content = {
     headlineHighlight: "AI-augmented",
     headlineRest: "shipbuilding, without leaving your CAD workflow.",
     deck:
-      "ASHSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
+      "AshSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
     heroCtaPrimary: "Request early access",
     intro:
-      "ASHSIM is invite-only shipyard intelligence for teams that already design in AVEVA Marine, ShipConstructor, or CADMATIC. Upload IFC or STEP exports and receive AI analysis without changing your CAD workflow.",
-    whyTitle: "Why ASHSIM",
+      "AshSIM is invite-only shipyard intelligence for teams that already design in AVEVA Marine, ShipConstructor, or CADMATIC. Upload IFC or STEP exports and receive AI analysis without changing your CAD workflow.",
+    whyTitle: "Why AshSIM",
     whyBody:
-      "Most shipyards still rely on manual clash reviews and spreadsheet tracking across drawings, welds, and NCRs. ASHSIM adds an AI analysis layer on top of your existing exports, checks IACS material grades and element completeness, and keeps every finding in one structured build record from first steel to handover.",
+      "Most shipyards still rely on manual clash reviews and spreadsheet tracking across drawings, welds, and NCRs. AshSIM adds an AI analysis layer on top of your existing exports, checks IACS material grades and element completeness, and keeps every finding in one structured build record from first steel to handover.",
     howTitle: "How it works",
-    howDeck: "ASHSIM sits on top of your existing CAD system. No workflow disruption.",
+    howDeck: "AshSIM sits on top of your existing CAD system. No workflow disruption.",
     pillars: [
       {
         title: "Export from your CAD",
-        body: "ASHSIM works with AVEVA Marine, ShipConstructor and CADMATIC. One-click IFC or STEP export from your existing design system.",
+        body: "AshSIM works with AVEVA Marine, ShipConstructor and CADMATIC. One-click IFC or STEP export from your existing design system.",
       },
       {
         title: "AI analysis in minutes",
-        body: "Upload to ASHSIM. Get an instant report: geometric clash detection, IACS steel grade verification, element completeness, and prioritised recommendations.",
+        body: "Upload to AshSIM. Get an instant report: geometric clash detection, IACS steel grade verification, element completeness, and prioritised recommendations.",
       },
       {
         title: "Structured build record",
         body: "Every finding, drawing, weld, and NCR stays in one place. At delivery, generate a complete digital handover package for the owner.",
       },
     ],
-    featuresTitle: "What ASHSIM analyses",
+    featuresTitle: "What AshSIM analyses",
     features: [
       {
         title: "IFC model analysis",
@@ -48,7 +48,7 @@ const content = {
     ],
     complianceTitle: "Built for classification",
     complianceIntro:
-      "ASHSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS, and Turk Loydu handover packages.",
+      "AshSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS, and Turk Loydu handover packages.",
     standards: [
       { code: "IACS material grades", desc: "AH32-AH40, DH, EH verification" },
       { code: "IFC 2x3 and IFC 4", desc: "Structural model exchange" },
@@ -57,7 +57,7 @@ const content = {
     ],
     ctaTitle: "Currently in early access",
     ctaBody:
-      "ASHSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
+      "AshSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
     ctaButton: "Request early access",
     linkAshfi: "Explore AshFI",
     linkEvidence: "Explore Evidence Pack",
@@ -66,30 +66,30 @@ const content = {
     headlineHighlight: "AI destekli",
     headlineRest: "gemi insaati, CAD is akisinizdan ayrilmadan.",
     deck:
-      "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
+      "AshSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
     heroCtaPrimary: "Erken erisim talep et",
     intro:
-      "ASHSIM, AVEVA Marine, ShipConstructor veya CADMATIC ile tasarim yapan tersaneler icin davetli erisim modelinde gemi bilgi modelleme zekasidir. IFC veya STEP ciktilarini yukleyin, CAD is akisinizi degistirmeden AI analizi alin.",
-    whyTitle: "Neden ASHSIM",
+      "AshSIM, AVEVA Marine, ShipConstructor veya CADMATIC ile tasarim yapan tersaneler icin davetli erisim modelinde gemi bilgi modelleme zekasidir. IFC veya STEP ciktilarini yukleyin, CAD is akisinizi degistirmeden AI analizi alin.",
+    whyTitle: "Neden AshSIM",
     whyBody:
-      "Cogu tersane hala manuel cakisma incelemelerine ve cizimler, kaynaklar ve URT'ler arasinda elektronik tablo takibine guvenir. ASHSIM mevcut ciktilarinizin uzerine bir AI analiz katmani ekler, IACS malzeme siniflarini ve eleman tamligini kontrol eder, her bulguyu ilk celikten teslimata kadar tek yapilandirilmis insaat kaydinda tutar.",
+      "Cogu tersane hala manuel cakisma incelemelerine ve cizimler, kaynaklar ve URT'ler arasinda elektronik tablo takibine guvenir. AshSIM mevcut ciktilarinizin uzerine bir AI analiz katmani ekler, IACS malzeme siniflarini ve eleman tamligini kontrol eder, her bulguyu ilk celikten teslimata kadar tek yapilandirilmis insaat kaydinda tutar.",
     howTitle: "Nasil calisir",
-    howDeck: "ASHSIM mevcut CAD sisteminizin uzerinde calisir. Is akisi bozulmaz.",
+    howDeck: "AshSIM mevcut CAD sisteminizin uzerinde calisir. Is akisi bozulmaz.",
     pillars: [
       {
         title: "CAD yaziliminizdan disa aktarin",
-        body: "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile calisir. Mevcut tasarim sisteminizden tek tikla IFC veya STEP disa aktarimi.",
+        body: "AshSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile calisir. Mevcut tasarim sisteminizden tek tikla IFC veya STEP disa aktarimi.",
       },
       {
         title: "Dakikalar icinde AI analizi",
-        body: "ASHSIM'e yukleyin. Aninda rapor alin: geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi ve onceliklendirilmis oneriler.",
+        body: "AshSIM'e yukleyin. Aninda rapor alin: geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi ve onceliklendirilmis oneriler.",
       },
       {
         title: "Yapilandirilmis insaat kaydi",
         body: "Her bulgu, cizim, kaynak ve URT tek yerde kalir. Teslimatta armatore eksiksiz dijital devir paketi olusturun.",
       },
     ],
-    featuresTitle: "ASHSIM ne analiz eder",
+    featuresTitle: "AshSIM ne analiz eder",
     features: [
       {
         title: "IFC model analizi",
@@ -106,7 +106,7 @@ const content = {
     ],
     complianceTitle: "Siniflandirma icin tasarlandi",
     complianceIntro:
-      "ASHSIM ciktilari IACS yapisal kurallariyla uyumludur ve DNV, BV, LR, ABS ve Turk Loydu devir paketleri icin survey tanik kayitlarini destekler.",
+      "AshSIM ciktilari IACS yapisal kurallariyla uyumludur ve DNV, BV, LR, ABS ve Turk Loydu devir paketleri icin survey tanik kayitlarini destekler.",
     standards: [
       { code: "IACS malzeme siniflari", desc: "AH32-AH40, DH, EH dogrulama" },
       { code: "IFC 2x3 ve IFC 4", desc: "Yapisal model degisimi" },
@@ -115,7 +115,7 @@ const content = {
     ],
     ctaTitle: "Simdilik erken erisimde",
     ctaBody:
-      "ASHSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
+      "AshSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
     ctaButton: "Erken erisim talep et",
     linkAshfi: "AshFI'yi Kesfet",
     linkEvidence: "Kanit Paketini Kesfet",

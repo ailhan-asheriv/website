@@ -56,7 +56,7 @@ const content = {
       "Evidence Pack completes the operational stack by turning AshMOP and AshFI data into structured external proof.",
     linkAshmop: "Explore AshMOP",
     linkAshfi: "Explore AshFI",
-    linkSim: "Explore SIM",
+    linkSim: "Explore AshSIM",
   },
   tr: {
     title: "Kanit Paketi",
@@ -110,7 +110,7 @@ const content = {
       "Kanit Paketi, AshMOP ve AshFI verilerini dis paydaslara yonelik yapilandirilmis kanita donusturur.",
     linkAshmop: "AshMOP'u Kesfet",
     linkAshfi: "AshFI'yi Kesfet",
-    linkSim: "SIM'i Kesfet",
+    linkSim: "AshSIM'i Kesfet",
   },
 } as const;
 

@@ -281,7 +281,7 @@
     "copyright": "© 2026 A'SHERIV Intelligent Marine Technologies Ltd. Tüm hakları saklıdır.",
     "ashmop": "AshMOP",
     "ashfi": "ASHFI",
-    "sim": "SIM",
+    "sim": "AshSIM",
     "evidencePack": "Evidence Pack",
     "about": "Hakkımızda",
     "careers": "Kariyer",
@@ -353,27 +353,27 @@
   },
   "sim": {
     "meta": {
-      "title": "ASHSIM - Gemi Bilgi Modelleme Zekasi",
-      "description": "Tersaneler icin AI analizi ve yapilandirilmis insaat kayitlari. CAD is akisinizi ASHSIM'e baglayin: cakisma tespiti, IACS kural uyumlulugu ve dijital devir."
+      "title": "AshSIM - Gemi Bilgi Modelleme Zekasi",
+      "description": "Tersaneler icin AI analizi ve yapilandirilmis insaat kayitlari. CAD is akisinizi AshSIM'e baglayin: cakisma tespiti, IACS kural uyumlulugu ve dijital devir."
     },
     "hero": {
-      "eyebrow": "ASHSIM",
+      "eyebrow": "AshSIM",
       "heading": "AI destekli gemi insaati, CAD is akisinizdan ayrilmadan.",
       "highlight": "AI destekli",
-      "deck": "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
+      "deck": "AshSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
       "cta": "Erken erisim talep et",
       "secondaryCta": "Daha fazla bilgi"
     },
     "howItWorks": {
       "heading": "Nasil calisir",
-      "deck": "ASHSIM mevcut CAD sisteminizin uzerinde calisir. Is akisi bozulmaz.",
+      "deck": "AshSIM mevcut CAD sisteminizin uzerinde calisir. Is akisi bozulmaz.",
       "pillar1": {
         "title": "CAD yaziliminizdan disa aktarin",
-        "body": "ASHSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile calisir. Mevcut tasarim sisteminizden tek tikla IFC veya STEP disa aktarimi."
+        "body": "AshSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile calisir. Mevcut tasarim sisteminizden tek tikla IFC veya STEP disa aktarimi."
       },
       "pillar2": {
         "title": "Dakikalar icinde AI analizi",
-        "body": "ASHSIM'e yukleyin. Aninda rapor alin: geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi ve onceliklendirilmis oneriler."
+        "body": "AshSIM'e yukleyin. Aninda rapor alin: geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi ve onceliklendirilmis oneriler."
       },
       "pillar3": {
         "title": "Yapilandirilmis insaat kaydi",
@@ -381,7 +381,7 @@
       }
     },
     "capabilities": {
-      "heading": "ASHSIM ne analiz eder",
+      "heading": "AshSIM ne analiz eder",
       "card1": {
         "title": "IFC model analizi",
         "body": "AABB toleransi ile geometrik cakisma tespiti, IACS celik sinifi dogrulama, eleman tamligi kontrolleri ve yapisal modelde anomali tespiti."
@@ -397,7 +397,7 @@
     },
     "compliance": {
       "heading": "Siniflandirma icin tasarlandi",
-      "body": "ASHSIM ciktilari IACS yapisal kurallariyla uyumludur ve DNV, BV, LR, ABS ve Turk Loydu devir paketleri icin survey tanik kayitlarini destekler.",
+      "body": "AshSIM ciktilari IACS yapisal kurallariyla uyumludur ve DNV, BV, LR, ABS ve Turk Loydu devir paketleri icin survey tanik kayitlarini destekler.",
       "items": {
         "grades": "IACS malzeme siniflari",
         "ifc": "IFC 2x3 ve IFC 4",
@@ -407,22 +407,22 @@
     },
     "cta": {
       "heading": "Simdilik erken erisimde",
-      "body": "ASHSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
+      "body": "AshSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
       "cta": "Erken erisim talep et"
     }
   },
   "ashsim": {
-    "title": "ASHSIM",
+    "title": "AshSIM",
     "subheading": "Gemi Bilgi Modelleme Zekasi",
     "tagline": "Mevcut 3B tasarim yaziliminizi bir AI analiz katmanina baglayin. Is akisinizi degistirmeden cakisma tespiti, kural uyumluluk kontrolleri ve yapilandirilmis insaat kayitlari alin.",
     "heroCtaPrimary": "Erken erisim talep et",
     "heroCtaSecondary": "Nasil calisir",
     "howTitle": "Nasil calisir",
-    "featuresTitle": "ASHSIM ne analiz eder",
+    "featuresTitle": "AshSIM ne analiz eder",
     "pricingTitle": "Basit, proje bazli fiyatlandirma",
     "pricingNote": "Tersane gruplari ve klas kuruluslari icin kurumsal fiyatlandirma mevcuttur. info@asheriv.com adresinden iletisime gecin",
     "earlyTitle": "Su anda erken erisimde",
-    "earlyBody": "ASHSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve AI destekli model analizini pilot olarak denemek istiyorsaniz, sizinle calismak isteriz.",
+    "earlyBody": "AshSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve AI destekli model analizini pilot olarak denemek istiyorsaniz, sizinle calismak isteriz.",
     "earlyCta": "Erken erisim basvurusu"
   }
 }

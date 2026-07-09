@@ -281,7 +281,7 @@
     "copyright": "© 2026 A'SHERIV Intelligent Marine Technologies Ltd. All rights reserved.",
     "ashmop": "AshMOP",
     "ashfi": "ASHFI",
-    "sim": "SIM",
+    "sim": "AshSIM",
     "evidencePack": "Evidence Pack",
     "about": "About",
     "careers": "Careers",
@@ -353,27 +353,27 @@
   },
   "sim": {
     "meta": {
-      "title": "ASHSIM - Ship Information Modelling Intelligence",
-      "description": "AI analysis and structured build records for shipyards. Connect your CAD workflow to ASHSIM for clash detection, IACS rule compliance, and digital handover."
+      "title": "AshSIM - Ship Information Modelling Intelligence",
+      "description": "AI analysis and structured build records for shipyards. Connect your CAD workflow to AshSIM for clash detection, IACS rule compliance, and digital handover."
     },
     "hero": {
-      "eyebrow": "ASHSIM",
+      "eyebrow": "AshSIM",
       "heading": "AI-augmented shipbuilding, without leaving your CAD workflow.",
       "highlight": "AI-augmented",
-      "deck": "ASHSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
+      "deck": "AshSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
       "cta": "Request early access",
       "secondaryCta": "Learn more"
     },
     "howItWorks": {
       "heading": "How it works",
-      "deck": "ASHSIM sits on top of your existing CAD system. No workflow disruption.",
+      "deck": "AshSIM sits on top of your existing CAD system. No workflow disruption.",
       "pillar1": {
         "title": "Export from your CAD",
-        "body": "ASHSIM works with AVEVA Marine, ShipConstructor and CADMATIC. One-click IFC or STEP export from your existing design system."
+        "body": "AshSIM works with AVEVA Marine, ShipConstructor and CADMATIC. One-click IFC or STEP export from your existing design system."
       },
       "pillar2": {
         "title": "AI analysis in minutes",
-        "body": "Upload to ASHSIM. Get an instant report: geometric clash detection, IACS steel grade verification, element completeness, and prioritised recommendations."
+        "body": "Upload to AshSIM. Get an instant report: geometric clash detection, IACS steel grade verification, element completeness, and prioritised recommendations."
       },
       "pillar3": {
         "title": "Structured build record",
@@ -381,7 +381,7 @@
       }
     },
     "capabilities": {
-      "heading": "What ASHSIM analyses",
+      "heading": "What AshSIM analyses",
       "card1": {
         "title": "IFC model analysis",
         "body": "Geometric clash detection with AABB tolerance, IACS steel grade verification, element completeness checks, and anomaly detection across the structural model."
@@ -397,7 +397,7 @@
     },
     "compliance": {
       "heading": "Built for classification",
-      "body": "ASHSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS, and Turk Loydu handover packages.",
+      "body": "AshSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS, and Turk Loydu handover packages.",
       "items": {
         "grades": "IACS material grades",
         "ifc": "IFC 2x3 and IFC 4",
@@ -407,22 +407,22 @@
     },
     "cta": {
       "heading": "Currently in early access",
-      "body": "ASHSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
+      "body": "AshSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
       "cta": "Request early access"
     }
   },
   "ashsim": {
-    "title": "ASHSIM",
+    "title": "AshSIM",
     "subheading": "Ship Information Modelling Intelligence",
     "tagline": "Connect your existing 3D design software to an AI analysis layer. Get clash detection, rule compliance checks, and structured build records without changing your workflow.",
     "heroCtaPrimary": "Request early access",
     "heroCtaSecondary": "See how it works",
     "howTitle": "How it works",
-    "featuresTitle": "What ASHSIM analyses",
+    "featuresTitle": "What AshSIM analyses",
     "pricingTitle": "Simple, project-based pricing",
     "pricingNote": "Enterprise pricing available for shipyard groups and class societies. Contact info@asheriv.com",
     "earlyTitle": "Currently in early access",
-    "earlyBody": "ASHSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want to pilot AI-powered model analysis, we would like to work with you.",
+    "earlyBody": "AshSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want to pilot AI-powered model analysis, we would like to work with you.",
     "earlyCta": "Apply for early access"
   }
 }

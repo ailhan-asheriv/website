@@ -9,7 +9,7 @@ const content = {
     lastUpdated: "Last updated: June 2026",
     servicesCoveredTitle: "Services Covered",
     servicesCoveredBody:
-      "This Privacy Policy applies to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and ASHSIM (Ship Information Modelling).",
+      "This Privacy Policy applies to all services provided by A'SHERIV Intelligent Marine Technologies Ltd., including AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence), and AshSIM (Ship Information Modelling).",
     note:
       "This policy covers the asheriv.com marketing website, contact forms, and general site analytics, as well as high-level processing principles for the Asheriv platform services.",
     sections: [
@@ -45,7 +45,7 @@ const content = {
       },
       {
         heading: "8. Product data",
-        body: "If you are a user of AshMOP, ASHFI, or ASHSIM, service-specific privacy terms may apply to vessel analysis data, account information, BIM and operational records, and fleet data processed inside those services. Contact info@asheriv.com or refer to your product agreement for details.",
+        body: "If you are a user of AshMOP, ASHFI, or AshSIM, service-specific privacy terms may apply to vessel analysis data, account information, BIM and operational records, and fleet data processed inside those services. Contact info@asheriv.com or refer to your product agreement for details.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI product page",
       },
@@ -61,7 +61,7 @@ const content = {
     lastUpdated: "Son guncelleme: Haziran 2026",
     servicesCoveredTitle: "Kapsanan Hizmetler",
     servicesCoveredBody:
-      "Bu Gizlilik Politikasi, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan sunulan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve ASHSIM (Ship Information Modelling).",
+      "Bu Gizlilik Politikasi, A'SHERIV Intelligent Marine Technologies Ltd. tarafindan sunulan tum hizmetler icin gecerlidir: AshMOP (Maritime Operations Platform), AshFI (Fleet Intelligence) ve AshSIM (Ship Information Modelling).",
     note:
       "Bu politika asheriv.com pazarlama web sitesini, iletisim formlarini ve genel site analitigini kapsar, ayrica Asheriv platform hizmetlerine iliskin yuksek seviyeli veri isleme ilkelerini aciklar.",
     sections: [
@@ -97,7 +97,7 @@ const content = {
       },
       {
         heading: "8. Urun verileri",
-        body: "AshMOP, ASHFI veya ASHSIM kullanicisiysaniz, gemi analiz verileri, hesap bilgileri, BIM ve operasyonel kayitlar ile filo verileri icin hizmete ozel gizlilik kosullari gecerli olabilir. Ayrintilar icin info@asheriv.com adresine yazin veya urun sozlesmenize bakin.",
+        body: "AshMOP, ASHFI veya AshSIM kullanicisiysaniz, gemi analiz verileri, hesap bilgileri, BIM ve operasyonel kayitlar ile filo verileri icin hizmete ozel gizlilik kosullari gecerli olabilir. Ayrintilar icin info@asheriv.com adresine yazin veya urun sozlesmenize bakin.",
         linkHref: "/ashfi",
         linkLabel: "ASHFI urun sayfasi",
       },

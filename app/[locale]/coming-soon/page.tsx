@@ -35,7 +35,7 @@ export default async function ComingSoonPage({
             {[
               { href: "/platform", label: "AshMOP" },
               { href: "/ashfi", label: "AshFI" },
-              { href: "/sim", label: "ASHSIM" },
+              { href: "/sim", label: "AshSIM" },
               { href: "/compliance-evidence", label: "Evidence Pack" },
             ].map((item) => (
               <Link key={item.href} href={item.href} locale={locale} className="rounded-xl border border-[#E3E8EB] bg-white px-5 py-4 text-sm font-semibold text-[#0A0F1E] transition hover:border-[#00D4FF]">

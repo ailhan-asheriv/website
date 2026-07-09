@@ -66,8 +66,8 @@ export default async function ShipyardIntelligencePage({
               {
                 title: isTr ? "Operasyona baglanti" : "Link to operations",
                 desc: isTr
-                  ? "SIM verisi AshMOP operasyonel katmanina dogrudan aktarilir."
-                  : "SIM data flows directly into AshMOP for lifecycle continuity.",
+                  ? "AshSIM verisi AshMOP operasyonel katmanina dogrudan aktarilir."
+                  : "AshSIM data flows directly into AshMOP for lifecycle continuity.",
               },
             ].map((card) => (
               <div key={card.title} className="rounded-xl border border-white/10 bg-[#0D1627] p-6">
@@ -82,15 +82,15 @@ export default async function ShipyardIntelligencePage({
         <section className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-4xl rounded-xl border border-[#E3E8EB] bg-white p-8 text-center">
             <h2 className="font-heading text-2xl font-bold text-[#0A0F1E]">
-              {isTr ? "ASHSIM urununu kesfedin" : "Explore ASHSIM"}
+              {isTr ? "AshSIM urununu kesfedin" : "Explore AshSIM"}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-[#3D4852]">
               {isTr
-                ? "Shipyard Intelligence yetenekleri ASHSIM urun sayfasinda detaylandirilmistir."
-                : "Full shipyard integration capabilities are detailed on the ASHSIM product page."}
+                ? "Shipyard Intelligence yetenekleri AshSIM urun sayfasinda detaylandirilmistir."
+                : "Full shipyard integration capabilities are detailed on the AshSIM product page."}
             </p>
             <Link href="/sim" locale={locale} className="mt-6 inline-block rounded-full bg-[#0A0F1E] px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/25 transition hover:bg-[#1C3D5A]">
-              {isTr ? "ASHSIM'e git" : "Go to ASHSIM"}
+              {isTr ? "AshSIM'e git" : "Go to AshSIM"}
             </Link>
           </div>
         </section>

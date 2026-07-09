@@ -140,7 +140,7 @@ export default async function AboutPage({
               {[
                 { href: "/platform", title: "AshMOP", desc: "Operational digital twin platform." },
                 { href: "/ashfi", title: "AshFI", desc: "Fleet intelligence from AIS data." },
-                { href: "/sim", title: "ASHSIM", desc: "Shipyard-to-operations data continuity." },
+                { href: "/sim", title: "AshSIM", desc: "Shipyard-to-operations data continuity." },
                 { href: "/compliance-evidence", title: "Evidence Pack", desc: "Structured compliance exports." },
               ].map((product) => (
                 <Link key={product.href} href={product.href} className="rounded-xl border border-[#E3E8EB] bg-white p-5 transition hover:border-[#00D4FF]">
