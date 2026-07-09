@@ -38,7 +38,7 @@ const content = {
         heading: "7. Product terms",
         body: "Users of AshMOP, ASHFI, AshSIM, and related Asheriv platform services may also be subject to service-specific terms and privacy documents provided at registration or upon request.",
         linkHref: "/ashfi",
-        linkLabel: "ASHFI product page",
+        linkLabel: "AshFI product page",
       },
       {
         heading: "8. Contact",
@@ -81,7 +81,7 @@ const content = {
         heading: "7. Urun kosullari",
         body: "AshMOP, ASHFI, AshSIM ve ilgili Asheriv platform hizmetlerinin kullanicilari, kayit sirasinda veya talep uzerine saglanan hizmete ozel kosullara ve gizlilik metinlerine de tabi olabilir.",
         linkHref: "/ashfi",
-        linkLabel: "ASHFI urun sayfasi",
+        linkLabel: "AshFI urun sayfasi",
       },
       {
         heading: "8. Iletisim",

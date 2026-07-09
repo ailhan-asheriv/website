@@ -57,8 +57,8 @@ const content = {
     ctaBody:
       "AshSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
     ctaButton: "Request early access",
-    linkAshfi: "Explore AshFI",
-    linkEvidence: "Explore Evidence Pack",
+    linkAshfi: "AshFI",
+    linkEvidence: "Evidence Pack",
   },
   tr: {
     title: "AshSIM",
@@ -113,8 +113,8 @@ const content = {
     ctaBody:
       "AshSIM, sinirli sayida tersane icin erken erisim testine aciktir. Gemi insa ediyorsaniz ve is akisinizda AI destekli model analizi istiyorsaniz, sizinle calismak isteriz.",
     ctaButton: "Erken erisim talep et",
-    linkAshfi: "AshFI'yi Kesfet",
-    linkEvidence: "Kanit Paketini Kesfet",
+    linkAshfi: "AshFI",
+    linkEvidence: "Evidence Pack",
   },
 } as const;
 

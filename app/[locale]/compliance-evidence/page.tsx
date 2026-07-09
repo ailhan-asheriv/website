@@ -54,9 +54,9 @@ const content = {
     suiteTitle: "Part of the Asheriv suite",
     suiteBody:
       "Evidence Pack completes the operational stack by turning AshMOP and AshFI data into structured external proof.",
-    linkAshmop: "Explore AshMOP",
-    linkAshfi: "Explore AshFI",
-    linkSim: "Explore AshSIM",
+    linkAshmop: "AshMOP",
+    linkAshfi: "AshFI",
+    linkSim: "AshSIM",
   },
   tr: {
     title: "Kanit Paketi",
@@ -108,9 +108,9 @@ const content = {
     suiteTitle: "Asheriv paketinin bir parcasi",
     suiteBody:
       "Kanit Paketi, AshMOP ve AshFI verilerini dis paydaslara yonelik yapilandirilmis kanita donusturur.",
-    linkAshmop: "AshMOP'u Kesfet",
-    linkAshfi: "AshFI'yi Kesfet",
-    linkSim: "AshSIM'i Kesfet",
+    linkAshmop: "AshMOP",
+    linkAshfi: "AshFI",
+    linkSim: "AshSIM",
   },
 } as const;
 

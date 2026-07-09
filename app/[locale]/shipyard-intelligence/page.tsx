@@ -82,7 +82,7 @@ export default async function ShipyardIntelligencePage({
         <section className="bg-[#F7F9FA] px-6 py-16 sm:px-10 lg:px-16">
           <div className="mx-auto max-w-4xl rounded-xl border border-[#E3E8EB] bg-white p-8 text-center">
             <h2 className="font-heading text-2xl font-bold text-[#0A0F1E]">
-              {isTr ? "AshSIM urununu kesfedin" : "Explore AshSIM"}
+              {isTr ? "AshSIM urun sayfasi" : "AshSIM"}
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-[#3D4852]">
               {isTr

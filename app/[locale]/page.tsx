@@ -65,7 +65,7 @@ export default async function HomePage({
                     : "Maritime Operations Platform. The operational digital twin - telemetry, anomaly detection, maintenance intelligence, and role-based decision support."}
                 </p>
                 <a href={isTr ? "/tr/platform" : "/en/platform"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {isTr ? "AshMOP'u Kesfet →" : "Explore AshMOP →"}
+                  AshMOP →
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
@@ -76,7 +76,7 @@ export default async function HomePage({
                     : "Fleet Intelligence. AIS-derived vessel health and RUL insights, no sensor integration required. Feeds the digital twin."}
                 </p>
                 <a href={isTr ? "/tr/ashfi" : "/en/ashfi"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {isTr ? "AshFI'yi Kesfet →" : "Explore AshFI →"}
+                  AshFI →
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
@@ -87,18 +87,18 @@ export default async function HomePage({
                     : "Ship Information Modelling. Connect shipyard design and build data to the digital twin. From IFC geometry to operational baseline."}
                 </p>
                 <a href={isTr ? "/tr/sim" : "/en/sim"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {isTr ? "AshSIM'i Kesfet →" : "Explore AshSIM →"}
+                  AshSIM →
                 </a>
               </div>
               <div className="rounded-xl border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-                <h3 className="text-xl font-semibold text-white mb-3">{isTr ? "Kanit Paketi" : "Evidence Pack"}</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Evidence Pack</h3>
                 <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
                   {isTr
                     ? "Uyumluluk ve Dokumantasyon. Sinif denetimleri ve sigorta talepleri icin yapilandirilmis disa aktarimlar."
                     : "Compliance & Documentation. Structured exports for class surveys, insurance claims, and charter disputes - without requiring full platform adoption."}
                 </p>
                 <a href={isTr ? "/tr/compliance-evidence" : "/en/compliance-evidence"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
-                  {isTr ? "Kanit Paketini Kesfet →" : "Explore Evidence Pack →"}
+                  Evidence Pack →
                 </a>
               </div>
             </div>

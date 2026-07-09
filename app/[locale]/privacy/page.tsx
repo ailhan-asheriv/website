@@ -47,7 +47,7 @@ const content = {
         heading: "8. Product data",
         body: "If you are a user of AshMOP, ASHFI, or AshSIM, service-specific privacy terms may apply to vessel analysis data, account information, BIM and operational records, and fleet data processed inside those services. Contact info@asheriv.com or refer to your product agreement for details.",
         linkHref: "/ashfi",
-        linkLabel: "ASHFI product page",
+        linkLabel: "AshFI product page",
       },
       {
         heading: "9. Changes",
@@ -99,7 +99,7 @@ const content = {
         heading: "8. Urun verileri",
         body: "AshMOP, ASHFI veya AshSIM kullanicisiysaniz, gemi analiz verileri, hesap bilgileri, BIM ve operasyonel kayitlar ile filo verileri icin hizmete ozel gizlilik kosullari gecerli olabilir. Ayrintilar icin info@asheriv.com adresine yazin veya urun sozlesmenize bakin.",
         linkHref: "/ashfi",
-        linkLabel: "ASHFI urun sayfasi",
+        linkLabel: "AshFI urun sayfasi",
       },
       {
         heading: "9. Degisiklikler",

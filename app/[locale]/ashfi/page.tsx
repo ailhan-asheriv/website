@@ -42,9 +42,9 @@ const content = {
     suiteTitle: "AshFI and the Asheriv suite",
     suiteBody:
       "AshFI is one of three products in the Asheriv maritime intelligence suite. AshSIM connects shipyard design and build data to the digital twin. ASHMOP is the full operational digital twin platform. AshFI provides fleet intelligence without requiring sensor integration, serving as both a standalone tool and a feed into ASHMOP.",
-    linkAshmop: "Explore ASHMOP →",
-    linkSim: "Explore AshSIM →",
-    linkEvidence: "Explore Evidence Pack →",
+    linkAshmop: "AshMOP",
+    linkSim: "AshSIM",
+    linkEvidence: "Evidence Pack",
   },
   tr: {
     title: "AshFI",
@@ -84,9 +84,9 @@ const content = {
     suiteTitle: "AshFI ve Asheriv paketi",
     suiteBody:
       "AshFI, Asheriv denizcilik zekasi paketindeki uc urunden biridir. AshSIM, tersane tasarim ve insaat verisini dijital ikize baglar. ASHMOP, tam operasyonel dijital ikiz platformudur. AshFI, sensor entegrasyonu gerektirmeden filo zekasi sunar, hem bagimsiz bir arac hem de ASHMOP'a beslenen bir veri kaynagi olarak hizmet eder.",
-    linkAshmop: "ASHMOP'u Kesfet →",
-    linkSim: "AshSIM'i Kesfet →",
-    linkEvidence: "Kanit Paketini Kesfet →",
+    linkAshmop: "AshMOP",
+    linkSim: "AshSIM",
+    linkEvidence: "Evidence Pack",
   },
 } as const;
 
