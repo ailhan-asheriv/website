@@ -352,54 +352,52 @@
     }
   },
   "sim": {
+    "meta": {
+      "title": "ASHSIM - Ship Information Modelling Intelligence",
+      "description": "AI analysis and structured build records for shipyards. Connect your CAD workflow to ASHSIM for clash detection, IACS rule compliance, and digital handover."
+    },
     "hero": {
       "eyebrow": "ASHSIM",
-      "headlineHighlight": "AI-augmented",
-      "headlineRest": "shipbuilding, without leaving your CAD workflow.",
-      "headline": "AI-augmented shipbuilding, without leaving your CAD workflow.",
-      "subcopy": "ASHSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export, and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
-      "features": {
-        "analysis": "Real-time AI analysis",
-        "compliance": "IACS rule compliance",
-        "records": "Structured build records"
-      },
-      "cta": "Request early access"
+      "heading": "AI-augmented shipbuilding, without leaving your CAD workflow.",
+      "highlight": "AI-augmented",
+      "deck": "ASHSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
+      "cta": "Request early access",
+      "secondaryCta": "Learn more"
     },
     "howItWorks": {
-      "eyebrow": "How it works",
-      "step1": {
+      "heading": "How it works",
+      "deck": "ASHSIM sits on top of your existing CAD system. No workflow disruption.",
+      "pillar1": {
         "title": "Export from your CAD",
         "body": "ASHSIM works with AVEVA Marine, ShipConstructor and CADMATIC. One-click IFC or STEP export from your existing design system."
       },
-      "step2": {
+      "pillar2": {
         "title": "AI analysis in minutes",
-        "body": "Upload to ASHSIM. Get an instant analysis report: geometric clash detection, IACS material grade checks, element completeness, and prioritised recommendations."
+        "body": "Upload to ASHSIM. Get an instant report: geometric clash detection, IACS steel grade verification, element completeness, and prioritised recommendations."
       },
-      "step3": {
-        "title": "Structured digital record",
+      "pillar3": {
+        "title": "Structured build record",
         "body": "Every finding, drawing, weld, and NCR stays in one place. At delivery, generate a complete digital handover package for the owner."
       }
     },
     "capabilities": {
-      "eyebrow": "What ASHSIM analyses",
-      "cards": {
-        "ifc": {
-          "title": "IFC model analysis",
-          "body": "Geometric clash detection with AABB tolerance, IACS steel grade verification, element completeness checks, and anomaly detection across the structural model."
-        },
-        "drawings": {
-          "title": "Technical drawings",
-          "body": "Upload PDFs and drawing exports. AI extracts dimensions, revision history, and compliance notes. Class approval status tracked per drawing."
-        },
-        "workflow": {
-          "title": "Construction workflow",
-          "body": "Optional modules for block tracking, welding QC, NCR management, milestones, equipment register, and material certificates. Add what you need."
-        }
+      "heading": "What ASHSIM analyses",
+      "card1": {
+        "title": "IFC model analysis",
+        "body": "Geometric clash detection with AABB tolerance, IACS steel grade verification, element completeness checks, and anomaly detection across the structural model."
+      },
+      "card2": {
+        "title": "Technical drawings",
+        "body": "Upload PDFs and drawing exports. AI extracts dimensions, revision history, and compliance notes. Class approval status tracked per drawing."
+      },
+      "card3": {
+        "title": "Construction workflow",
+        "body": "Optional modules for block tracking, welding QC, NCR management, milestones, equipment register, and material certificates."
       }
     },
     "compliance": {
-      "eyebrow": "Built for classification",
-      "body": "ASHSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS and Turk Loydu handover packages.",
+      "heading": "Built for classification",
+      "body": "ASHSIM outputs align with IACS structural rules and support survey witness records for DNV, BV, LR, ABS, and Turk Loydu handover packages.",
       "items": {
         "grades": "IACS material grades",
         "ifc": "IFC 2x3 and IFC 4",
@@ -407,8 +405,8 @@
         "handover": "SOLAS-aligned handover"
       }
     },
-    "access": {
-      "eyebrow": "Currently in early access",
+    "cta": {
+      "heading": "Currently in early access",
       "body": "ASHSIM is available to a limited number of shipyards for early access testing. If you are building vessels and want AI-powered model analysis in your workflow, we would like to work with you.",
       "cta": "Request early access"
     }
