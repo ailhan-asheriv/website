@@ -5,13 +5,11 @@ import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 
 const content = {
   en: {
-    headlineHighlight: "AI-augmented",
-    headlineRest: "shipbuilding, without leaving your CAD workflow.",
-    deck:
+    title: "AshSIM",
+    tagline: "AI-augmented shipbuilding, without leaving your CAD workflow.",
+    intro:
       "AshSIM connects to AVEVA Marine, ShipConstructor and CADMATIC. Upload an IFC or STEP export and get instant AI analysis: clash detection, IACS rule compliance, and a structured digital build record.",
     heroCtaPrimary: "Request early access",
-    intro:
-      "AshSIM is invite-only shipyard intelligence for teams that already design in AVEVA Marine, ShipConstructor, or CADMATIC. Upload IFC or STEP exports and receive AI analysis without changing your CAD workflow.",
     whyTitle: "Why AshSIM",
     whyBody:
       "Most shipyards still rely on manual clash reviews and spreadsheet tracking across drawings, welds, and NCRs. AshSIM adds an AI analysis layer on top of your existing exports, checks IACS material grades and element completeness, and keeps every finding in one structured build record from first steel to handover.",
@@ -63,13 +61,11 @@ const content = {
     linkEvidence: "Explore Evidence Pack",
   },
   tr: {
-    headlineHighlight: "AI destekli",
-    headlineRest: "gemi insaati, CAD is akisinizdan ayrilmadan.",
-    deck:
+    title: "AshSIM",
+    tagline: "AI destekli gemi insaati, CAD is akisinizdan ayrilmadan.",
+    intro:
       "AshSIM, AVEVA Marine, ShipConstructor ve CADMATIC ile baglanir. IFC veya STEP dosyanizi yukleyin ve aninda AI analizi alin: cakisma tespiti, IACS kural uyumlulugu ve yapilandirilmis dijital insaat kaydi.",
     heroCtaPrimary: "Erken erisim talep et",
-    intro:
-      "AshSIM, AVEVA Marine, ShipConstructor veya CADMATIC ile tasarim yapan tersaneler icin davetli erisim modelinde gemi bilgi modelleme zekasidir. IFC veya STEP ciktilarini yukleyin, CAD is akisinizi degistirmeden AI analizi alin.",
     whyTitle: "Neden AshSIM",
     whyBody:
       "Cogu tersane hala manuel cakisma incelemelerine ve cizimler, kaynaklar ve URT'ler arasinda elektronik tablo takibine guvenir. AshSIM mevcut ciktilarinizin uzerine bir AI analiz katmani ekler, IACS malzeme siniflarini ve eleman tamligini kontrol eder, her bulguyu ilk celikten teslimata kadar tek yapilandirilmis insaat kaydinda tutar.",
@@ -143,13 +139,8 @@ export default async function SimPage({
           }}
         >
           <div className="mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
-            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">
-              <span className="bg-gradient-to-r from-[#00D4FF] via-[#4facfe] to-[#00f2fe] bg-clip-text italic text-transparent">
-                {c.headlineHighlight}
-              </span>{" "}
-              {c.headlineRest}
-            </h1>
-            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.deck}</p>
+            <h1 className="font-heading text-4xl font-bold sm:text-5xl lg:text-6xl">{c.title}</h1>
+            <p className="mt-4 max-w-3xl text-lg text-[#CBD5E1]">{c.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
                 href="/contact"
