@@ -1,6 +1,26 @@
 {
   "rewrites": [
     {
+      "source": "/sim",
+      "destination": "http://142.132.168.47:3001/"
+    },
+    {
+      "source": "/sim/:path*",
+      "destination": "http://142.132.168.47:3001/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "http://142.132.168.47/api/:path*"
+    },
+    {
+      "source": "/ashmop",
+      "destination": "http://142.132.168.47/ashmop/"
+    },
+    {
+      "source": "/ashmop/:path*",
+      "destination": "http://142.132.168.47/ashmop/:path*"
+    },
+    {
       "source": "/admin",
       "destination": "http://142.132.168.47/fleetintelligence/admin"
     },
