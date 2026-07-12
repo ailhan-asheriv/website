@@ -18,16 +18,12 @@ export async function generateMetadata({
   const { locale } = await params;
   const isEn = locale === "en";
   return {
-    title: isEn
-      ? "Operational intelligence for vessel lifecycle"
-      : "Gemi yasam dongusu icin operasyonel istihbarat",
+    title: "ASHERIV",
     description: isEn
       ? "A'SHERIV unifies design data, sensor telemetry, and maintenance history into a living digital twin."
       : "A'SHERIV tasarim verisi, sensor telemetrisi ve bakim gecmisini yasayan bir dijital ikizde birlestirir.",
     openGraph: {
-      title: isEn
-        ? "Operational intelligence for vessel lifecycle"
-        : "Gemi yasam dongusu icin operasyonel istihbarat",
+      title: "ASHERIV",
       description: isEn
         ? "A'SHERIV unifies design data, sensor telemetry, and maintenance history into a living digital twin."
         : "A'SHERIV tasarim verisi, sensor telemetrisi ve bakim gecmisini yasayan bir dijital ikizde birlestirir.",
