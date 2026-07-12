@@ -14,19 +14,23 @@ const nextConfig = {
       { from: 'evidence/pack', to: 'evidence-pack' },
     ];
 
-    return legacyRoutes.flatMap(({ from, to }) =>
-      locales.map((locale) => ({
-        source: `/${locale}/${from}`,
-        destination: `/${locale}/${to}`,
-        permanent: true,
-      }))
-    );
+    return [
+      { source: '/sim', destination: '/ashsim', permanent: true },
+      { source: '/sim/:path*', destination: '/ashsim/:path*', permanent: true },
+      ...legacyRoutes.flatMap(({ from, to }) =>
+        locales.map((locale) => ({
+          source: `/${locale}/${from}`,
+          destination: `/${locale}/${to}`,
+          permanent: true,
+        }))
+      ),
+    ];
   },
   async rewrites() {
     const origin = 'http://142.132.168.47';
     return [
-      { source: '/sim', destination: `${origin}:3001/` },
-      { source: '/sim/:path*', destination: `${origin}:3001/:path*` },
+      { source: '/ashsim', destination: `${origin}:3001/` },
+      { source: '/ashsim/:path*', destination: `${origin}:3001/:path*` },
       { source: '/api/:path*', destination: `${origin}/api/:path*` },
       { source: '/ashmop', destination: `${origin}/ashmop/` },
       { source: '/ashmop/:path*', destination: `${origin}/ashmop/:path*` },

@@ -27,25 +27,29 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const isEn = locale === "en";
-  const title = isEn
-    ? "A'SHERIV — Digital Twin Infrastructure for Shipbuilding, Vessel Operations, and Lifecycle Intelligence"
-    : "A'SHERIV — Gemi İnşası, Gemi Operasyonları ve Yaşam Döngüsü İstihbaratı için Dijital İkiz Altyapısı";
+  const title = "ASHERIV";
   const description = isEn
     ? "A'SHERIV builds digital twin infrastructure for shipbuilding, vessel operations, and lifecycle intelligence—connecting shipyard production data, vessel operational systems, maintenance records, and targeted sensing into a unified maritime intelligence platform."
     : "A'SHERIV, gemi inşası, gemi operasyonları ve yaşam döngüsü istihbaratı için dijital ikiz altyapısı kurar—tersane üretim verilerini, gemi operasyon sistemlerini, bakım kayıtlarını ve hedefli sensörleri tek bir denizcilik istihbarat platformunda birleştirir.";
 
   return {
-    title: { default: title, template: isEn ? "%s | A'SHERIV" : "%s | A'SHERIV" },
+    title: { default: title, template: "%s | ASHERIV" },
     description,
     openGraph: {
-      title,
+      title: isEn
+        ? "ASHERIV — Digital Twin Infrastructure for Shipbuilding and Vessel Operations"
+        : "ASHERIV — Gemi İnşası ve Gemi Operasyonları için Dijital İkiz Altyapısı",
       description,
       type: "website",
       locale: isEn ? "en_GB" : "tr_TR",
       url: `${baseUrl}/${locale}`,
-      siteName: "A'SHERIV",
+      siteName: "ASHERIV",
     },
-    twitter: { card: "summary_large_image", title, description },
+    twitter: {
+      card: "summary_large_image",
+      title: "ASHERIV",
+      description,
+    },
     alternates: { canonical: `${baseUrl}/${locale}` },
   };
 }

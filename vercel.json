@@ -1,11 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "/sim",
+      "source": "/ashsim",
       "destination": "http://142.132.168.47:3001/"
     },
     {
-      "source": "/sim/:path*",
+      "source": "/ashsim/:path*",
       "destination": "http://142.132.168.47:3001/:path*"
     },
     {
@@ -39,6 +39,18 @@
     {
       "source": "/fleetintelligence/:path*",
       "destination": "http://142.132.168.47/fleetintelligence/:path*"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/sim",
+      "destination": "/ashsim",
+      "permanent": true
+    },
+    {
+      "source": "/sim/:path*",
+      "destination": "/ashsim/:path*",
+      "permanent": true
     }
   ]
 }
