@@ -1,6 +1,18 @@
 {
   "rewrites": [
     {
+      "source": "/auth",
+      "destination": "http://142.132.168.47/auth/"
+    },
+    {
+      "source": "/auth/:path*",
+      "destination": "http://142.132.168.47/auth/:path*"
+    },
+    {
+      "source": "/.well-known/jwks.json",
+      "destination": "http://142.132.168.47/.well-known/jwks.json"
+    },
+    {
       "source": "/ashsim",
       "destination": "http://142.132.168.47:3001/"
     },

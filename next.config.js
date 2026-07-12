@@ -29,6 +29,10 @@ const nextConfig = {
   async rewrites() {
     const origin = 'http://142.132.168.47';
     return [
+      // Central auth SPA (asheriv-auth on Hetzner)
+      { source: '/auth', destination: `${origin}/auth/` },
+      { source: '/auth/:path*', destination: `${origin}/auth/:path*` },
+      { source: '/.well-known/jwks.json', destination: `${origin}/.well-known/jwks.json` },
       { source: '/ashsim', destination: `${origin}:3001/` },
       { source: '/ashsim/:path*', destination: `${origin}:3001/:path*` },
       { source: '/api/:path*', destination: `${origin}/api/:path*` },
