@@ -75,6 +75,16 @@
   ],
   "redirects": [
     {
+      "source": "/dashboard/yard",
+      "destination": "/ashsim/",
+      "permanent": false
+    },
+    {
+      "source": "/dashboard/yard/:path*",
+      "destination": "/ashsim/:path*",
+      "permanent": false
+    },
+    {
       "source": "/sim",
       "destination": "/ashsim",
       "permanent": true

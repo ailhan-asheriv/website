@@ -15,6 +15,9 @@ const nextConfig = {
     ];
 
     return [
+      // Post-H C1 — Shipyard Twin deep links → working AshSIM SPA
+      { source: '/dashboard/yard', destination: '/ashsim/', permanent: false },
+      { source: '/dashboard/yard/:path*', destination: '/ashsim/:path*', permanent: false },
       { source: '/sim', destination: '/ashsim', permanent: true },
       { source: '/sim/:path*', destination: '/ashsim/:path*', permanent: true },
       ...legacyRoutes.flatMap(({ from, to }) =>
