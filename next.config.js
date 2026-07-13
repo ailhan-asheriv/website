@@ -33,6 +33,12 @@ const nextConfig = {
       { source: '/auth', destination: `${origin}/auth/` },
       { source: '/auth/:path*', destination: `${origin}/auth/:path*` },
       { source: '/.well-known/jwks.json', destination: `${origin}/.well-known/jwks.json` },
+      // Phase D / Phase C residuals — marketing edge → Hetzner origin
+      { source: '/tools/fueleu', destination: `${origin}/tools/fueleu/` },
+      { source: '/tools/fueleu/:path*', destination: `${origin}/tools/fueleu/:path*` },
+      { source: '/dashboard', destination: `${origin}/dashboard` },
+      { source: '/dashboard/:path*', destination: `${origin}/dashboard/:path*` },
+      { source: '/ashsim/api/:path*', destination: `${origin}:8009/:path*` },
       { source: '/ashsim', destination: `${origin}:3001/` },
       { source: '/ashsim/:path*', destination: `${origin}:3001/:path*` },
       { source: '/api/:path*', destination: `${origin}/api/:path*` },

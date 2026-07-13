@@ -13,6 +13,26 @@
       "destination": "http://142.132.168.47/.well-known/jwks.json"
     },
     {
+      "source": "/tools/fueleu",
+      "destination": "http://142.132.168.47/tools/fueleu/"
+    },
+    {
+      "source": "/tools/fueleu/:path*",
+      "destination": "http://142.132.168.47/tools/fueleu/:path*"
+    },
+    {
+      "source": "/dashboard",
+      "destination": "http://142.132.168.47/dashboard"
+    },
+    {
+      "source": "/dashboard/:path*",
+      "destination": "http://142.132.168.47/dashboard/:path*"
+    },
+    {
+      "source": "/ashsim/api/:path*",
+      "destination": "http://142.132.168.47:8009/:path*"
+    },
+    {
       "source": "/ashsim",
       "destination": "http://142.132.168.47:3001/"
     },
