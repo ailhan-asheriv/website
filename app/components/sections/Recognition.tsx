@@ -2,18 +2,19 @@
 
 import Image from "next/image";
 import { useParams } from "next/navigation";
+import { useCallback, useState } from "react";
 import { motion } from "framer-motion";
 
 const strings = {
   en: {
     label: "RECOGNITION",
-    lead: "Independent programs that back deep-tech builders shaping Türkiye’s industrial future.",
-    badgeAlt: "TeknoGirişim Badge",
+    lead: "Official TeknoGirişim recognition from Türkiye’s Presidency of Defence Industries (SSB) — formal proof we build deep-tech, not slideware.",
+    badgeAlt: "TeknoGirişim Badge — Presidency of Defence Industries (SSB)",
   },
   tr: {
     label: "TANINMA",
-    lead: "Türkiye’nin sanayi geleceğini şekillendiren derin teknoloji girişimlerini destekleyen bağımsız programlar.",
-    badgeAlt: "TeknoGirişim Rozeti",
+    lead: "Savunma Sanayii Başkanlığı (SSB) TeknoGirişim Rozeti — derin teknoloji ürettiğimizin resmi kanıtı; sunum değil, mühendislik.",
+    badgeAlt: "TeknoGirişim Rozeti — Savunma Sanayii Başkanlığı (SSB)",
   },
 } as const;
 
@@ -21,6 +22,20 @@ export default function Recognition() {
   const params = useParams();
   const lang = (params?.lang as string) ?? (params?.locale as string) ?? "en";
   const t = strings[lang as keyof typeof strings] ?? strings.en;
+
+  const [tip, setTip] = useState<{ x: number; y: number; visible: boolean }>({
+    x: 0,
+    y: 0,
+    visible: false,
+  });
+
+  const onMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    setTip({ x: e.clientX + 14, y: e.clientY + 14, visible: true });
+  }, []);
+
+  const onLeave = useCallback(() => {
+    setTip((prev) => ({ ...prev, visible: false }));
+  }, []);
 
   return (
     <section
@@ -43,17 +58,15 @@ export default function Recognition() {
             {t.label}
           </h2>
 
-          <div className="group relative mt-8 inline-block max-w-[14rem] sm:max-w-[16rem]">
-            <p
-              className="pointer-events-none absolute bottom-full left-0 z-10 mb-2 max-w-[18rem] rounded-md bg-[#0A0F1E] px-2.5 py-1.5 text-[11px] leading-snug text-[#E2E8F0] opacity-0 shadow-sm transition-opacity duration-200 group-hover:opacity-100 group-focus-within:opacity-100"
-              role="tooltip"
-            >
-              {t.lead}
-            </p>
+          <div
+            className="relative mt-8 inline-block max-w-[14rem] cursor-default sm:max-w-[16rem]"
+            onMouseMove={onMove}
+            onMouseEnter={onMove}
+            onMouseLeave={onLeave}
+          >
             <Image
               src="/images/badges/teknogirisim-rozet.png"
               alt={t.badgeAlt}
-              title={t.lead}
               width={447}
               height={184}
               className="h-auto w-full object-contain"
@@ -62,6 +75,16 @@ export default function Recognition() {
           </div>
         </motion.div>
       </div>
+
+      {tip.visible ? (
+        <div
+          role="tooltip"
+          className="pointer-events-none fixed z-[80] max-w-[16rem] rounded-md bg-[#0A0F1E] px-2.5 py-1.5 text-[11px] leading-snug text-[#E2E8F0] shadow-lg"
+          style={{ left: tip.x, top: tip.y }}
+        >
+          {t.lead}
+        </div>
+      ) : null}
     </section>
   );
 }
