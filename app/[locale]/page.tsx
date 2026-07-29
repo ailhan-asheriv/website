@@ -7,6 +7,7 @@ import HowItWorks from "../components/sections/HowItWorks";
 import ThreeLayers from "../components/sections/ThreeLayers";
 import Stakeholders from "../components/sections/Stakeholders";
 import VisionTimeline from "../components/sections/VisionTimeline";
+import Recognition from "../components/sections/Recognition";
 import ContactCTA from "../components/sections/ContactCTA";
 import type { Metadata } from "next";
 
@@ -103,6 +104,7 @@ export default async function HomePage({
         <ThreeLayers />
         <Stakeholders />
         <VisionTimeline />
+        <Recognition />
         <ContactCTA />
       </main>
 
