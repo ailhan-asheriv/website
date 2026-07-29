@@ -8,12 +8,12 @@ import { motion } from "framer-motion";
 const strings = {
   en: {
     label: "RECOGNITION",
-    lead: "Official TeknoGirişim recognition from Türkiye’s Presidency of Defence Industries (SSB) — formal proof we build deep-tech, not slideware.",
+    lead: "Official TeknoGirişim recognition from Türkiye’s Presidency of Defence Industries (SSB).",
     badgeAlt: "TeknoGirişim Badge — Presidency of Defence Industries (SSB)",
   },
   tr: {
     label: "TANINMA",
-    lead: "Savunma Sanayii Başkanlığı (SSB) TeknoGirişim Rozeti — derin teknoloji ürettiğimizin resmi kanıtı; sunum değil, mühendislik.",
+    lead: "Savunma Sanayii Başkanlığı TeknoGirişim Rozeti (SSB).",
     badgeAlt: "TeknoGirişim Rozeti — Savunma Sanayii Başkanlığı (SSB)",
   },
 } as const;
