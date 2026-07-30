@@ -39,8 +39,8 @@ const badges: BadgeDef[] = [
       tr: "NVIDIA Inception Program rozeti",
     },
     tip: {
-      en: "A'SHERIV is a member of NVIDIA Inception, the program for AI and accelerated-computing startups — preferential access to NVIDIA technology, expertise, and go-to-market support.",
-      tr: "A'SHERIV, NVIDIA Inception üyesi — yapay zeka ve hızlandırılmış hesaplama girişimleri için NVIDIA teknolojisine, uzmanlığa ve go-to-market desteğine öncelikli erişim.",
+      en: "A'SHERIV is a member of NVIDIA Inception Program.",
+      tr: "A'SHERIV, NVIDIA Inception Program üyesidir.",
     },
   },
 ];
