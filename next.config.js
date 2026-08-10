@@ -17,17 +17,13 @@ const nextConfig = {
     ];
 
     return [
-      // Product SPA lives on ashsim.asheriv.com — permanent redirect (308), not proxy.
+      // /ashsim and /sim → middleware.ts (Clear-Site-Data + 308 to ashsim host).
+      // Do NOT also list them in vercel.json redirects — those run before middleware
+      // and would skip SW/cache wipe for legacy www-scoped PWAs.
       // Do NOT match /en/ashsim or /tr/ashsim (marketing product pages on www).
-      // Explicit /ashsim/ first — avoids platform trailing-slash hop to /ashsim.
-      { source: '/ashsim/', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
-      { source: '/ashsim', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
-      { source: '/ashsim/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: true },
       // Shipyard Twin deep links → AshSIM host (avoid www /ashsim hop)
       { source: '/dashboard/yard', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: false },
       { source: '/dashboard/yard/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: false },
-      { source: '/sim', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
-      { source: '/sim/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: true },
       ...legacyRoutes.flatMap(({ from, to }) =>
         locales.map((locale) => ({
           source: `/${locale}/${from}`,

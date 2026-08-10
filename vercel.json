@@ -63,21 +63,6 @@
   ],
   "redirects": [
     {
-      "source": "/ashsim/",
-      "destination": "https://ashsim.asheriv.com/ashsim/",
-      "permanent": true
-    },
-    {
-      "source": "/ashsim",
-      "destination": "https://ashsim.asheriv.com/ashsim/",
-      "permanent": true
-    },
-    {
-      "source": "/ashsim/:path*",
-      "destination": "https://ashsim.asheriv.com/ashsim/:path*",
-      "permanent": true
-    },
-    {
       "source": "/dashboard/yard",
       "destination": "https://ashsim.asheriv.com/ashsim/",
       "permanent": false
@@ -86,16 +71,6 @@
       "source": "/dashboard/yard/:path*",
       "destination": "https://ashsim.asheriv.com/ashsim/:path*",
       "permanent": false
-    },
-    {
-      "source": "/sim",
-      "destination": "https://ashsim.asheriv.com/ashsim/",
-      "permanent": true
-    },
-    {
-      "source": "/sim/:path*",
-      "destination": "https://ashsim.asheriv.com/ashsim/:path*",
-      "permanent": true
     }
   ]
 }
