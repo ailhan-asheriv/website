@@ -19,6 +19,8 @@ const nextConfig = {
     return [
       // Product SPA lives on ashsim.asheriv.com — permanent redirect (308), not proxy.
       // Do NOT match /en/ashsim or /tr/ashsim (marketing product pages on www).
+      // Explicit /ashsim/ first — avoids platform trailing-slash hop to /ashsim.
+      { source: '/ashsim/', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
       { source: '/ashsim', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
       { source: '/ashsim/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: true },
       // Shipyard Twin deep links → AshSIM host (avoid www /ashsim hop)

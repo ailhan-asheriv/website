@@ -63,6 +63,11 @@
   ],
   "redirects": [
     {
+      "source": "/ashsim/",
+      "destination": "https://ashsim.asheriv.com/ashsim/",
+      "permanent": true
+    },
+    {
       "source": "/ashsim",
       "destination": "https://ashsim.asheriv.com/ashsim/",
       "permanent": true
