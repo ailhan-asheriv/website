@@ -2,6 +2,8 @@ const createNextIntlPlugin = require('next-intl/plugin');
 
 const withNextIntl = createNextIntlPlugin('./lib/i18n.ts');
 
+const ASHSIM_ORIGIN = 'https://ashsim.asheriv.com';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
@@ -15,11 +17,15 @@ const nextConfig = {
     ];
 
     return [
-      // Post-H C1 — Shipyard Twin deep links → working AshSIM SPA
-      { source: '/dashboard/yard', destination: '/ashsim/', permanent: false },
-      { source: '/dashboard/yard/:path*', destination: '/ashsim/:path*', permanent: false },
-      { source: '/sim', destination: '/ashsim', permanent: true },
-      { source: '/sim/:path*', destination: '/ashsim/:path*', permanent: true },
+      // Product SPA lives on ashsim.asheriv.com — permanent redirect (308), not proxy.
+      // Do NOT match /en/ashsim or /tr/ashsim (marketing product pages on www).
+      { source: '/ashsim', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
+      { source: '/ashsim/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: true },
+      // Shipyard Twin deep links → AshSIM host (avoid www /ashsim hop)
+      { source: '/dashboard/yard', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: false },
+      { source: '/dashboard/yard/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: false },
+      { source: '/sim', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: true },
+      { source: '/sim/:path*', destination: `${ASHSIM_ORIGIN}/ashsim/:path*`, permanent: true },
       ...legacyRoutes.flatMap(({ from, to }) =>
         locales.map((locale) => ({
           source: `/${locale}/${from}`,
@@ -41,9 +47,8 @@ const nextConfig = {
       { source: '/tools/fueleu/:path*', destination: `${origin}/tools/fueleu/:path*` },
       { source: '/dashboard', destination: `${origin}/dashboard` },
       { source: '/dashboard/:path*', destination: `${origin}/dashboard/:path*` },
-      { source: '/ashsim/api/:path*', destination: `${origin}:8009/:path*` },
-      { source: '/ashsim', destination: `${origin}:3001/` },
-      { source: '/ashsim/:path*', destination: `${origin}:3001/:path*` },
+      // /ashsim* rewrites removed — Vercel edge could not reach origin (:3001/:8009).
+      // Traffic redirects to https://ashsim.asheriv.com/ashsim/ (see redirects()).
       { source: '/api/:path*', destination: `${origin}/api/:path*` },
       { source: '/ashmop', destination: `${origin}/ashmop/` },
       { source: '/ashmop/:path*', destination: `${origin}/ashmop/:path*` },
@@ -62,5 +67,3 @@ const nextConfig = {
 };
 
 module.exports = withNextIntl(nextConfig);
-
-

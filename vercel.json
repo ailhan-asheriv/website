@@ -29,18 +29,6 @@
       "destination": "http://142.132.168.47/dashboard/:path*"
     },
     {
-      "source": "/ashsim/api/:path*",
-      "destination": "http://142.132.168.47:8009/:path*"
-    },
-    {
-      "source": "/ashsim",
-      "destination": "http://142.132.168.47:3001/"
-    },
-    {
-      "source": "/ashsim/:path*",
-      "destination": "http://142.132.168.47:3001/:path*"
-    },
-    {
       "source": "/api/:path*",
       "destination": "http://142.132.168.47/api/:path*"
     },
@@ -75,23 +63,33 @@
   ],
   "redirects": [
     {
+      "source": "/ashsim",
+      "destination": "https://ashsim.asheriv.com/ashsim/",
+      "permanent": true
+    },
+    {
+      "source": "/ashsim/:path*",
+      "destination": "https://ashsim.asheriv.com/ashsim/:path*",
+      "permanent": true
+    },
+    {
       "source": "/dashboard/yard",
-      "destination": "/ashsim/",
+      "destination": "https://ashsim.asheriv.com/ashsim/",
       "permanent": false
     },
     {
       "source": "/dashboard/yard/:path*",
-      "destination": "/ashsim/:path*",
+      "destination": "https://ashsim.asheriv.com/ashsim/:path*",
       "permanent": false
     },
     {
       "source": "/sim",
-      "destination": "/ashsim",
+      "destination": "https://ashsim.asheriv.com/ashsim/",
       "permanent": true
     },
     {
       "source": "/sim/:path*",
-      "destination": "/ashsim/:path*",
+      "destination": "https://ashsim.asheriv.com/ashsim/:path*",
       "permanent": true
     }
   ]
