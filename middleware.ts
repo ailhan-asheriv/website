@@ -16,8 +16,10 @@ function redirectAshsim(req: NextRequest, pathname: string) {
   const targetPath = pathname === "/ashsim" || pathname === "/sim" ? "/ashsim/" : pathname.replace(/^\/sim/, "/ashsim");
   const dest = `${ASHSIM_ORIGIN}${targetPath}${req.nextUrl.search}`;
   const res = NextResponse.redirect(dest, 308);
+  // Wipe legacy www-scoped AshSIM SW/caches (browser honors on this origin).
   res.headers.set("Clear-Site-Data", '"cache", "storage"');
   res.headers.set("Cache-Control", "no-store");
+  res.headers.set("X-Ashsim-Redirect", "middleware");
   return res;
 }
 
