@@ -64,11 +64,6 @@ const labels = {
   tr: "TANINMA",
 } as const;
 
-const note = {
-  en: "Proud to join İTÜ Çekirdek as an Acceleration Startup for 2026.",
-  tr: "İTÜ Çekirdek 2026 Acceleration Startup ailesine katıldık.",
-} as const;
-
 export default function Recognition() {
   const params = useParams();
   const lang = ((params?.lang as string) ?? (params?.locale as string) ?? "en") as
@@ -111,9 +106,6 @@ export default function Recognition() {
           >
             {label}
           </h2>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#475569] sm:text-[0.95rem]">
-            {note[lang] ?? note.en}
-          </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-8 sm:gap-10">
             {badges.map((badge) => {
