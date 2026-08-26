@@ -16,6 +16,20 @@ type BadgeDef = {
 
 const badges: BadgeDef[] = [
   {
+    id: "itu-cekirdek",
+    src: "/images/badges/itu-cekirdek-2026.png",
+    width: 426,
+    height: 313,
+    alt: {
+      en: "İTÜ Çekirdek Acceleration Startup 2026",
+      tr: "İTÜ Çekirdek Acceleration Startup 2026",
+    },
+    tip: {
+      en: "Accepted into İTÜ Çekirdek Acceleration Program 2026.",
+      tr: "İTÜ Çekirdek 2026 hızlandırma programına kabul edildik.",
+    },
+  },
+  {
     id: "teknogirisim",
     src: "/images/badges/teknogirisim-rozet.png",
     width: 447,
@@ -48,6 +62,11 @@ const badges: BadgeDef[] = [
 const labels = {
   en: "RECOGNITION",
   tr: "TANINMA",
+} as const;
+
+const note = {
+  en: "Proud to join İTÜ Çekirdek as an Acceleration Startup for 2026.",
+  tr: "İTÜ Çekirdek 2026 Acceleration Startup ailesine katıldık.",
 } as const;
 
 export default function Recognition() {
@@ -92,6 +111,9 @@ export default function Recognition() {
           >
             {label}
           </h2>
+          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#475569] sm:text-[0.95rem]">
+            {note[lang] ?? note.en}
+          </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-8 sm:gap-10">
             {badges.map((badge) => {
