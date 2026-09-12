@@ -17,9 +17,9 @@ const nextConfig = {
     ];
 
     return [
-      // /ashsim and /sim → middleware.ts (Clear-Site-Data + 308 to ashsim host).
+      // /ashsim and /sim → middleware.ts (Clear-Site-Data + hash-preserving bounce to ashsim host).
       // Do NOT also list them in vercel.json redirects — those run before middleware
-      // and would skip SW/cache wipe for legacy www-scoped PWAs.
+      // and would skip SW/cache wipe and drop the URL hash on register → accept-invite.
       // Do NOT match /en/ashsim or /tr/ashsim (marketing product pages on www).
       // Shipyard Twin deep links → AshSIM host (avoid www /ashsim hop)
       { source: '/dashboard/yard', destination: `${ASHSIM_ORIGIN}/ashsim/`, permanent: false },

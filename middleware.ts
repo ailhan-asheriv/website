@@ -7,20 +7,53 @@ const intlMiddleware = createMiddleware(routing);
 
 const ASHSIM_ORIGIN = "https://ashsim.asheriv.com";
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/"/g, "&quot;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;");
+}
+
 /**
- * Kill legacy www-scoped AshSIM service workers / caches, then hard-redirect
- * to ashsim.asheriv.com. Stale www SW was serving the SPA from www origin →
- * web-ifc.wasm followed a cross-origin redirect and died on CORS.
+ * Do not serve AshSIM from www. A 308 loses the URL hash in some clients
+ * (embedded browsers, hash-routed register → accept-invite). Bounce with a
+ * tiny HTML page so location.hash is appended on the real host, and wipe any
+ * leftover www-scoped SW/cache that used to host the SPA copy.
  */
 function redirectAshsim(req: NextRequest, pathname: string) {
-  const targetPath = pathname === "/ashsim" || pathname === "/sim" ? "/ashsim/" : pathname.replace(/^\/sim/, "/ashsim");
+  const targetPath =
+    pathname === "/ashsim" || pathname === "/sim" ? "/ashsim/" : pathname.replace(/^\/sim/, "/ashsim");
   const dest = `${ASHSIM_ORIGIN}${targetPath}${req.nextUrl.search}`;
-  const res = NextResponse.redirect(dest, 308);
-  // Wipe legacy www-scoped AshSIM SW/caches (browser honors on this origin).
-  res.headers.set("Clear-Site-Data", '"cache", "storage"');
-  res.headers.set("Cache-Control", "no-store");
-  res.headers.set("X-Ashsim-Redirect", "middleware");
-  return res;
+  const safeDest = escapeHtml(dest);
+  const html = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=${safeDest}">
+  <title>AshSIM</title>
+  <script>
+    (function () {
+      var path = location.pathname.replace(/^\\/sim(?=\\/|$)/, "/ashsim");
+      if (path === "/ashsim" || path === "/sim") path = "/ashsim/";
+      location.replace(${JSON.stringify(ASHSIM_ORIGIN)} + path + location.search + location.hash);
+    })();
+  </script>
+</head>
+<body style="font-family:system-ui,sans-serif;padding:24px;color:#111827">
+  <p>Opening AshSIM…</p>
+  <p><a href="${safeDest}">Continue to AshSIM</a></p>
+</body>
+</html>`;
+  return new NextResponse(html, {
+    status: 200,
+    headers: {
+      "content-type": "text/html; charset=utf-8",
+      "cache-control": "no-store",
+      "clear-site-data": '"cache", "storage"',
+      "x-ashsim-redirect": "hash-bounce",
+    },
+  });
 }
 
 export default function middleware(req: NextRequest) {
