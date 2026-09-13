@@ -16,11 +16,11 @@ function escapeHtml(value: string): string {
 }
 
 /**
- * Do not serve AshSIM from www. A 308 (and meta refresh) lose the URL hash
- * in some clients (register → accept-invite JWT lives in location.hash).
- * Bounce with JS so the hash is appended on the real host. No automatic
- * fallback: a meta refresh races JS and wins without the fragment. No-JS
- * browsers get a manual link (query only; hash is never sent to the server).
+ * Do not serve AshSIM from www. A 308, meta refresh, and Clear-Site-Data
+ * reload all lose the URL hash (register → accept-invite JWT lives in
+ * location.hash). Bounce with JS only so the hash is appended on the real
+ * host. No-JS browsers get a manual link (query only; hash is never sent
+ * to the server).
  */
 function redirectAshsim(req: NextRequest, pathname: string) {
   const targetPath =
@@ -53,7 +53,6 @@ function redirectAshsim(req: NextRequest, pathname: string) {
     headers: {
       "content-type": "text/html; charset=utf-8",
       "cache-control": "no-store",
-      "clear-site-data": '"cache", "storage"',
       "x-ashsim-redirect": "hash-bounce",
     },
   });
