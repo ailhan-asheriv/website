@@ -16,10 +16,11 @@ function escapeHtml(value: string): string {
 }
 
 /**
- * Do not serve AshSIM from www. A 308 loses the URL hash in some clients
- * (embedded browsers, hash-routed register → accept-invite). Bounce with a
- * tiny HTML page so location.hash is appended on the real host, and wipe any
- * leftover www-scoped SW/cache that used to host the SPA copy.
+ * Do not serve AshSIM from www. A 308 (and meta refresh) lose the URL hash
+ * in some clients (register → accept-invite JWT lives in location.hash).
+ * Bounce with JS so the hash is appended on the real host. No automatic
+ * fallback: a meta refresh races JS and wins without the fragment. No-JS
+ * browsers get a manual link (query only; hash is never sent to the server).
  */
 function redirectAshsim(req: NextRequest, pathname: string) {
   const targetPath =
@@ -30,19 +31,21 @@ function redirectAshsim(req: NextRequest, pathname: string) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=${safeDest}">
   <title>AshSIM</title>
   <script>
     (function () {
       var path = location.pathname.replace(/^\\/sim(?=\\/|$)/, "/ashsim");
       if (path === "/ashsim" || path === "/sim") path = "/ashsim/";
-      location.replace(${JSON.stringify(ASHSIM_ORIGIN)} + path + location.search + location.hash);
+      var dest = ${JSON.stringify(ASHSIM_ORIGIN)} + path + location.search + location.hash;
+      var a = document.getElementById("continue");
+      if (a) a.setAttribute("href", dest);
+      location.replace(dest);
     })();
   </script>
 </head>
 <body style="font-family:system-ui,sans-serif;padding:24px;color:#111827">
   <p>Opening AshSIM…</p>
-  <p><a href="${safeDest}">Continue to AshSIM</a></p>
+  <p><a id="continue" href="${safeDest}">Continue to AshSIM</a></p>
 </body>
 </html>`;
   return new NextResponse(html, {
