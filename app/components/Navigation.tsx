@@ -9,7 +9,7 @@ type MenuKey = "platform" | "intelligence" | "developers" | "company" | null;
 
 const platformLinks = [
   { href: "/ashmop", label: "AshMOP", desc: "Maritime Operations Platform" },
-  { href: "/ashfi", label: "AshFI", desc: "Fleet intelligence from AIS data" },
+  { href: "/ashfi", label: "AshFI", desc: "Main engine maintenance windows from the IMO number. No sensors, no integration." },
   { href: "/ashsim", label: "AshSIM", desc: "Ship Information Modelling" },
   { href: "/evidence-pack", label: "Evidence Pack", desc: "Audit-ready documentation" },
 ];

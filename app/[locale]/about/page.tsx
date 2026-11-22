@@ -139,7 +139,7 @@ export default async function AboutPage({
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {[
                 { href: "/ashmop", title: "AshMOP", desc: "Operational digital twin platform." },
-                { href: "/ashfi", title: "AshFI", desc: "Fleet intelligence from AIS data." },
+                { href: "/ashfi", title: "AshFI", desc: "Main engine maintenance windows from the IMO number. No sensors, no integration." },
                 { href: "/ashsim", title: "AshSIM", desc: "Shipyard-to-operations data continuity." },
                 { href: "/evidence-pack", title: "Evidence Pack", desc: "Structured compliance exports." },
               ].map((product) => (

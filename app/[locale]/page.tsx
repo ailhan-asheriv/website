@@ -69,8 +69,8 @@ export default async function HomePage({
                 <h3 className="text-xl font-semibold text-white mb-3">AshFI</h3>
                 <p className="text-sm leading-relaxed text-[#CBD5E1] mb-5">
                   {isTr
-                    ? "Filo Zekasi. AIS tabanli gemi sagligi ve RUL ongoruleri, sensor entegrasyonu gerektirmez. Dijital ikizi besler."
-                    : "Fleet Intelligence. AIS-derived vessel health and RUL insights, no sensor integration required. Feeds the digital twin."}
+                    ? "IMO numarasından ana makine bakım penceresi. Sensör yok, entegrasyon yok."
+                    : "Main engine maintenance windows from the IMO number. No sensors, no integration."}
                 </p>
                 <a href={isTr ? "/tr/ashfi" : "/en/ashfi"} className="text-sm font-semibold text-[#00D4FF] hover:text-[#67E5FF] transition-colors">
                   AshFI →
