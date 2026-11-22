@@ -6,21 +6,21 @@ import { PRODUCT_HERO_IMAGES } from "../../../lib/imagery";
 const content = {
   en: {
     title: "AshFI",
-    tagline: "Fleet intelligence from AIS data. No sensors required.",
+    tagline: "No sensors. No hardware. No integration. Just an IMO number.",
     intro:
-      "AshFI brings AIS-derived vessel intelligence, physics-informed health indicators, and remaining useful life estimation to any fleet, without requiring sensor integration or onboard hardware. It is the data layer that feeds ASHMOP, the operational digital twin, and stands on its own for operators who need fleet visibility today.",
+      "AshFI gives technical teams a maintenance planning window from a vessel's IMO alone — fleet-relative standing and peer position today. Connect your own noon reports and that window narrows by about 70%.",
     whyTitle: "Why AshFI",
     whyBody:
-      "Most fleet intelligence tools stop at position, route, and ETA. AshFI goes further: using only a vessel's IMO number, publicly available AIS data, and engine specifications, it estimates engine load, fuel efficiency trends, and remaining useful life, using the same physics-informed modelling approach that powers ASHMOP's predictive maintenance engine. No sensors. No integration. No waiting for a digital twin rollout.",
+      "Most fleet tools stop at position, route, and ETA. AshFI starts with an IMO number: a maintenance planning window you can act on now, and a clear path to tighten it when you upload the noon data you already fill in. No sensors. No hardware. No integration project.",
     featuresTitle: "What AshFI does",
     features: [
       {
         title: "Vessel Health Snapshot",
-        desc: "Enter an IMO number and receive an instant, physics-informed estimate of engine load, fuel efficiency, and degradation trend, derived from AIS movement data and engine design specifications.",
+        desc: "Enter an IMO number and see fleet-relative standing, peer position, and a maintenance planning window — without onboard sensors or a new integration.",
       },
       {
-        title: "Remaining Useful Life Estimation",
-        desc: "Weibull-based RUL modelling, the same methodology used in ASHMOP's predictive maintenance core, applied at fleet scale without requiring onboard sensors.",
+        title: "Maintenance planning window",
+        desc: "A calendar planning interval from public identity data today. Connect your noon reports and the window narrows by about 70%.",
       },
       {
         title: "Fleet Risk Benchmarking",
@@ -48,42 +48,42 @@ const content = {
   },
   tr: {
     title: "AshFI",
-    tagline: "AIS verisinden filo zekasi. Sensor entegrasyonu gerekmez.",
+    tagline: "Sensör yok. Donanım yok. Entegrasyon yok. Sadece IMO numarası.",
     intro:
-      "AshFI, sensor entegrasyonu veya gemi uzeri donanim gerektirmeden, herhangi bir filoya AIS tabanli gemi zekasi, fizik bilgili saglik gostergeleri ve kalan kullanim omru (RUL) tahmini sunar. ASHMOP'un operasyonel dijital ikizini besleyen veri katmanidir ve filo gorunurlugune bugun ihtiyaci olan operatorler icin de bagimsiz olarak calisir.",
+      "AshFI, yalnızca IMO ile bakım planlama penceresi verir — filo içi durum ve akran konumu bugünden. Noon raporlarınızı bağladığınızda pencere yaklaşık %70 daralır.",
     whyTitle: "Neden AshFI",
     whyBody:
-      "Cogu filo zekasi araci konum, rota ve ETA ile sinirli kalir. AshFI daha ileri gider: sadece bir geminin IMO numarasini, halka acik AIS verisini ve motor ozelliklerini kullanarak, ASHMOP'un kestirimci bakim motorunu calistiran ayni fizik bilgili modelleme yaklasimiyla motor yukunu, yakit verimliligi trendini ve kalan kullanim omrunu tahmin eder. Sensor yok. Entegrasyon yok. Dijital ikiz kurulumu icin beklemek yok.",
+      "Çoğu filo aracı konum, rota ve ETA ile sınırlı kalır. AshFI bir IMO ile başlar: hemen kullanabileceğiniz bir bakım planlama penceresi ve zaten doldurduğunuz noon verisini yükleyince daraltma yolu. Sensör yok. Donanım yok. Entegrasyon projesi yok.",
     featuresTitle: "AshFI ne yapar",
     features: [
       {
-        title: "Gemi Saglik Anlik Goruntusu",
-        desc: "Bir IMO numarasi girin ve AIS hareket verisi ile motor tasarim ozelliklerinden turetilen, motor yuku, yakit verimliligi ve degradasyon trendine dair anlik, fizik bilgili bir tahmin alin.",
+        title: "Gemi Sağlık Anlık Görüntüsü",
+        desc: "Bir IMO numarası girin; gemi üzeri sensör veya yeni entegrasyon olmadan filo içi durum, akran konumu ve bakım planlama penceresini görün.",
       },
       {
-        title: "Kalan Kullanim Omru Tahmini",
-        desc: "ASHMOP'un kestirimci bakim cekirdeginde kullanilan ayni Weibull tabanli RUL modellemesi, gemi uzeri sensor gerektirmeden filo olceginde uygulanir.",
+        title: "Bakım planlama penceresi",
+        desc: "Bugün kamuya açık kimlik verisiyle bir takvim aralığı. Noon raporlarınızı bağladığınızda pencere yaklaşık %70 daralır.",
       },
       {
-        title: "Filo Risk Karsilastirmasi",
-        desc: "Bir filodaki gemileri tutarli saglik ve risk gostergeleri uzerinden karsilastirin, teknik amirlerin dikkatlerini en onemli yere oncelendirmesine yardimci olun.",
+        title: "Filo Risk Karşılaştırması",
+        desc: "Bir filodaki gemileri tutarlı sağlık ve risk göstergeleri üzerinden karşılaştırın; teknik amirlerin dikkatini en önemli yere önceliklendirin.",
       },
       {
-        title: "Dijital Ikizi Besler",
-        desc: "AshFI verisi ve ASHMOP'un operasyonel dijital ikizi birlikte calismak uzere tasarlanmistir. Burada uretilen ongoruler, bir filonun dijital ikiz olgunlugu buyudukce dogrudan tam bir ASHMOP dagitimina akabilir.",
+        title: "Dijital İkizi Besler",
+        desc: "AshFI verisi ve ASHMOP'un operasyonel dijital ikizi birlikte çalışmak üzere tasarlanmıştır. Burada üretilen öngörüler, filonun dijital ikiz olgunluğu büyüdükçe doğrudan tam bir ASHMOP dağıtımına akabilir.",
       },
     ],
-    howTitle: "Nasil calisir",
+    howTitle: "Nasıl çalışır",
     steps: [
-      "Gemi IMO numaraniz veya filo detaylarinizla demo talep edin",
-      "AshFI'nin urettigi ongoru turunu gosteren bir ornek analiz alin",
-      "Ekibimiz, operasyonunuza uygun filo capinda bir dagitimi kapsamlandirmak icin sizinle iletisime gecer",
+      "Gemi IMO numaranız veya filo detaylarınızla demo talep edin",
+      "AshFI'nin ürettiği öngörü türünü gösteren bir örnek analiz alın",
+      "Ekibimiz, operasyonunuza uygun filo çapında bir dağıtımı kapsamlandırmak için sizinle iletişime geçer",
     ],
     formTitle: "Demo talep edin",
     heroCtaPrimary: "Demo Talep Et",
     suiteTitle: "AshFI ve Asheriv paketi",
     suiteBody:
-      "AshFI, Asheriv denizcilik zekasi paketindeki uc urunden biridir. AshSIM, tersane tasarim ve insaat verisini dijital ikize baglar. ASHMOP, tam operasyonel dijital ikiz platformudur. AshFI, sensor entegrasyonu gerektirmeden filo zekasi sunar, hem bagimsiz bir arac hem de ASHMOP'a beslenen bir veri kaynagi olarak hizmet eder.",
+      "AshFI, Asheriv denizcilik zekâsı paketindeki üç üründen biridir. AshSIM, tersane tasarım ve inşaat verisini dijital ikize bağlar. ASHMOP, tam operasyonel dijital ikiz platformudur. AshFI, sensör entegrasyonu gerektirmeden filo görünürlüğü sunar; hem bağımsız bir araç hem de ASHMOP'a beslenen bir veri kaynağıdır.",
     linkAshmop: "AshMOP",
     linkSim: "AshSIM",
     linkEvidence: "Evidence Pack",
