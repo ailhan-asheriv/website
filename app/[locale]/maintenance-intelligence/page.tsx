@@ -8,7 +8,7 @@ const content = {
     tagline: "Component-level health scoring, degradation modelling, and remaining useful life estimation.",
     intro: "Continuous health monitoring, anomaly detection, and remaining useful life estimation for vessel machinery and critical systems.",
     methodology:
-      "On public data you get peer position and fleet priority. The calendar maintenance window opens with build year and annual operating hours. Connect your own data and the window gets about 65% tighter.",
+      "On public data you get peer position and fleet priority. The calendar maintenance window opens with last major engine overhaul date and annual operating hours. Connect your own data and the window gets about 38% tighter.",
     bodyCards: [
       {
         title: "Health Scoring",
@@ -20,7 +20,7 @@ const content = {
       },
       {
         title: "Calendar maintenance window",
-        desc: "Opens with build year and annual operating hours — not from AIS alone. Public data gives peer position and fleet priority; with your own operating data the window gets about 65% tighter.",
+        desc: "Opens with last major engine overhaul date and annual operating hours — not from AIS or build year alone. Public data gives peer position and fleet priority; with your own operating data the window gets about 38% tighter.",
       },
       {
         title: "Sensor Integration",
@@ -42,7 +42,7 @@ const content = {
     intro:
       "Gemi makineleri ve kritik sistemler için sürekli sağlık izleme, anomali tespiti ve kalan faydalı ömür tahmini.",
     methodology:
-      "Kamuya açık veriyle akran konumu ve filo önceliği verilir. Takvim bakım penceresi inşa yılı ve yıllık çalışma saatiyle açılır. Kendi verinizle yaklaşık %65 daha dar.",
+      "Kamuya açık veriyle akran konumu ve filo önceliği verilir. Takvim bakım penceresi son büyük makine overhaul tarihi ve yıllık çalışma saatiyle açılır. Kendi verinizle yaklaşık %38 daha dar.",
     bodyCards: [
       {
         title: "Sağlık Skorlaması",
@@ -54,7 +54,7 @@ const content = {
       },
       {
         title: "Takvim bakım penceresi",
-        desc: "İnşa yılı ve yıllık çalışma saatiyle açılır — yalnız AIS’ten üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %65 daha daralır.",
+        desc: "Son büyük makine overhaul tarihi ve yıllık çalışma saatiyle açılır — yalnız AIS veya inşa yılından üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %38 daha daralır.",
       },
       {
         title: "Sensör Entegrasyonu",

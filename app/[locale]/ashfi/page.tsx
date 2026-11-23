@@ -9,7 +9,7 @@ const content = {
     tagline:
       "Main engine maintenance windows. No sensors, no hardware, no integration.",
     intro:
-      "AshFI tells you how far ahead a vessel's main engine is likely to need attention. It runs on the IMO number alone: nothing to install on board, nothing to integrate, no waiting for a retrofit. Connect the operating data you already collect and the window gets about 65% tighter.",
+      "AshFI tells you how far ahead a vessel's main engine is likely to need its next major overhaul. It runs on the IMO number alone: nothing to install on board, nothing to integrate, no waiting for a retrofit. Connect the operating data you already collect and the window gets about 38% tighter.",
     whyTitle: "Why AshFI",
     whyBody:
       "Condition monitoring has always meant hardware: sensors, cabling, commissioning, and months before the first useful answer. AshFI starts the other way round. You get a maintenance window for every vessel in the fleet on day one, from the IMO number. From there it sharpens as you connect data, on your schedule, with no capital outlay at any step.",
@@ -24,8 +24,8 @@ const content = {
         desc: "See which vessels need attention first, ranked against their actual peers of the same type and reporting year, not against a generic industry average.",
       },
       {
-        title: "About 65% tighter with your own data",
-        desc: "Connect the operating data your crews already record and the window narrows from roughly a year to roughly a quarter. No new instrumentation: the fields we need are the ones already on your noon report.",
+        title: "About 38% tighter with your own data",
+        desc: "Connect the operating data your crews already record and the window narrows (about ±372 → ±231 calendar days on a typical unlocked case). No new instrumentation: the fields we need are the ones already on your noon report.",
       },
       {
         title: "Built to carry into the digital twin",
@@ -52,7 +52,7 @@ const content = {
     tagline:
       "Ana makine bakım penceresi. Sensör yok, donanım yok, entegrasyon yok.",
     intro:
-      "AshFI, bir geminin ana makinesinin ne kadar önceden bakım gerektireceğini söyler. Yalnızca IMO numarasıyla çalışır: gemiye kurulacak bir şey yok, entegre edilecek bir sistem yok, tadilat beklemek yok. Zaten topladığınız işletme verisini bağladığınızda pencere yaklaşık %65 daralır.",
+      "AshFI, bir geminin ana makinesinin bir sonraki büyük overhaul'a ne kadar süre kaldığını söyler. Yalnızca IMO numarasıyla çalışır: gemiye kurulacak bir şey yok, entegre edilecek bir sistem yok, tadilat beklemek yok. Zaten topladığınız işletme verisini bağladığınızda pencere yaklaşık %38 daralır.",
     whyTitle: "Neden AshFI",
     whyBody:
       "Durum takibi bugüne kadar hep donanım demekti: sensör, kablolama, devreye alma, ve ilk işe yarar cevaba kadar geçen aylar. AshFI tersinden başlıyor. Filodaki her gemi için bakım penceresini ilk gün alıyorsunuz, sadece IMO numarasından. Sonrasında veri bağladıkça keskinleşiyor, kendi takviminizle ve hiçbir adımda yatırım gerektirmeden.",
@@ -67,8 +67,8 @@ const content = {
         desc: "Hangi gemiye önce bakmak gerektiğini görün. Karşılaştırma genel sektör ortalamasına göre değil, aynı tip ve aynı raporlama yılındaki gerçek akranlara göre yapılır.",
       },
       {
-        title: "Kendi verinizle yaklaşık %65 daha dar",
-        desc: "Ekiplerinizin zaten kaydettiği işletme verisini bağladığınızda pencere bir yıl mertebesinden üç ay mertebesine iner. Yeni cihaz gerekmez: ihtiyacımız olan alanlar noon raporunuzda zaten var.",
+        title: "Kendi verinizle yaklaşık %38 daha dar",
+        desc: "Ekiplerinizin zaten kaydettiği işletme verisini bağladığınızda pencere daralır (tipik açık pencerede yaklaşık ±372 → ±231 takvim günü). Yeni cihaz gerekmez: ihtiyacımız olan alanlar noon raporunuzda zaten var.",
       },
       {
         title: "Dijital ikize taşınacak şekilde kurgulandı",
