@@ -52,7 +52,7 @@ const content = {
       },
       {
         title: "Takvim bakım penceresi",
-        desc: "Inşa yılı ve yıllık çalışma saatiyle açılır — yalnız AIS’ten üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %65 daha daralır.",
+        desc: "İnşa yılı ve yıllık çalışma saatiyle açılır — yalnız AIS’ten üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %65 daha daralır.",
       },
       {
         title: "Sensor Entegrasyonu",
