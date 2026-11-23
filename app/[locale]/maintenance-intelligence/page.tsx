@@ -8,7 +8,7 @@ const content = {
     tagline: "Component-level health scoring, degradation modelling, and remaining useful life estimation.",
     intro: "Continuous health monitoring, anomaly detection, and remaining useful life estimation for vessel machinery and critical systems.",
     methodology:
-      "Built on physics-informed modelling and Weibull-based reliability analysis, applied with direct sensor data for significantly improved accuracy over AIS-only estimates.",
+      "On public data you get peer position and fleet priority. The calendar maintenance window opens with build year and annual operating hours. Connect your own data and the window gets about 65% tighter.",
     bodyCards: [
       {
         title: "Health Scoring",
@@ -19,8 +19,8 @@ const content = {
         desc: "AI ensemble combining LSTM autoencoder reconstruction error with Isolation Forest scoring. Catches both gradual degradation and sudden deviations, including on vessels with limited failure history.",
       },
       {
-        title: "RUL Estimation",
-        desc: "Remaining useful life prediction using Weibull degradation models updated by particle filter as new sensor observations arrive. P10/P50/P90 uncertainty bands included.",
+        title: "Calendar maintenance window",
+        desc: "Opens with build year and annual operating hours — not from AIS alone. Public data gives peer position and fleet priority; with your own operating data the window gets about 65% tighter.",
       },
       {
         title: "Sensor Integration",
@@ -40,7 +40,7 @@ const content = {
     tagline: "Komponent seviyesinde saglik skorlamasi, bozunma modellemesi ve kalan faydali omur tahmini.",
     intro: "Gemi makineleri ve kritik sistemler icin surekli saglik izleme, anomali tespiti ve kalan faydali omur tahmini.",
     methodology:
-      "Fizik bilgili modelleme ve Weibull tabanli guvenilirlik analizi uzerine kuruludur, AIS-only yaklasimlara gore daha yuksek dogruluk icin dogrudan sensor verisiyle uygulanir.",
+      "Kamuya açık veriyle akran konumu ve filo önceliği verilir. Takvim bakım penceresi inşa yılı ve yıllık çalışma saatiyle açılır. Kendi verinizle yaklaşık %65 daha dar.",
     bodyCards: [
       {
         title: "Saglik Skorlamasi",
@@ -51,8 +51,8 @@ const content = {
         desc: "LSTM otokodlayici yeniden yapilandirma hatasi ile Isolation Forest skorlamasini birlestiren AI toplulugu. Hem kademeli bozunmayi hem ani sapmalari yakalar.",
       },
       {
-        title: "RUL Tahmini",
-        desc: "Yeni sensor gozlemleri geldikce parcacik filtresiyle guncellenen Weibull bozunma modelleri kullanan kalan faydali omur tahmini. P10/P50/P90 belirsizlik bantlari dahil.",
+        title: "Takvim bakım penceresi",
+        desc: "Inşa yılı ve yıllık çalışma saatiyle açılır — yalnız AIS’ten üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %65 daha daralır.",
       },
       {
         title: "Sensor Entegrasyonu",
