@@ -36,35 +36,37 @@ const content = {
     ],
   },
   tr: {
-    title: "Varlik Zekasi",
-    tagline: "Komponent seviyesinde saglik skorlamasi, bozunma modellemesi ve kalan faydali omur tahmini.",
-    intro: "Gemi makineleri ve kritik sistemler icin surekli saglik izleme, anomali tespiti ve kalan faydali omur tahmini.",
+    title: "Varlık Zekası",
+    tagline:
+      "Komponent seviyesinde sağlık skorlaması, bozunma modellemesi ve kalan faydalı ömür tahmini.",
+    intro:
+      "Gemi makineleri ve kritik sistemler için sürekli sağlık izleme, anomali tespiti ve kalan faydalı ömür tahmini.",
     methodology:
       "Kamuya açık veriyle akran konumu ve filo önceliği verilir. Takvim bakım penceresi inşa yılı ve yıllık çalışma saatiyle açılır. Kendi verinizle yaklaşık %65 daha dar.",
     bodyCards: [
       {
-        title: "Saglik Skorlamasi",
-        desc: "Gercek zamanli sensor verilerinden, alarm gecmisinden ve bakim kayitlarindan turetilen komponentten gemiye saglik skorlamasi. Yeni veriler geldikce surekli guncellenir.",
+        title: "Sağlık Skorlaması",
+        desc: "Gerçek zamanlı sensör verilerinden, alarm geçmişinden ve bakım kayıtlarından türetilen komponentten gemiye sağlık skorlaması. Yeni veriler geldikçe sürekli güncellenir.",
       },
       {
         title: "Anomali Tespiti",
-        desc: "LSTM otokodlayici yeniden yapilandirma hatasi ile Isolation Forest skorlamasini birlestiren AI toplulugu. Hem kademeli bozunmayi hem ani sapmalari yakalar.",
+        desc: "LSTM otokodlayıcı yeniden yapılandırma hatası ile Isolation Forest skorlamasını birleştiren AI topluluğu. Hem kademeli bozunmayı hem ani sapmaları yakalar.",
       },
       {
         title: "Takvim bakım penceresi",
         desc: "İnşa yılı ve yıllık çalışma saatiyle açılır — yalnız AIS’ten üretilmez. Kamuya açık veri akran konumu ve filo önceliği verir; kendi işletme verinizle pencere yaklaşık %65 daha daralır.",
       },
       {
-        title: "Sensor Entegrasyonu",
-        desc: "Modbus, OPC-UA, NMEA ve MQTT protokollerini destekler. Mevcut bordaki izleme sistemleriyle uyumlu - donanim degisikligi gerekmez.",
+        title: "Sensör Entegrasyonu",
+        desc: "Modbus, OPC-UA, NMEA ve MQTT protokollerini destekler. Mevcut bordaki izleme sistemleriyle uyumlu - donanım değişikliği gerekmez.",
       },
     ],
     useCasesTitle: "Tipik Uygulamalar",
     useCases: [
-      "Ana makine kestirimci bakim planlamasi",
-      "Yardimci makine saglik izleme",
-      "Itki sistemi bozunma tespiti",
-      "Yapisal izleme ve yorulma tahmini",
+      "Ana makine kestirimci bakım planlaması",
+      "Yardımcı makine sağlık izleme",
+      "İtki sistemi bozunma tespiti",
+      "Yapısal izleme ve yorulma tahmini",
     ],
   },
 } as const;
